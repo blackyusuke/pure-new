@@ -85,7 +85,7 @@ export default {
 
 <style>
 .header-common .header-container {
-  @apply flex items-center justify-between m-auto w-1100;
+  @apply flex items-end justify-between m-auto w-1100;
 }
 .header-common .header-container .title-wrapper {
   @apply flex items-end;
@@ -126,6 +126,9 @@ export default {
   border-color: theme('colors.border-gray');
   color: theme('colors.font-base');
 }
+.header-common .header-container .variety-wrapper form input[type="text"]:focus {
+  @apply outline-none;
+}
 .header-common .header-container .variety-wrapper form button {
   @apply p-4 h-30;
   background: theme('colors.blue');
@@ -144,6 +147,10 @@ export default {
 .header-common .header-container .variety-wrapper .link-wrapper div a {
   @apply flex items-center border-2 border-solid rounded-30 h-30;
   border-color: theme('colors.primary');
+}
+.header-common .header-container .variety-wrapper .link-wrapper div a:hover {
+  background: theme('colors.primary');
+  @apply text-white;
 }
 .header-common .header-container .variety-wrapper .link-wrapper div a .icon {
   @apply inline-flex items-center justify-center rounded-half h-30;
