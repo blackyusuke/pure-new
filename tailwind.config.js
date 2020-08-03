@@ -11,10 +11,11 @@ module.exports = {
         default: '-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif',
       },
       colors: {
-        'font-base': '#333333',
         'font-gray': '#747474',
+        'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
         blue: '#47AFFF',
+        base: '#333333',
         primary: '#FD306A',
       },
       width: {
@@ -23,9 +24,6 @@ module.exports = {
       height: {
         30: '30px'
       },
-      borderWidth: {
-        2: '2px',
-      },
       borderRadius: {
         30: '30px',
         half: '50%'
@@ -33,19 +31,25 @@ module.exports = {
       fontSize: {
         fz12: '12px',
         fz14: '14px',
+        fz16: '16px',
+        fz18: '18px',
         fz20: '20px',
       },
       lineHeight: {
+        lh12: '12px',
+        lh16: '16px',
         lh17: '17px',
         lh25: '25px',
       },
       spacing: {
         2: '2px',
         4: '4px',
+        5: '5px',
         6: '6px',
         8: '8px',
         10: '10px',
         20: '20px',
+        40: '40px',
       }
     }
   },

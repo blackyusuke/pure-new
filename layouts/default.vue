@@ -19,7 +19,7 @@ export default {
 html {
   @apply box-border antialiased;
   font-family: theme('fontFamily.default');
-  color: theme('colors.font-base');
+  color: theme('colors.base');
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
