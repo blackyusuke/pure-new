@@ -239,12 +239,12 @@ export default {
 .header-common .contents-wrapper .container .variety-wrapper form {
   @apply flex items-center h-30;
 }
-.header-common .contents-wrapper .container .variety-wrapper form input[type="text"] {
+.header-common .contents-wrapper .container .variety-wrapper form input {
   @apply border-2 border-solid text-fz14 text-center p-6 h-30;
   border-color: theme('colors.border-gray');
   color: theme('colors.base');
 }
-.header-common .contents-wrapper .container .variety-wrapper form input[type="text"]:focus {
+.header-common .contents-wrapper .container .variety-wrapper form input:focus {
   @apply outline-none;
 }
 .header-common .contents-wrapper .container .variety-wrapper form button {
