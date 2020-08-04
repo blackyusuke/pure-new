@@ -1,19 +1,16 @@
 <template>
   <div>
     <HeaderCommon />
-    <GlobalNav />
     <nuxt />
   </div>
 </template>
 
 <script>
 import HeaderCommon from '~/components/modules/HeaderCommon.vue'
-import GlobalNav from '~/components/modules/GlobalNav.vue'
 
 export default {
   components: {
-    HeaderCommon,
-    GlobalNav
+    HeaderCommon
   }
 }
 </script>
