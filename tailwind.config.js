@@ -14,9 +14,10 @@ module.exports = {
         'font-gray': '#747474',
         'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
+        'border-thin-gray': '#D4D4D4',
         blue: '#47AFFF',
         base: '#333333',
-        primary: '#FD306A',
+        primary: '#FD306A', 
       },
       width: {
         1100: '1100px'
@@ -40,6 +41,7 @@ module.exports = {
         lh16: '16px',
         lh17: '17px',
         lh25: '25px',
+        lh28: '28px',
       },
       spacing: {
         2: '2px',
@@ -48,6 +50,7 @@ module.exports = {
         6: '6px',
         8: '8px',
         10: '10px',
+        15: '15px',
         20: '20px',
         40: '40px',
       }
