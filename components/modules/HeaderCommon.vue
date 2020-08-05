@@ -144,7 +144,7 @@
           v-for="(num, index) in 7"
           :key="index"
           class="global-item"
-          :class="{ 'icon': index === 0 || index=== 1}"
+          :class="{ 'icon': index === 0 || index=== 1 || index=== 2 || index=== 6}"
           @mouseover="mouseOverAction(index)"
           @mouseleave="mouseLemoveAction(index)"
         >
@@ -472,6 +472,9 @@ export default {
   border-color: theme('colors.border-thin-gray');
   width: 150px;
 }
+.header-common .header-nav .global-list .global-item .title {
+  @apply text-white text-fz14 leading-lh28 font-bold w-full h-full flex items-center justify-center;
+}
 .header-common .header-nav .global-list .global-item nav {
   @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0;
   transform: translate(0,100%);
@@ -512,9 +515,6 @@ export default {
 }
 .header-common .header-nav .global-list .global-item nav ul li a:hover {
   color: theme('colors.primary');
-}
-.header-common .header-nav .global-list .global-item .title {
-  @apply text-white text-fz14 leading-lh28 font-bold;
 }
 .header-common .header-nav .global-list .global-item:first-child {
   @apply border-l border-solid;
