@@ -144,6 +144,7 @@
           v-for="(num, index) in 7"
           :key="index"
           class="global-item"
+          :class="{ 'icon': index === 0 || index=== 1}"
           @mouseover="mouseOverAction(index)"
           @mouseleave="mouseLemoveAction(index)"
         >
@@ -192,30 +193,30 @@
             <nav v-if="hoverFlag && index === hoverIndex">
               <ul>
                 <li>
-                <a href="">
-                  出勤&タイプで探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  画像から女の子を探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  今すぐ遊べるピックアップ嬢
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  体験入店の女の子
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  店舗名から探す
-                </a>
-              </li>
+                  <a href="">
+                    出勤&タイプで探す
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    画像から女の子を探す
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    今すぐ遊べるピックアップ嬢
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    体験入店の女の子
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    店舗名から探す
+                  </a>
+                </li>
               </ul>
             </nav>
           </template>
@@ -459,7 +460,7 @@ export default {
 }
 .header-common .header-nav {
   background: theme('colors.primary');
-  @apply border-b-4 border-solid;
+  @apply border-b-4 border-solid; 
   border-color: theme('colors.base');
 }
 .header-common .header-nav .global-list {
@@ -467,17 +468,50 @@ export default {
   height: 60px;
 }
 .header-common .header-nav .global-list .global-item  {
-  @apply flex items-center justify-center py-15 px-20 border-r border-solid relative;
+  @apply flex items-center justify-center border-r border-solid relative;
   border-color: theme('colors.border-thin-gray');
-  width: 140px;
+  width: 150px;
 }
 .header-common .header-nav .global-list .global-item nav {
-  @apply border-4 border-solid absolute py-5 px-10;
-  bottom: 0;
-  left: 0;
+  @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0;
   transform: translate(0,100%);
   border-color: theme('colors.primary');
-  width: 220px;
+  width: 240px;
+}
+.header-common .header-nav .global-list .icon {
+  @apply relative;
+}
+.header-common .header-nav .global-list .icon::after {
+  @apply absolute;
+  content: '';
+  bottom: 10px;
+  right: 10px;
+  border-top: 8px solid #ffffff;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.header-common .header-nav .global-list .global-item nav ul li + li {
+  @apply border-solid border-t-2;
+  border-color: theme('colors.primary');
+}
+.header-common .header-nav .global-list .global-item nav ul li a {
+  @apply relative pl-16 py-8 block font-bold text-fz14;
+}
+.header-common .header-nav .global-list .global-item nav ul li a::before {
+  @apply absolute top-0 bottom-0 m-auto border-solid border-t-4 border-r-4;
+  left: 3px;
+  content: "";
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-color: theme('colors.base');
+  transform: rotate(45deg);
+}
+.header-common .header-nav .global-list .global-item nav ul li a:hover::before {
+  border-color: theme('colors.primary');
+}
+.header-common .header-nav .global-list .global-item nav ul li a:hover {
+  color: theme('colors.primary');
 }
 .header-common .header-nav .global-list .global-item .title {
   @apply text-white text-fz14 leading-lh28 font-bold;
