@@ -14,7 +14,7 @@ module.exports = {
         'font-gray': '#747474',
         'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
-        'border-thin-gray': '#D4D4D4',
+        'border-thin-gray': '#D4D4D4',　
         blue: '#47AFFF',
         base: '#333333',
         primary: '#FD306A', 
@@ -53,7 +53,14 @@ module.exports = {
         15: '15px',
         16: '16px',
         20: '20px',
+        36: '36px',
         40: '40px',
+      },
+      zIndex: {
+        1:1,
+        10:10,
+        100:100,
+        1000:1000,
       }
     }
   },

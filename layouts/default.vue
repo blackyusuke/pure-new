@@ -2,15 +2,18 @@
   <div>
     <HeaderCommon />
     <nuxt />
+    <FooterCommon />
   </div>
 </template>
 
 <script>
 import HeaderCommon from '~/components/modules/HeaderCommon.vue'
+import FooterCommon from '~/components/modules/FooterCommon.vue'
 
 export default {
   components: {
-    HeaderCommon
+    HeaderCommon,
+    FooterCommon
   }
 }
 </script>

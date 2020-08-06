@@ -132,7 +132,10 @@
     <nav class="header-nav">
       <ul class="global-list">
         <li class="global-item">
-          <a href="">
+          <a
+            href=""
+            class="home"
+          >
             <icon-home
               class="fill-current"
               width="29"
@@ -318,7 +321,7 @@ export default {
   },
   data() {
     return {
-      hoverFlag: false
+      hoverFlag: false,
     }
   },
   methods: {
@@ -467,19 +470,23 @@ export default {
   @apply flex m-auto w-1100;
   height: 60px;
 }
-.header-common .header-nav .global-list .global-item  {
+.header-common .header-nav .global-list .global-item {
   @apply flex items-center justify-center border-r border-solid relative;
   border-color: theme('colors.border-thin-gray');
   width: 150px;
+}
+.header-common .header-nav .global-list .global-item .home {
+  @apply flex justify-center items-center w-full h-full;
 }
 .header-common .header-nav .global-list .global-item .title {
   @apply text-white text-fz14 leading-lh28 font-bold w-full h-full flex items-center justify-center;
 }
 .header-common .header-nav .global-list .global-item nav {
-  @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0;
+  @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0 bg-white;
   transform: translate(0,100%);
   border-color: theme('colors.primary');
   width: 240px;
+  z-index: theme('zIndex.1');
 }
 .header-common .header-nav .global-list .icon {
   @apply relative;
