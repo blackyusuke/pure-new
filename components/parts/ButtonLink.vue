@@ -9,10 +9,18 @@
     >
     </slot>
     <span class="link-name">
-      <slot name="link-name"></slot>
+      {{ linkName }}
     </span>
   </a>
 </template>
+
+<script>
+export default {
+  props: {
+    linkName: String
+  }
+}
+</script>
 
 <style>
 .button-link {

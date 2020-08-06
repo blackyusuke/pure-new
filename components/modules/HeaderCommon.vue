@@ -89,7 +89,7 @@
           </form>
           <div class="link-wrapper">
             <div>
-              <ButtonLink>
+              <ButtonLink link-name="ログイン">
                 <span
                   slot="icon"
                   class="icon"
@@ -100,13 +100,10 @@
                       height="18"
                     />
                 </span>
-                <template v-slot:link-name>
-                  ログイン
-                </template>
               </ButtonLink>
             </div>
             <div>
-              <ButtonLink>
+              <ButtonLink link-name="会員登録">
                 <span
                   slot="icon"
                   class="icon"
@@ -117,9 +114,6 @@
                     height="18"
                   />
                 </span>
-                <template v-slot:link-name>
-                  会員登録
-                </template>
               </ButtonLink>
             </div>
           </div>

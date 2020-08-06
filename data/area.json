@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "apple"
+    },
+    {
+      "id": "orange"
+    },
+    {
+      "id": "banana"
+    }
+  ],
+  "default": {
+    "id": "fruits"
+  },
+  "error": {
+    "id": "nashi"
+  }
+}

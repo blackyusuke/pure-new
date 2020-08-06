@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "kanto"
+    },
+    {
+      "id": "kansai"
+    },
+    {
+      "id": "hokkaido-tohoku"
+    },
+    {
+      "id": "hokuriku"
+    },
+    {
+      "id": "koshinetsu"
+    },
+    {
+      "id": "tokai"
+    },
+    {
+      "id": "chugoku-shikoku"
+    },
+    {
+      "id": "kyushu-okinawa"
+    }
+  ]
+}

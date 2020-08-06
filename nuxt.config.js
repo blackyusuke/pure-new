@@ -1,5 +1,6 @@
 
-export default {
+const area = require('./data/area.json')
+module.exports = {
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -69,5 +70,12 @@ export default {
         })
       }
     },
+  },
+  generate: {
+    routes() {
+      return area.items.map(item => {
+        return `${item.id}`
+      })
+    }
   }
 }
