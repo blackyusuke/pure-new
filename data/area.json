@@ -1,19 +1,28 @@
 {
   "items": [
     {
-      "id": "apple"
+      "id": "kanto"
     },
     {
-      "id": "orange"
+      "id": "kansai"
     },
     {
-      "id": "banana"
+      "id": "hokkaido-tohoku"
+    },
+    {
+      "id": "hokuriku"
+    },
+    {
+      "id": "koshinetsu"
+    },
+    {
+      "id": "tokai"
+    },
+    {
+      "id": "chugoku-shikoku"
+    },
+    {
+      "id": "kyushu-okinawa"
     }
-  ],
-  "default": {
-    "id": "fruits"
-  },
-  "error": {
-    "id": "nashi"
-  }
+  ]
 }

@@ -14,7 +14,7 @@ module.exports = {
         'font-gray': '#747474',
         'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
-        'border-thin-gray': '#D4D4D4',　
+        'border-thin-gray': '#D4D4D4',
         blue: '#47AFFF',
         base: '#333333',
         primary: '#FD306A', 

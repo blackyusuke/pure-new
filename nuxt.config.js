@@ -30,12 +30,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    'swiper/swiper-bundle.css'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~plugins/vue-awesome-swiper', mode: 'client' }
   ],
   /*
   ** Auto import components
@@ -70,6 +72,9 @@ module.exports = {
         })
       }
     },
+    vendor: [
+      'vue-awesome-swiper'
+    ]
   },
   generate: {
     routes() {
