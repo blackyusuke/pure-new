@@ -24,9 +24,15 @@ export default {
 
 <style>
 .button-link {
-  @apply flex items-center justify-center border-2 border-solid rounded-30 h-30 font-bold text-fz16;
+  @apply flex items-center justify-center border-2 border-solid rounded-30;
   border-color: theme('colors.primary');
   color: theme('colors.primary');
+} 
+.button-link.is-small {
+  @apply h-30 text-fz16;
+}
+.button-link.is-bold {
+  @apply font-bold;
 }
 .button-link:hover {
   background: theme('colors.primary');

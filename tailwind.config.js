@@ -20,14 +20,19 @@ module.exports = {
         primary: '#FD306A', 
       },
       width: {
+        190: '190px',
         1100: '1100px'
       },
       height: {
-        30: '30px'
+        30: '30px',
+        46: '46px'
       },
       borderRadius: {
         30: '30px',
         half: '50%'
+      },
+      borderWidth: {
+        46: '46px'
       },
       fontSize: {
         fz12: '12px',
@@ -35,11 +40,14 @@ module.exports = {
         fz16: '16px',
         fz18: '18px',
         fz20: '20px',
+        fz24: '24px',
       },
       lineHeight: {
         lh12: '12px',
         lh16: '16px',
         lh17: '17px',
+        lh18: '18px',
+        lh24: '24px',
         lh25: '25px',
         lh28: '28px',
       },
@@ -50,6 +58,7 @@ module.exports = {
         6: '6px',
         8: '8px',
         10: '10px',
+        12: '12px',
         15: '15px',
         16: '16px',
         20: '20px',

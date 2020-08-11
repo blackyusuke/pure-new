@@ -30,7 +30,6 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'swiper/swiper-bundle.css'
   ],
   /*
   ** Plugins to load before mounting the App

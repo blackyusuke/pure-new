@@ -89,7 +89,10 @@
           </form>
           <div class="link-wrapper">
             <div>
-              <ButtonLink link-name="ログイン">
+              <ButtonLink
+                link-name="ログイン"
+                class="is-small is-bold"
+              >
                 <span
                   slot="icon"
                   class="icon"
@@ -103,7 +106,10 @@
               </ButtonLink>
             </div>
             <div>
-              <ButtonLink link-name="会員登録">
+              <ButtonLink
+                link-name="会員登録"
+                class="is-small is-bold"
+              >
                 <span
                   slot="icon"
                   class="icon"
@@ -480,7 +486,7 @@ export default {
   transform: translate(0,100%);
   border-color: theme('colors.primary');
   width: 240px;
-  z-index: theme('zIndex.1');
+  z-index: theme('zIndex.10');
 }
 .header-common .header-nav .global-list .icon {
   @apply relative;

@@ -1,0 +1,136 @@
+<template>
+  <div class="search-area">
+    <MainSecondary
+      title="関東エリアの風俗店を探す"
+      btn="詳細検索"
+    >
+      <span
+        slot="icon"
+        class="icon"
+      >
+        <icon-map
+          class="fill-current"
+          width="24"
+          height="24"
+        />
+      </span>
+      <p
+        slot="btn"
+        class="btn" 
+      >
+        <ButtonLink
+          class="is-bold is-middle"
+          link-name="詳細検索"
+        >
+        </ButtonLink>
+      </p>
+      <p
+        slot="lead"
+        class="lead"
+      >
+      各エリアの風俗情報をご紹介。お店や女の子検索もここから
+      </p>
+    </MainSecondary>
+    <ul class="search-area-list">
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/tokyo.jpg"
+              alt="東京" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/kanagawa.jpg"
+              alt="神奈川" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/saitama.jpg"
+              alt="埼玉" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/tiba.jpg"
+              alt="千葉" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/ibaraki.jpg"
+              alt="茨城" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/tochigi.jpg"
+              alt="栃木" 
+            />
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img
+              src="~/assets/images/gunma.jpg"
+              alt="群馬" 
+            />
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import MainSecondary from '~/components/parts/MainSecondary.vue'
+import IconMap from '~/components/icons/IconMap'
+import ButtonLink from '~/components/parts/ButtonLink'
+export default {
+  components: {
+    MainSecondary,
+    IconMap,
+    ButtonLink
+  }
+}
+</script>
+
+<style>
+.search-area {
+  width: 680px;
+}
+.search-area h2 {
+  width: 520px;
+}
+.search-area-list {
+  @apply flex border-solid border-t border-white;
+}
+.search-area-list li {
+  @apply flex border-solid border-r border-white;
+}
+.search-area-list li:last-child {
+  @apply border-r-0;
+}
+.search-area-list li a {
+  @apply block overflow-hidden bg-black;
+}
+.search-area-list li a img {
+  transition-duration: 0.5s;
+  width: 100%;
+}
+.search-area-list li a img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+</style>
