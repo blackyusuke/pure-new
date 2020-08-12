@@ -47,7 +47,7 @@ export default {
 }
 .main-secondary .title h2 .headline {
   transform: skew(-45deg);
-  @apply flex text-white text-fz24 leading-lh24 font-bold;
+  @apply flex items-center text-white text-fz24 leading-lh24 font-bold;
   margin-left: 25px;
 }
 .main-secondary .title h2 .headline .icon {

@@ -28,8 +28,11 @@
       <SideLeft />
       <div class="content">
         <ul class="content-list">
-          <li>
-            <SearchArea />
+          <li class="content-list-item">
+            <AreaSearch />
+          </li>
+          <li class="content-list-item">
+             <AreaRanking />
           </li>
         </ul>
       </div>
@@ -41,12 +44,14 @@
 <script>
 import SideLeft from '~/components/modules/SideLeft.vue'
 import SideRight from '~/components/modules/SideRight.vue'
-import SearchArea from '~/components/modules/SearchArea.vue'
+import AreaSearch from '~/components/modules/AreaSearch.vue'
+import AreaRanking from '~/components/modules/AreaRanking.vue'
 export default {
   components: {
     SideLeft,
     SideRight,
-    SearchArea
+    AreaSearch,
+    AreaRanking
   },
   layout: 'region',
   data() {
@@ -76,5 +81,8 @@ export default {
 }
 #region .wrap .content {
   width: 680px;
+}
+#region .wrap .content .content-list .content-list-item + .content-list-item {
+  @apply mt-20;
 }
 </style>

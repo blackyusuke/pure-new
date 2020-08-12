@@ -129,8 +129,8 @@ export default {
   width: 100%;
 }
 .search-area-list li a img:hover {
+  @apply duration-500;
   opacity: 0.6;
   transform: scale(1.1);
-  transition-duration: 0.5s;
 }
 </style>
