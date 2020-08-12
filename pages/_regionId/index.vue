@@ -1,29 +1,31 @@
 <template>
   <main id="region">
-    <client-only>
-        <swiper :options="swiperOption">
-          <swiper-slide>
-            <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </swiper-slide>
-        </swiper>
-    </client-only>
+    <div class="slider">
+      <client-only>
+          <swiper :options="swiperOption">
+            <swiper-slide>
+              <a href="">
+                <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="">
+                <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="">
+                <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="">
+                <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+              </a>
+            </swiper-slide>
+          </swiper>
+      </client-only>
+    </div>
     <div class="wrap">
       <SideLeft />
       <div class="content">
@@ -76,7 +78,7 @@ export default {
 #region .wrap {
   @apply flex justify-between;
 }
-#region .swiper-container + .wrap {
+#region .slider + .wrap {
   @apply mt-20;
 }
 #region .wrap .content {

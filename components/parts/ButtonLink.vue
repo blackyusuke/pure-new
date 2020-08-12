@@ -24,10 +24,27 @@ export default {
 
 <style>
 .button-link {
-  @apply flex items-center justify-center border-2 border-solid rounded-30;
+  @apply flex items-center justify-center border-2 border-solid rounded-30 overflow-hidden relative z-1;
   border-color: theme('colors.primary');
   color: theme('colors.primary');
-} 
+  transition: all .3s;
+}
+.button-link::after {
+  @apply absolute bottom-0 left-0 w-full h-full bg-white rounded-30;
+  content: '';
+  z-index: theme('zIndex.-100');
+}
+.button-link::before {
+  @apply absolute bottom-0 left-0 w-0 h-full rounded-30;
+  content: '';
+  background-color: theme('colors.primary');
+  transition: all .3s;
+  z-index: theme('zIndex.-10');
+}
+.button-link:hover::before {
+  width: 100%;
+}
+
 .button-link.is-small {
   @apply h-30 text-fz16;
 }
