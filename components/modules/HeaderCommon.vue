@@ -143,41 +143,76 @@
             />
           </a>
         </li>
-        <no-ssr>
-          <li
-            v-for="(num, index) in 7"
-            :key="index"
-            class="global-item"
-            :class="{ 'icon': index === 0 || index=== 1 || index=== 2 || index=== 6}"
-            @mouseover="mouseOverAction(index)"
-            @mouseleave="mouseLemoveAction(index)"
-          >
-            <template v-if="index === 0">
-              <p
-                class="title"
-              >
-              お店検索
+        <li
+          v-for="(num, index) in 7"
+          :key="index"
+          class="global-item"
+          :class="{ 'icon': index === 0 || index=== 1 || index=== 2 || index=== 6}"
+          @mouseover="mouseOverAction(index)"
+          @mouseleave="mouseLemoveAction(index)"
+        >
+          <template v-if="index === 0">
+            <p
+              class="title"
+            >
+            お店検索
+          </p>
+          <nav v-if="hoverFlag && index === hoverIndex">
+            <ul>
+              <li>
+                <a href="">
+                  場所から探す
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  業種から探す
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  総額から探す
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  こだわりから探す
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  店舗名から探す
+                </a>
+              </li>
+            </ul>
+          </nav>
+          </template>
+          <template v-if="index === 1">
+            <p
+              class="title"
+            >
+              女の子検索
             </p>
             <nav v-if="hoverFlag && index === hoverIndex">
               <ul>
                 <li>
                   <a href="">
-                    場所から探す
+                    出勤&タイプで探す
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    業種から探す
+                    画像から女の子を探す
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    総額から探す
+                    今すぐ遊べるピックアップ嬢
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    こだわりから探す
+                    体験入店の女の子
                   </a>
                 </li>
                 <li>
@@ -187,121 +222,84 @@
                 </li>
               </ul>
             </nav>
-            </template>
-            <template v-if="index === 1">
-              <p
-                class="title"
-              >
-                女の子検索
-              </p>
-              <nav v-if="hoverFlag && index === hoverIndex">
-                <ul>
-                  <li>
-                    <a href="">
-                      出勤&タイプで探す
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      画像から女の子を探す
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      今すぐ遊べるピックアップ嬢
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      体験入店の女の子
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      店舗名から探す
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </template>
-            <template v-if="index === 2">
-              <p
-                class="title"
-              >
-                クーポン
-              </p>
-              <nav v-if="hoverFlag && index === hoverIndex">
-                <ul>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </template>
-            <template v-if="index === 3">
-              <a
-                href=""
-                class="title"
-              >
-                ランキング
-              </a>
-            </template>
-            <template v-if="index === 4">
-              <a
-                href=""
-                class="title"
-              >
-                口コミ
-              </a>
-            </template>
-            <template v-if="index === 5">
-              <a
-                href=""
-                class="title"
-              >
-                写メ日記
-              </a>
-            </template>
-            <template v-if="index === 6">
-              <p
-                class="title"
-              >
-                動画・画像・マンガ
-              </p>
-              <nav v-if="hoverFlag && index === hoverIndex">
-                <ul>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      サンプルテキスト
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </template>
-          </li>
-        </no-ssr>
+          </template>
+          <template v-if="index === 2">
+            <p
+              class="title"
+            >
+              クーポン
+            </p>
+            <nav v-if="hoverFlag && index === hoverIndex">
+              <ul>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </template>
+          <template v-if="index === 3">
+            <a
+              href=""
+              class="title"
+            >
+              ランキング
+            </a>
+          </template>
+          <template v-if="index === 4">
+            <a
+              href=""
+              class="title"
+            >
+              口コミ
+            </a>
+          </template>
+          <template v-if="index === 5">
+            <a
+              href=""
+              class="title"
+            >
+              写メ日記
+            </a>
+          </template>
+          <template v-if="index === 6">
+            <p
+              class="title"
+            >
+              動画・画像・マンガ
+            </p>
+            <nav v-if="hoverFlag && index === hoverIndex">
+              <ul>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    サンプルテキスト
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </template>
+        </li>
       </ul>
     </nav>
   </header>

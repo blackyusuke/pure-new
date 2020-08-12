@@ -1,7 +1,7 @@
 <template>
   <div class="main-secondary">
     <div class="title">
-      <h2>
+      <h2 :class="{ 'head-short': headLine === 'short' }">
         <span class="headline">
           <slot
             name="icon"
@@ -27,7 +27,7 @@ export default {
   props: {
     title: String,
     btn: String,
-    lead: String
+    headLine: String
   }
 }
 </script>
@@ -36,6 +36,9 @@ export default {
 .main-secondary .title {
   overflow: hidden;
   @apply flex justify-between;
+}
+.main-secondary .title .head-short {
+  width: 520px;
 }
 .main-secondary h2 {
   @apply flex items-center w-full;

@@ -42,7 +42,7 @@ export default {
   z-index: theme('zIndex.-10');
 }
 .button-link:hover::before {
-  width: 100%;
+  @apply w-full;
 }
 
 .button-link.is-small {

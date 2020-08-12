@@ -2,7 +2,7 @@
   <div class="search-area">
     <MainSecondary
       title="関東エリアの風俗店を探す"
-      btn="詳細検索"
+      headLine="short"
     >
       <span
         slot="icon"
@@ -108,9 +108,6 @@ export default {
 <style>
 .search-area {
   width: 680px;
-}
-.search-area .main-secondary .title h2 {
-  width: 520px;
 }
 .search-area-list {
   @apply flex border-solid border-t border-white;
