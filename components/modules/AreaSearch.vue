@@ -109,7 +109,7 @@ export default {
 .search-area {
   width: 680px;
 }
-.search-area h2 {
+.search-area .main-secondary .title h2 {
   width: 520px;
 }
 .search-area-list {
