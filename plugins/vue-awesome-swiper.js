@@ -1,5 +1,5 @@
 import Vue from 'vue'
 import Swiper from 'swiper/swiper-bundle.esm'
-import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+import getAwesomeSwiper from 'vue-awesome-swiper/dist/ssr'
 Vue.use(getAwesomeSwiper(Swiper))
 import 'swiper/swiper-bundle.css'

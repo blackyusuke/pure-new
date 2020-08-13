@@ -1,7 +1,7 @@
 <template>
   <li
     class="nav-item"
-    :class="{ 'quarter': headLine === 'short' }"
+    :class="[{ 'is-quarter': width === 'quarter' }, {'is-third': width === 'third'}]"
   >
     <slot />
   </li>
@@ -10,16 +10,19 @@
 <script>
 export default {
   props: {
-    headLine: String
+    width: String
   }
 }
 </script>
 
 <style>
   .nav-item {
-    @apply pr-8 pb-16 w-3/12;
+    @apply pr-8 pb-16;
   }
   .nav-item.is-quarter {
     @apply w-1/4;
+  }
+  .nav-item.is-third {
+    @apply w-1/3;
   }
 </style>
