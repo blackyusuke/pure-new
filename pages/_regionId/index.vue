@@ -36,6 +36,9 @@
           <li class="content-list-item">
              <AreaRanking />
           </li>
+          <li class="content-list-item">
+             <OtherArea />
+          </li>
         </ul>
       </div>
       <SideRight />
@@ -48,12 +51,14 @@ import SideLeft from '~/components/modules/SideLeft.vue'
 import SideRight from '~/components/modules/SideRight.vue'
 import AreaSearch from '~/components/modules/AreaSearch.vue'
 import AreaRanking from '~/components/modules/AreaRanking.vue'
+import OtherArea from '~/components/modules/OtherArea.vue'
 export default {
   components: {
     SideLeft,
     SideRight,
     AreaSearch,
-    AreaRanking
+    AreaRanking,
+    OtherArea
   },
   layout: 'region',
   data() {
