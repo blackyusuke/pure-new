@@ -1,32 +1,30 @@
 <template>
   <main id="region">
     <div class="slider">
-      <client-only>
-          <div v-swiper="swiperOption">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <a href="">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-                </a>
-              </li>
-               <li class="swiper-slide">
-                 <a href="">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-                </a>
-              </li>
-               <li class="swiper-slide">
-                 <a href="">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-                </a>
-              </li>
-               <li class="swiper-slide">
-                 <a href="">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-                </a>
-              </li>
-            </ul>
-          </div>
-      </client-only>
+      <div v-swiper="swiperOption">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <a href="">
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            </a>
+          </li>
+            <li class="swiper-slide">
+              <a href="">
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            </a>
+          </li>
+            <li class="swiper-slide">
+              <a href="">
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            </a>
+          </li>
+            <li class="swiper-slide">
+              <a href="">
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="wrap">
       <SideLeft />
