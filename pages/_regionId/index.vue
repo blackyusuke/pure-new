@@ -1,30 +1,30 @@
 <template>
   <main id="region">
     <div class="slider">
-      <div v-swiper:garallySwiper="swiperOption">
-        <ul class="swiper-wrapper">
-          <li class="swiper-slide">
-            <a href="">
+      <client-only>
+      <swiper :options="swiperOption">
+        <swiper-slide>
+          <a href="">
               <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </li>
-            <li class="swiper-slide">
-              <a href="">
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="">
               <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </li>
-            <li class="swiper-slide">
-              <a href="">
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="">
               <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </li>
-            <li class="swiper-slide">
-              <a href="">
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="">
               <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-            </a>
-          </li>
-        </ul>
-      </div>
+          </a>
+        </swiper-slide>
+      </swiper>
+      </client-only>
     </div>
     <div class="wrap">
       <SideLeft />

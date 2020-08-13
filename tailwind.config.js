@@ -25,6 +25,7 @@ module.exports = {
       },
       height: {
         30: '30px',
+        36: '36px',
         46: '46px'
       },
       borderRadius: {
@@ -44,6 +45,7 @@ module.exports = {
       },
       lineHeight: {
         lh12: '12px',
+        lh14: '14px',
         lh16: '16px',
         lh17: '17px',
         lh18: '18px',

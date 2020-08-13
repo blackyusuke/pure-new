@@ -46,7 +46,10 @@ export default {
 }
 
 .button-link.is-small {
-  @apply h-30 text-fz16;
+  @apply h-30 text-fz16 leading-lh24;
+}
+.button-link.is-middle {
+  @apply h-36 text-fz14 leading-lh14;
 }
 .button-link.is-bold {
   @apply font-bold;
