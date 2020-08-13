@@ -1,7 +1,7 @@
 <template>
   <main id="region">
     <div class="slider">
-      <div v-swiper="swiperOption">
+      <div v-swiper:garallySwiper="swiperOption">
         <ul class="swiper-wrapper">
           <li class="swiper-slide">
             <a href="">
