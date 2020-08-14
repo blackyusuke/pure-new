@@ -19,6 +19,7 @@ module.exports = {
         'back-gray': '#EFEFEF',
         'number-1': '#FFCC21',
         'new-icon': '#FFF000',
+        'light-blue': '#47AFFF',
         red: '#FF0000',
         primary: '#FD306A',
         secondary: '#E81212',

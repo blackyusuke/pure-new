@@ -21,41 +21,54 @@
         <div v-show="activetab === 2" class="inner">コンテンツ02</div>
         <div v-show="activetab === 3" class="inner">
           <ul class="ranking-list">
-            <li class="first new triangle">
-              <img src="http://placehold.jp/FFCCCC/FF0000/180x135.png" />
-              <span class="number number-1">
-                <strong>1</strong>位
-              </span> 
+            <li class="first new is-first-new triangle">
+              <a href="">
+                <img src="~/assets/images/sample/sample1.jpg" alt="女の子" />
+                <span class="number number-1">
+                  <strong>1</strong>位
+                </span> 
+              </a>
             </li>
             <li class="ranking-item triangle silver">
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
-              <span class="number number-2">
-                <strong>2</strong>位
-              </span>
-              <div class="arrow is-top">
-                <icon-arrow class="fill-current" width="16" height="20" />
-              </div>
+              <a href="">
+                <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+                <span class="number number-2">
+                  <strong>2</strong>位
+                </span>
+                <div class="arrow is-top">
+                  <icon-arrow class="fill-current" width="16" height="20" />
+                </div>
+              </a>
             </li>
             <li class="ranking-item triangle blonze">
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
-              <span class="number number-3">
-                <strong>3</strong>位
-              </span>
-              <div class="arrow is-right">
-                <icon-arrow class="fill-current" width="16" height="20" />
-              </div>
+              <a href="">
+                <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+                <span class="number number-3">
+                  <strong>3</strong>位
+                </span>
+                <div class="arrow is-right">
+                  <icon-arrow class="fill-current" width="16" height="20" />
+                </div>
+              </a>
             </li>
             <li class="ranking-item triangle gray">
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
-              <span class="number number-4">
-                <strong>4</strong>位
-              </span>
+              <a href="">
+                <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+                <span class="number number-4">
+                  <strong>4</strong>位
+                </span>
+                <div class="arrow is-bottom">
+                  <icon-arrow class="fill-current" width="16" height="20" />
+                </div>
+              </a>
             </li>
-            <li class="ranking-item triangle gray">
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
-              <span class="number number-5">
-                <strong>5</strong>位
-              </span>
+            <li class="ranking-item triangle gray new is-other-new">
+              <a href="">
+                <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+                <span class="number number-5">
+                  <strong>5</strong>位
+                </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -111,24 +124,40 @@ export default {
 .area-ranking .genre .contents-wrapper .ranking-list li {
   @apply relative;
 }
-.area-ranking .genre .contents-wrapper .ranking-list li img {
+.area-ranking .genre .contents-wrapper .ranking-list li a img {
   @apply absolute max-w-full max-h-full;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.area-ranking .genre .contents-wrapper .ranking-list li a:hover::before {
+  content: 'チェック';
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  z-index: 50000;
+  animation:check ease-in-out 2s infinite alternate;
+}
+@keyframes check{
+	0%   { transform:translate(-50%, 0%);}
+	100% { transform:translate(0px, 0%);}
+}
 .area-ranking .genre .contents-wrapper .ranking-list .ranking-item::before {
   border-width: 70px 70px 0 0;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .triangle::before {
   content: "";
-  @apply w-0 h-0 border-solid absolute border-transparent top-0 left-0;
+  @apply w-0 h-0 border-solid absolute border-transparent top-0 left-0 pointer-events-none;
   z-index: theme('zIndex.1');
 }
 .area-ranking .genre .contents-wrapper .ranking-list .first {
   @apply col-start-1;
   grid-row: 1 / 3;
+}
+.area-ranking .genre .contents-wrapper .ranking-list .first a  {
   width: 340px;
   height: 454px;
 }
@@ -145,9 +174,7 @@ export default {
 }
 .area-ranking .genre .contents-wrapper .ranking-list .new::after {
   content: "NEW";
-  @apply absolute border-2 border-solid text-fz16 leading-lh23 font-bold;
-  top: 60px;
-  left: 10px;
+  @apply absolute border-2 border-solid text-fz16 leading-lh23 font-bold pointer-events-none;
   border-color: theme("colors.new-icon");
   width: 56px;
   height: 26px;
@@ -155,6 +182,14 @@ export default {
   background: theme("colors.red");
   border-radius: theme("borderRadius.4");
   z-index: theme('zIndex.100');
+}
+.area-ranking .genre .contents-wrapper .ranking-list .new.is-first-new::after {
+  top: 60px;
+  left: 10px;
+}
+.area-ranking .genre .contents-wrapper .ranking-list .new.is-other-new::after {
+  top: 40px;
+  @apply left-0;
 }
 
 /* 三角形の背景色 */
@@ -173,7 +208,10 @@ export default {
 }
 /* ------------------------------------------------------------------------- */
 
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item {
+.area-ranking .genre .contents-wrapper .ranking-list li a {
+  @apply block;
+}
+.area-ranking .genre .contents-wrapper .ranking-list .ranking-item a {
   width: 170px;
   height: 227px;
 }
@@ -211,6 +249,13 @@ export default {
 .area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-right svg {
   color: theme('colors.green');
   @apply transform rotate-90;
+}
+.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-bottom {
+  border-color: theme('colors.light-blue');
+}
+.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-bottom svg {
+  color: theme('colors.light-blue');
+  @apply transform rotate-180;
 }
 /* -------------------------------------------------------------------------- */
 </style>
