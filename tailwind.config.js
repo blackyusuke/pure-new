@@ -15,9 +15,17 @@ module.exports = {
         'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
         'border-thin-gray': '#D4D4D4',
+        'border-tab-gray': '#E0E0E0',
+        'back-gray': '#EFEFEF',
+        'number-1': '#FFCC21',
+        'new-icon': '#FFF000',
+        red: '#FF0000',
+        primary: '#FD306A',
+        secondary: '#E81212',
         blue: '#47AFFF',
         base: '#333333',
-        primary: '#FD306A', 
+        yellow: '#FDC130',
+        green: '#58B000',
       },
       width: {
         190: '190px',
@@ -26,9 +34,12 @@ module.exports = {
       height: {
         30: '30px',
         36: '36px',
-        46: '46px'
+        46: '46px',
+        50: '50px',
       },
       borderRadius: {
+        2: '2px',
+        4: '4px',
         30: '30px',
         half: '50%'
       },
@@ -42,6 +53,8 @@ module.exports = {
         fz18: '18px',
         fz20: '20px',
         fz24: '24px',
+        fz30: '30px',
+        fz34: '34px',
       },
       lineHeight: {
         lh12: '12px',
@@ -49,9 +62,13 @@ module.exports = {
         lh16: '16px',
         lh17: '17px',
         lh18: '18px',
+        lh20: '20px',
+        lh23: '23px',
         lh24: '24px',
         lh25: '25px',
         lh28: '28px',
+        lh43: '43px',
+        lh49: '49px',
       },
       spacing: {
         2: '2px',
@@ -76,6 +93,9 @@ module.exports = {
         '-10': '-10',
         '-100': '-100',
         '-1000': '-1000',
+      },
+      cursor: {
+        ponter: 'pointer'
       }
     }
   },

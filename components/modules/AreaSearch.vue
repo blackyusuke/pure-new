@@ -1,91 +1,48 @@
 <template>
   <div class="search-area">
-    <MainSecondary
-      title="関東エリアの風俗店を探す"
-      headLine="short"
-    >
-      <span
-        slot="icon"
-        class="icon"
-      >
-        <icon-map
-          class="fill-current"
-          width="24"
-          height="24"
-        />
+    <MainSecondary title="関東エリアの風俗店を探す" headLine="short">
+      <span slot="icon" class="icon">
+        <icon-map class="fill-current" width="24" height="24" />
       </span>
-      <p
-        slot="btn"
-        class="btn" 
-      >
-        <ButtonLink
-          class="is-bold is-middle"
-          link-name="詳細検索"
-        >
-        </ButtonLink>
+      <p slot="btn" class="btn">
+        <ButtonLink class="is-bold is-middle" link-name="詳細検索"></ButtonLink>
       </p>
-      <p
-        slot="lead"
-        class="lead"
-      >
-      各エリアの風俗情報をご紹介。お店や女の子検索もここから
-      </p>
+      <p slot="lead" class="lead">各エリアの風俗情報をご紹介。お店や女の子検索もここから</p>
     </MainSecondary>
     <ul class="search-area-list">
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/tokyo.jpg"
-              alt="東京" 
-            />
+        <a href>
+          <img src="~/assets/images/area/tokyo.jpg" alt="東京" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/kanagawa.jpg"
-              alt="神奈川" 
-            />
+        <a href>
+          <img src="~/assets/images/area/kanagawa.jpg" alt="神奈川" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/saitama.jpg"
-              alt="埼玉" 
-            />
+        <a href>
+          <img src="~/assets/images/area/saitama.jpg" alt="埼玉" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/tiba.jpg"
-              alt="千葉" 
-            />
+        <a href>
+          <img src="~/assets/images/area/tiba.jpg" alt="千葉" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/ibaraki.jpg"
-              alt="茨城" 
-            />
+        <a href>
+          <img src="~/assets/images/area/ibaraki.jpg" alt="茨城" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/tochigi.jpg"
-              alt="栃木" 
-            />
+        <a href>
+          <img src="~/assets/images/area/tochigi.jpg" alt="栃木" />
         </a>
       </li>
       <li>
-        <a href="">
-          <img
-              src="~/assets/images/gunma.jpg"
-              alt="群馬" 
-            />
+        <a href>
+          <img src="~/assets/images/area/gunma.jpg" alt="群馬" />
         </a>
       </li>
     </ul>
@@ -93,16 +50,16 @@
 </template>
 
 <script>
-import MainSecondary from '~/components/parts/MainSecondary.vue'
-import IconMap from '~/components/icons/IconMap'
-import ButtonLink from '~/components/parts/ButtonLink'
+import MainSecondary from "~/components/parts/MainSecondary.vue";
+import IconMap from "~/components/icons/IconMap";
+import ButtonLink from "~/components/parts/ButtonLink";
 export default {
   components: {
     MainSecondary,
     IconMap,
-    ButtonLink
-  }
-}
+    ButtonLink,
+  },
+};
 </script>
 
 <style>

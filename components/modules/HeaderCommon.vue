@@ -2,51 +2,41 @@
   <header class="header-common">
     <div class="information-wrapper">
       <div class="number">
-        <p><span>9,999</span>店舗</p>
-        <p><span>9,999</span>女の子</p>
-        <p><span>9,99999</span>口コミ</p>
+        <p>
+          <span>9,999</span>店舗
+        </p>
+        <p>
+          <span>9,999</span>女の子
+        </p>
+        <p>
+          <span>9,99999</span>口コミ
+        </p>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="">
-              北海道・東北
-            </a>
+            <a href>北海道・東北</a>
           </li>
           <li>
-            <p class="active">
-              関東
-            </p>
+            <p class="active">関東</p>
           </li>
           <li>
-            <a href="">
-              北陸
-            </a>
+            <a href>北陸</a>
           </li>
           <li>
-            <a href="">
-              甲信越
-            </a>
+            <a href>甲信越</a>
           </li>
           <li>
-            <a href="">
-              東海
-            </a>
+            <a href>東海</a>
           </li>
           <li>
-            <a href="">
-              関西
-            </a>
+            <a href>関西</a>
           </li>
           <li>
-            <a href="">
-              中国・四国
-            </a>
+            <a href>中国・四国</a>
           </li>
           <li>
-            <a href="">
-              九州・沖縄
-            </a>
+            <a href>九州・沖縄</a>
           </li>
         </ul>
       </nav>
@@ -54,93 +44,52 @@
     <div class="contents-wrapper">
       <div class="container">
         <div class="title">
-          <a href="">
-            <img
-              src="~/assets/images/pure-logo.png"
-              alt="風俗情報ぴゅあらば" 
-            />
+          <a href>
+            <img src="~/assets/images/pure-logo.png" alt="風俗情報ぴゅあらば" />
           </a>
           <h1>
-            関東の<br>風俗店情報
-          </h1> 
+            関東の
+            <br />風俗店情報
+          </h1>
         </div>
         <div class="variety-wrapper">
           <p class="ban-icon">
-            <img
-              src="~/assets/images/ban.png"
-              alt="18未満禁止" 
-            />
+            <img src="~/assets/images/ban.png" alt="18未満禁止" />
           </p>
-          <p class="ban-text">
-            18歳未満の御利用は<br>固くお断りいたします。
-          </p>
+          <p class="ban-text">18歳未満の御利用は<br />固くお断りいたします。</p>
           <form>
-            <input
-              type="text"
-              placeholder="フリーワード検索"
-            >  
+            <input type="text" placeholder="フリーワード検索" />
             <button type="submit">
-              <icon-search
-                class="fill-current"
-                width="22"
-                height="22"
-              />
+              <icon-search class="fill-current" width="22" height="22" />
             </button>
           </form>
           <div class="link-wrapper">
             <div>
-              <ButtonLink
-                link-name="ログイン"
-                class="is-small is-bold"
-              >
-                <span
-                  slot="icon"
-                  class="icon"
-                >
-                  <icon-login
-                      class="fill-current"
-                      width="18"
-                      height="18"
-                    />
+              <ButtonLink link-name="ログイン" class="is-small is-bold">
+                <span slot="icon" class="icon">
+                  <icon-login class="fill-current" width="18" height="18" />
                 </span>
               </ButtonLink>
             </div>
             <div>
-              <ButtonLink
-                link-name="会員登録"
-                class="is-small is-bold"
-              >
-                <span
-                  slot="icon"
-                  class="icon"
-                >
-                  <icon-register
-                    class="fill-current"
-                    width="18"
-                    height="18"
-                  />
+              <ButtonLink link-name="会員登録" class="is-small is-bold">
+                <span slot="icon" class="icon">
+                  <icon-register class="fill-current" width="18" height="18" />
                 </span>
               </ButtonLink>
             </div>
           </div>
         </div>
       </div>
-      <p class="read">
-        {都道府県}・{都道府県}・{都道府県}など{関東}の安心して遊べるおすすめ風俗店情報をご紹介!デリヘルやソープ・セクキャバなどの割引クーポン・人気ランキング・体験動画・口コミ情報など風俗店探しに役立つコンテンツをご覧いただけます。
-      </p>
+      <p
+        class="read"
+      >{都道府県}・{都道府県}・{都道府県}など{関東}の安心して遊べるおすすめ風俗店情報をご紹介!デリヘルやソープ・セクキャバなどの割引クーポン・人気ランキング・体験動画・口コミ情報など風俗店探しに役立つコンテンツをご覧いただけます。</p>
     </div>
     <nav class="header-nav">
       <ul class="global-list">
         <li class="global-item">
-          <a
-            href=""
-            class="home"
-          >
-            <icon-home
-              class="fill-current"
-              width="29"
-              height="26"
-            />
+          <a href class="home">
+            <icon-home class="fill-current" width="29" height="26" />
           </a>
         </li>
         <li
@@ -152,149 +101,86 @@
           @mouseleave="mouseLemoveAction(index)"
         >
           <template v-if="index === 0">
-            <p
-              class="title"
-            >
-            お店検索
-          </p>
-          <nav v-if="hoverFlag && index === hoverIndex">
-            <ul>
-              <li>
-                <a href="">
-                  場所から探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  業種から探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  総額から探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  こだわりから探す
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  店舗名から探す
-                </a>
-              </li>
-            </ul>
-          </nav>
-          </template>
-          <template v-if="index === 1">
-            <p
-              class="title"
-            >
-              女の子検索
-            </p>
+            <p class="title">お店検索</p>
             <nav v-if="hoverFlag && index === hoverIndex">
               <ul>
                 <li>
-                  <a href="">
-                    出勤&タイプで探す
-                  </a>
+                  <a href>場所から探す</a>
                 </li>
                 <li>
-                  <a href="">
-                    画像から女の子を探す
-                  </a>
+                  <a href>業種から探す</a>
                 </li>
                 <li>
-                  <a href="">
-                    今すぐ遊べるピックアップ嬢
-                  </a>
+                  <a href>総額から探す</a>
                 </li>
                 <li>
-                  <a href="">
-                    体験入店の女の子
-                  </a>
+                  <a href>こだわりから探す</a>
                 </li>
                 <li>
-                  <a href="">
-                    店舗名から探す
-                  </a>
+                  <a href>店舗名から探す</a>
+                </li>
+              </ul>
+            </nav>
+          </template>
+          <template v-if="index === 1">
+            <p class="title">女の子検索</p>
+            <nav v-if="hoverFlag && index === hoverIndex">
+              <ul>
+                <li>
+                  <a href>出勤&タイプで探す</a>
+                </li>
+                <li>
+                  <a href>画像から女の子を探す</a>
+                </li>
+                <li>
+                  <a href>今すぐ遊べるピックアップ嬢</a>
+                </li>
+                <li>
+                  <a href>体験入店の女の子</a>
+                </li>
+                <li>
+                  <a href>店舗名から探す</a>
                 </li>
               </ul>
             </nav>
           </template>
           <template v-if="index === 2">
-            <p
-              class="title"
-            >
-              クーポン
-            </p>
+            <p class="title">クーポン</p>
             <nav v-if="hoverFlag && index === hoverIndex">
               <ul>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
               </ul>
             </nav>
           </template>
           <template v-if="index === 3">
-            <a
-              href=""
-              class="title"
-            >
-              ランキング
-            </a>
+            <a href class="title">ランキング</a>
           </template>
           <template v-if="index === 4">
-            <a
-              href=""
-              class="title"
-            >
-              口コミ
-            </a>
+            <a href class="title">口コミ</a>
           </template>
           <template v-if="index === 5">
-            <a
-              href=""
-              class="title"
-            >
-              写メ日記
-            </a>
+            <a href class="title">写メ日記</a>
           </template>
           <template v-if="index === 6">
-            <p
-              class="title"
-            >
-              動画・画像・マンガ
-            </p>
+            <p class="title">動画・画像・マンガ</p>
             <nav v-if="hoverFlag && index === hoverIndex">
               <ul>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
                 <li>
-                  <a href="">
-                    サンプルテキスト
-                  </a>
+                  <a href>サンプルテキスト</a>
                 </li>
               </ul>
             </nav>
@@ -306,40 +192,40 @@
 </template>
 
 <script>
-import IconLogin from '~/components/icons/IconLogin'
-import IconSearch from '~/components/icons/IconSearch'
-import IconRegister from '~/components/icons/IconRegister'
-import ButtonLink from '~/components/parts/ButtonLink'
-import IconHome from '~/components/icons/IconHome'
+import IconLogin from "~/components/icons/IconLogin";
+import IconSearch from "~/components/icons/IconSearch";
+import IconRegister from "~/components/icons/IconRegister";
+import ButtonLink from "~/components/parts/ButtonLink";
+import IconHome from "~/components/icons/IconHome";
 export default {
   components: {
     IconLogin,
     IconRegister,
     IconSearch,
     ButtonLink,
-    IconHome
+    IconHome,
   },
   data() {
     return {
       hoverFlag: false,
-    }
+    };
   },
   methods: {
-    mouseOverAction(index){
-      this.hoverFlag = true
-      this.hoverIndex = index
+    mouseOverAction(index) {
+      this.hoverFlag = true;
+      this.hoverIndex = index;
     },
-    mouseLemoveAction(){
-      this.hoverFlag = false
-    }
-  }
-}
+    mouseLemoveAction() {
+      this.hoverFlag = false;
+    },
+  },
+};
 </script>
 
 <style>
 .header-common .information-wrapper {
   @apply border-solid flex justify-center items-start;
-  border-color: theme('colors.base');
+  border-color: theme("colors.base");
   border-top-width: 5px;
 }
 .header-common .information-wrapper .number {
@@ -348,22 +234,22 @@ export default {
 }
 .header-common .information-wrapper .number p {
   @apply text-fz12 leading-lh12;
-  color: theme('colors.base');
+  color: theme("colors.base");
 }
 .header-common .information-wrapper .number p + p {
   @apply ml-5;
 }
 .header-common .information-wrapper .number p span {
   @apply text-fz18 font-bold;
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .header-common .information-wrapper nav {
-   @apply px-40 py-10 relative;
-   background: theme('colors.base');
-   width: 45%;
+  @apply px-40 py-10 relative;
+  background: theme("colors.base");
+  width: 45%;
 }
 .header-common .information-wrapper nav::before {
-  content: '';
+  content: "";
   @apply absolute w-0 h-0 border-solid border-transparent top-0 left-0;
   border-width: 32px 0 0 32px;
   border-left-color: #ffffff;
@@ -378,14 +264,14 @@ export default {
   @apply border-l border-solid border-white;
 }
 .header-common .information-wrapper nav ul li a {
-  @apply text-white text-fz12 leading-lh12 block; 
+  @apply text-white text-fz12 leading-lh12 block;
 }
 .header-common .information-wrapper nav ul li a:hover {
-  color: theme('colors.primary'); 
+  color: theme("colors.primary");
 }
 .header-common .information-wrapper nav ul li p {
   @apply text-fz12 leading-lh12 block;
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .header-common .contents-wrapper {
   @apply m-auto w-1100;
@@ -403,9 +289,9 @@ export default {
 }
 .header-common .contents-wrapper .container .title h1 {
   @apply font-bold text-fz20 leading-lh25;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
-.header-common .contents-wrapper .container .title a + h1{
+.header-common .contents-wrapper .container .title a + h1 {
   @apply ml-20;
 }
 .header-common .contents-wrapper .container .variety-wrapper {
@@ -416,10 +302,15 @@ export default {
   height: 34px;
 }
 .header-common .contents-wrapper .container .variety-wrapper .ban-text {
-  color: theme('colors.font-gray');
+  color: theme("colors.font-gray");
   @apply text-fz12 leading-lh17;
 }
-.header-common .contents-wrapper .container .variety-wrapper .ban-icon + .ban-text {
+.header-common
+  .contents-wrapper
+  .container
+  .variety-wrapper
+  .ban-icon
+  + .ban-text {
   @apply ml-4;
 }
 .header-common .contents-wrapper .container .variety-wrapper .ban-text + form {
@@ -430,20 +321,25 @@ export default {
 }
 .header-common .contents-wrapper .container .variety-wrapper form input {
   @apply border-2 border-solid text-fz14 text-center p-6 h-30;
-  border-color: theme('colors.border-gray');
-  color: theme('colors.base');
+  border-color: theme("colors.border-gray");
+  color: theme("colors.base");
 }
 .header-common .contents-wrapper .container .variety-wrapper form input:focus {
   @apply outline-none;
 }
 .header-common .contents-wrapper .container .variety-wrapper form button {
   @apply p-4 h-30;
-  background: theme('colors.blue');
+  background: theme("colors.blue");
 }
 .header-common .contents-wrapper .container .variety-wrapper form button svg {
   @apply text-white;
 }
-.header-common .contents-wrapper .container .variety-wrapper form + .link-wrapper {
+.header-common
+  .contents-wrapper
+  .container
+  .variety-wrapper
+  form
+  + .link-wrapper {
   @apply ml-10;
 }
 .header-common .contents-wrapper .container .variety-wrapper .link-wrapper {
@@ -451,20 +347,26 @@ export default {
 }
 .header-common .contents-wrapper .container .variety-wrapper .link-wrapper div {
 }
-.header-common .contents-wrapper .container .variety-wrapper .link-wrapper div + div {
+.header-common
+  .contents-wrapper
+  .container
+  .variety-wrapper
+  .link-wrapper
+  div
+  + div {
   @apply ml-10;
 }
-.header-common .contents-wrapper .read  {
+.header-common .contents-wrapper .read {
   @apply text-fz12 leading-lh16;
-  color: theme('colors.font-thin-gray');
+  color: theme("colors.font-thin-gray");
 }
-.header-common .contents-wrapper .container + .read  {
+.header-common .contents-wrapper .container + .read {
   @apply mt-8;
 }
 .header-common .header-nav {
-  background: theme('colors.primary');
-  @apply border-b-4 border-solid; 
-  border-color: theme('colors.base');
+  background: theme("colors.primary");
+  @apply border-b-4 border-solid;
+  border-color: theme("colors.base");
 }
 .header-common .header-nav .global-list {
   @apply flex m-auto w-1100;
@@ -472,7 +374,7 @@ export default {
 }
 .header-common .header-nav .global-list .global-item {
   @apply flex items-center justify-center border-r border-solid relative;
-  border-color: theme('colors.border-thin-gray');
+  border-color: theme("colors.border-thin-gray");
   width: 150px;
 }
 .header-common .header-nav .global-list .global-item .home {
@@ -483,17 +385,17 @@ export default {
 }
 .header-common .header-nav .global-list .global-item nav {
   @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0 bg-white;
-  transform: translate(0,100%);
-  border-color: theme('colors.primary');
+  transform: translate(0, 100%);
+  border-color: theme("colors.primary");
   width: 240px;
-  z-index: theme('zIndex.10');
+  z-index: theme("zIndex.10");
 }
 .header-common .header-nav .global-list .icon {
   @apply relative;
 }
 .header-common .header-nav .global-list .icon::after {
   @apply absolute;
-  content: '';
+  content: "";
   bottom: 10px;
   right: 10px;
   border-top: 8px solid #ffffff;
@@ -502,7 +404,7 @@ export default {
 }
 .header-common .header-nav .global-list .global-item nav ul li + li {
   @apply border-solid border-t-2;
-  border-color: theme('colors.primary');
+  border-color: theme("colors.primary");
 }
 .header-common .header-nav .global-list .global-item nav ul li a {
   @apply relative pl-16 py-8 block font-bold text-fz14;
@@ -514,21 +416,21 @@ export default {
   vertical-align: middle;
   width: 8px;
   height: 8px;
-  border-color: theme('colors.base');
+  border-color: theme("colors.base");
   transform: rotate(45deg);
 }
 .header-common .header-nav .global-list .global-item nav ul li a:hover::before {
-  border-color: theme('colors.primary');
+  border-color: theme("colors.primary");
 }
 .header-common .header-nav .global-list .global-item nav ul li a:hover {
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .header-common .header-nav .global-list .global-item:first-child {
   @apply border-l border-solid;
   width: 70px;
-  border-color: theme('colors.border-thin-gray');
+  border-color: theme("colors.border-thin-gray");
 }
 .header-common .header-nav ul li a svg {
-  @apply text-white; 
+  @apply text-white;
 }
 </style>

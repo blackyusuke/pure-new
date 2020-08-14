@@ -15,6 +15,9 @@ module.exports = {
   plugins: ['vue'],
   // ここにカスタムルールを追加します。
   rules: {
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'vue/max-attributes-per-line': 'off',
     'no-console': 0, // console.logの許可
     'vue/html-self-closing': 0, // HTMLセルフ閉じタグ許可
     'vue/require-default-prop': 0, // propsのrequire設定なしを許可

@@ -5,22 +5,22 @@
       <swiper :options="swiperOption">
         <swiper-slide>
           <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
           </a>
         </swiper-slide>
         <swiper-slide>
           <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
           </a>
         </swiper-slide>
         <swiper-slide>
           <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
           </a>
         </swiper-slide>
         <swiper-slide>
           <a href="">
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
+            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
           </a>
         </swiper-slide>
       </swiper>
@@ -91,5 +91,8 @@ export default {
 }
 #region .wrap .content .content-list .content-list-item + .content-list-item {
   @apply mt-20;
+}
+#region .wrap .content .content-list .content-list-item:last-child {
+  padding-bottom: 120px;
 }
 </style>
