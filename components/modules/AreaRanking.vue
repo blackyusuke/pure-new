@@ -75,19 +75,38 @@
         <div v-show="activetab === 4" class="inner">コンテンツ04</div>
       </div>
     </div>
+    <div class="more">
+      <a href="">
+         <span class="icon">
+           <icon-angle class="fill-current" width="18" height="22" />
+         </span>
+         <span class="icon">
+           <icon-angle class="fill-current" width="18" height="22" />
+         </span>
+         女の子ランキングをもっと見る
+         <span class="left icon">
+           <icon-angle class="fill-current" width="18" height="22" />
+         </span>
+         <span class="left icon">
+           <icon-angle class="fill-current" width="18" height="22" />
+         </span>
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
-import MainSecondary from "~/components/parts/MainSecondary.vue";
-import IconCrown from "~/components/icons/IconCrown";
-import IconArrow from "~/components/icons/IconArrow";
-import ButtonLink from "~/components/parts/ButtonLink";
+import MainSecondary from "~/components/parts/MainSecondary.vue"
+import IconCrown from "~/components/icons/IconCrown"
+import IconArrow from "~/components/icons/IconArrow"
+import IconAngle from "~/components/icons/IconAngle"
+import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
     MainSecondary,
     IconCrown,
     IconArrow,
+    IconAngle,
     ButtonLink,
   },
   data() {
@@ -125,11 +144,9 @@ export default {
   @apply relative;
 }
 .area-ranking .genre .contents-wrapper .ranking-list li a img {
-  @apply absolute max-w-full max-h-full;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
+  top: theme('inset.half');
+  left: theme('inset.half');
 }
 .area-ranking .genre .contents-wrapper .ranking-list li a:hover::before {
   content: 'チェック';
@@ -258,4 +275,32 @@ export default {
   @apply transform rotate-180;
 }
 /* -------------------------------------------------------------------------- */
+ 
+.area-ranking .more {
+  @apply border-solid border-t-6;
+  border-color: theme('colors.border-red');
+  background: theme('colors.base');
+}
+.area-ranking .more a {
+  @apply flex items-center justify-center text-fz20 font-bold leading-lh20 p-20;
+  color: theme('colors.primary');
+}
+.area-ranking .more a .icon {
+  color: theme('colors.primary');
+}
+.area-ranking .more a .icon:nth-child(1) {
+  margin-right: -8px
+}
+.area-ranking .more a .icon:nth-child(2) {
+  @apply mr-4;
+}
+.area-ranking .more a .icon:nth-child(3) {
+  @apply ml-4;
+}
+.area-ranking .more a .icon:nth-child(4) {
+  margin-left: -8px;
+}
+.area-ranking .more a .left {
+  @apply transform rotate-180;
+}
 </style>

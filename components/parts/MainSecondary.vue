@@ -34,8 +34,8 @@ export default {
 
 <style>
 .main-secondary .title {
-  overflow: hidden;
-  @apply flex justify-between;
+  @apply flex justify-between border-solid border-b-4 overflow-hidden;
+  border-color: theme('colors.primary');
 }
 .main-secondary .title .head-short {
   width: 520px;

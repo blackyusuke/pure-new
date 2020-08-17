@@ -2,28 +2,28 @@
   <main id="region">
     <div class="slider">
       <client-only>
-      <swiper :options="swiperOption">
-        <swiper-slide>
-          <a href="">
-            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-          </a>
-        </swiper-slide>
-        <swiper-slide>
-          <a href="">
-            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-          </a>
-        </swiper-slide>
-        <swiper-slide>
-          <a href="">
-            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-          </a>
-        </swiper-slide>
-        <swiper-slide>
-          <a href="">
-            <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png">
-          </a>
-        </swiper-slide>
-      </swiper>
+        <swiper :options="swiperOption">
+          <swiper-slide>
+            <a href>
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href>
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href>
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a href>
+              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+            </a>
+          </swiper-slide>
+        </swiper>
       </client-only>
     </div>
     <div class="wrap">
@@ -34,10 +34,24 @@
             <AreaSearch />
           </li>
           <li class="content-list-item">
-             <AreaRanking />
+            <AreaRanking />
           </li>
           <li class="content-list-item">
-             <OtherArea />
+            <AreaMovie />
+          </li>
+          <li class="content-list-item">
+            <AreaComic />
+          </li>
+          <li class="content-list-item">
+            <a href>
+              <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+            </a>
+          </li>
+          <li class="content-list-item">
+            <AreaReview />
+          </li>
+          <li class="content-list-item">
+            <OtherArea />
           </li>
         </ul>
       </div>
@@ -47,33 +61,39 @@
 </template>
 
 <script>
-import SideLeft from '~/components/modules/SideLeft.vue'
-import SideRight from '~/components/modules/SideRight.vue'
-import AreaSearch from '~/components/modules/AreaSearch.vue'
-import AreaRanking from '~/components/modules/AreaRanking.vue'
-import OtherArea from '~/components/modules/OtherArea.vue'
+import SideLeft from "~/components/modules/SideLeft.vue"
+import SideRight from "~/components/modules/SideRight.vue"
+import AreaSearch from "~/components/modules/AreaSearch.vue"
+import AreaMovie from "~/components/modules/AreaMovie.vue"
+import AreaComic from "~/components/modules/AreaComic.vue"
+import AreaRanking from "~/components/modules/AreaRanking.vue"
+import AreaReview from "~/components/modules/AreaReview.vue"
+import OtherArea from "~/components/modules/OtherArea.vue"
 export default {
   components: {
     SideLeft,
     SideRight,
     AreaSearch,
     AreaRanking,
-    OtherArea
+    AreaMovie,
+    AreaComic,
+    AreaReview,
+    OtherArea,
   },
-  layout: 'region',
+  layout: "region",
   data() {
-      return {
-        swiperOption: {
-          spaceBetween: 20,
-          slidesPerView: 2,
-          loop: true,
-           autoplay: {
-            delay: 5000,
-          },
-        }
-      }
-    }  
-}
+    return {
+      swiperOption: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+      },
+    };
+  },
+};
 </script>
 
 <style>

@@ -50,9 +50,9 @@
 </template>
 
 <script>
-import MainSecondary from "~/components/parts/MainSecondary.vue";
-import IconMap from "~/components/icons/IconMap";
-import ButtonLink from "~/components/parts/ButtonLink";
+import MainSecondary from "~/components/parts/MainSecondary.vue"
+import IconMap from "~/components/icons/IconMap"
+import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
     MainSecondary,

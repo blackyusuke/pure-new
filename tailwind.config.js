@@ -20,6 +20,9 @@ module.exports = {
         'number-1': '#FFCC21',
         'new-icon': '#FFF000',
         'light-blue': '#47AFFF',
+        'border-red': '#E71212',
+        'dark-gray': '#BDBDBD',
+        orange: '#FF7E00',
         red: '#FF0000',
         primary: '#FD306A',
         secondary: '#E81212',
@@ -45,7 +48,8 @@ module.exports = {
         half: '50%'
       },
       borderWidth: {
-        46: '46px'
+        46: '46px',
+        6:'6px'
       },
       fontSize: {
         fz12: '12px',
@@ -97,7 +101,10 @@ module.exports = {
       },
       cursor: {
         ponter: 'pointer'
-      }
+      },
+      inset: {
+        half: '50%',
+      },
     }
   },
   variants: {},
