@@ -80,7 +80,6 @@ export default {
     AreaReview,
     OtherArea,
   },
-  layout: "region",
   data() {
     return {
       swiperOption: {
@@ -97,9 +96,6 @@ export default {
 </script>
 
 <style>
-#region {
-  @apply w-1100 m-auto;
-}
 #region .wrap {
   @apply flex justify-between;
 }

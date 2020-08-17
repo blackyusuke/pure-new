@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="wrap">
     <HeaderCommon />
-    <nuxt />
+    <div class="inner">
+      <nuxt />
+    </div>
     <FooterCommon />
   </div>
 </template>
@@ -118,4 +120,8 @@ input:focus {
 *:after {
   @apply box-border m-0;
 }
+.wrap .inner {
+  @apply w-1100 m-auto;
+}
+
 </style>

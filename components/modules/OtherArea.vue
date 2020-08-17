@@ -28,7 +28,7 @@
         <template v-else-if="index === 6">
           <ButtonLink class="is-middle" link-name="中国･四国"></ButtonLink>
         </template>
-        <template v-if="index === 7">
+        <template v-else-if="index === 7">
           <ButtonLink class="is-middle" link-name="九州･沖縄"></ButtonLink>
         </template>
       </NavItem>
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import MainSecondary from "~/components/parts/MainSecondary.vue";
-import NavItem from "~/components/parts/NavItem.vue";
-import NavList from "~/components/parts/NavList.vue";
-import IconMap from "~/components/icons/IconMap";
-import ButtonLink from "~/components/parts/ButtonLink";
+import MainSecondary from "~/components/parts/MainSecondary.vue"
+import NavItem from "~/components/parts/NavItem.vue"
+import NavList from "~/components/parts/NavList.vue"
+import IconMap from "~/components/icons/IconMap"
+import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
     MainSecondary,
