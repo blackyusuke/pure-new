@@ -96,14 +96,8 @@ export default {
 </script>
 
 <style>
-#region .wrap {
-  @apply flex justify-between;
-}
 #region .slider + .wrap {
   @apply mt-20;
-}
-#region .wrap .content {
-  width: 680px;
 }
 #region .wrap .content .content-list .content-list-item + .content-list-item {
   @apply mt-20;

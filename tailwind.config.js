@@ -15,7 +15,7 @@ module.exports = {
         'font-thin-gray': '#888787',
         'border-gray': '#E2E2E2',
         'border-thin-gray': '#D4D4D4',
-        'border-tab-gray': '#E0E0E0',
+        'border-dark-gray': '#E0E0E0',
         'back-gray': '#EFEFEF',
         'number-1': '#FFCC21',
         'new-icon': '#FFF000',
@@ -33,7 +33,8 @@ module.exports = {
       },
       width: {
         190: '190px',
-        1100: '1100px'
+        1100: '1100px',
+        680: '680px',
       },
       height: {
         30: '30px',

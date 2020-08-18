@@ -2,6 +2,7 @@
   <a
     href=""
     class="button-link"
+    :class="[{ 'is-primary': color === 'is-primary' }, {'is-default': color === 'is-default'}]"
   >
     <slot
       name="icon"
@@ -17,7 +18,8 @@
 <script>
 export default {
   props: {
-    linkName: String
+    linkName: String,
+    color: String
   }
 }
 </script>
@@ -25,9 +27,18 @@ export default {
 <style>
 .button-link {
   @apply flex items-center justify-center border-2 border-solid rounded-30 overflow-hidden relative z-1;
+  transition: all .3s;
+}
+.button-link.is-primary {
   border-color: theme('colors.primary');
   color: theme('colors.primary');
-  transition: all .3s;
+}
+.button-link.is-default {
+  border-color: theme('colors.border-dark-gray');
+  color: theme('colors.base'); 
+}
+.button-link.is-default:hover {
+  border-color: theme('colors.primary');
 }
 .button-link::after {
   @apply absolute bottom-0 left-0 w-full h-full bg-white rounded-30;

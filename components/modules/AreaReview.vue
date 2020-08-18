@@ -1,14 +1,14 @@
 <template>
   <div class="area-review">
-    <MainSecondary title="風俗店の新着口コミ" headLine="short">
+    <HeadMain title="風俗店の新着口コミ" headLine="short">
       <span slot="icon" class="icon">
         <icon-review class="fill-current" width="24" height="19" />
       </span>
       <p slot="btn" class="btn">
-        <ButtonLink class="is-bold is-middle" link-name="詳細検索"></ButtonLink>
+        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="詳細検索"></ButtonLink>
       </p>
       <p slot="lead" class="lead">お店に行ったユーザーのリアルな口コミ情報をご紹介！</p>
-    </MainSecondary>
+    </HeadMain>
     <div class="review">
       <ul>
         <li>

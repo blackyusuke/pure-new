@@ -1,56 +1,50 @@
 <template>
   <main id="area">
-    <div class="wrap">
-      <SideLeft />
-      <div class="searchArea">
-        <p class="bnr">
-          <img src="http://placehold.jp/30/FFCCCC/FF0000/640x160.png?text=エリア検索トップレコメンド" alt="画像" />
-        </p>
-        <MainSecondary title="都道府県を選ぶ">
-          <span slot="icon" class="icon">
-            <icon-map class="fill-current" width="24" height="24" />
-          </span>
-        </MainSecondary>
-        <NavList flex="side">
-          <NavItem v-for="item in areaJson" :key="item.value" width="quarter">
-            <ButtonLink :link-name="item.value"></ButtonLink>
-          </NavItem>
-        </NavList>
-        <NavList flex="side">
-          <template v-for="item in areaJson">
-            <NavItem v-for="item2 in item.prefecture" :key="item2.order" width="quarter">
-              <template v-for="item3 in item2.city">
-                <template v-if="item3.order === 1">
-                  <ButtonLink :key="item3.value" :link-name="item3.value"></ButtonLink>
-                </template>
+    <SearchWrapper>
+      <HeadMain title="都道府県を選ぶ">
+        <span slot="icon" class="icon">
+          <icon-map class="fill-current" width="24" height="24" />
+        </span>
+      </HeadMain>
+      <NavList flex="side">
+        <NavItem v-for="item in areaJson" :key="item.value" width="quarter">
+          <ButtonLink color="is-default" :link-name="item.value"></ButtonLink>
+        </NavItem>
+      </NavList>
+      <HeadSearch title="人気エリアから探す"></HeadSearch>
+      <NavList flex="side">
+        <template v-for="item in areaJson">
+          <NavItem v-for="item2 in item.prefecture" :key="item2.order" width="quarter">
+            <template v-for="item3 in item2.city">
+              <template v-if="item3.order === 1">
+                <ButtonLink :key="item3.value" color="is-default" :link-name="item3.value"></ButtonLink>
               </template>
-            </NavItem>
-          </template>
-        </NavList>
-      </div>
-      <SideRight />
-    </div>
+            </template>
+          </NavItem>
+        </template>
+      </NavList>
+    </SearchWrapper>
   </main>
 </template>
 
 <script>
-import SideLeft from "~/components/modules/SideLeft.vue"
-import SideRight from "~/components/modules/SideRight.vue"
-import MainSecondary from "~/components/parts/MainSecondary.vue"
-import IconMap from "~/components/icons/IconMap"
-import areaJson from "~/data/area.json"
-import NavItem from "~/components/parts/NavItem.vue"
-import NavList from "~/components/parts/NavList.vue"
-import ButtonLink from "~/components/parts/ButtonLink"
+import HeadMain from "~/components/parts/HeadMain.vue";
+import IconMap from "~/components/icons/IconMap";
+import areaJson from "~/data/area.json";
+import NavItem from "~/components/parts/NavItem.vue";
+import NavList from "~/components/parts/NavList.vue";
+import ButtonLink from "~/components/parts/ButtonLink";
+import HeadSearch from "~/components/parts/HeadSearch";
+import SearchWrapper from "~/components/modules/SearchWrapper.vue";
 export default {
   components: {
-    SideLeft,
-    SideRight,
-    MainSecondary,
+    HeadMain,
     IconMap,
     NavItem,
     NavList,
     ButtonLink,
+    HeadSearch,
+    SearchWrapper,
   },
   data() {
     return {
@@ -60,10 +54,7 @@ export default {
 };
 </script>
 <style>
-#area .wrap {
-  @apply flex justify-between;
-}
-#area .wrap .searchArea .bnr + .main-secondary {
-  @apply mt-20;
+#area  .nav-list + .head-search {
+  @apply mt-4;
 }
 </style>

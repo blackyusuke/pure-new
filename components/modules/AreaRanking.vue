@@ -1,14 +1,14 @@
 <template>
   <div class="area-ranking">
-    <MainSecondary title="関東の風俗ランキング" headLine="short">
+    <HeadMain title="関東の風俗ランキング" headLine="short">
       <span slot="icon" class="icon">
         <icon-crown class="fill-current" width="24" height="24" />
       </span>
       <p slot="btn" class="btn">
-        <ButtonLink class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
+        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
       </p>
       <p slot="lead" class="lead">あなたのお気に入りのお店や女の子の順位をチェック！</p>
-    </MainSecondary>
+    </HeadMain>
     <div class="genre">
       <ul class="genre-list">
         <li :class="[ activetab === 1 ? 'active' : '' ]" @click="activetab=1">お店</li>
@@ -96,14 +96,14 @@
 </template>
 
 <script>
-import MainSecondary from "~/components/parts/MainSecondary.vue"
+import HeadMain from "~/components/parts/HeadMain.vue"
 import IconCrown from "~/components/icons/IconCrown"
 import IconArrow from "~/components/icons/IconArrow"
 import IconAngle from "~/components/icons/IconAngle"
 import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
-    MainSecondary,
+    HeadMain,
     IconCrown,
     IconArrow,
     IconAngle,
@@ -120,7 +120,7 @@ export default {
 <style>
 .area-ranking .genre .genre-list {
   @apply flex border-solid border-t-2 border-l-2 border-r-2;
-  border-color: theme("colors.border-tab-gray");
+  border-color: theme("colors.border-dark-gray");
 }
 .area-ranking .genre .genre-list li {
   @apply flex items-center justify-center w-1/4 h-50 bg-white text-black text-fz20 leading-lh20 font-bold;
@@ -128,7 +128,7 @@ export default {
 }
 .area-ranking .genre .genre-list li + li {
   @apply border-solid border-l-2;
-  border-color: theme("colors.border-tab-gray");
+  border-color: theme("colors.border-dark-gray");
 }
 .area-ranking .genre .genre-list .active {
   @apply text-white;

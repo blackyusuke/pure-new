@@ -1,14 +1,14 @@
 <template>
   <div class="area-movie">
-    <MainSecondary title="関東の風俗体験動画" headLine="short">
+    <HeadMain title="関東の風俗体験動画" headLine="short">
       <span slot="icon" class="icon">
         <icon-film class="fill-current" width="22" height="17" />
       </span>
       <p slot="btn" class="btn">
-        <ButtonLink class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
+        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
       </p>
       <p slot="lead" class="lead">風俗店が投稿した動画をチェック！</p>
-    </MainSecondary>
+    </HeadMain>
     <div class="movie">
       <div class="top">
         <a href class="thumb">

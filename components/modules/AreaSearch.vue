@@ -1,14 +1,14 @@
 <template>
   <div class="search-area">
-    <MainSecondary title="関東エリアの風俗店を探す" headLine="short">
+    <HeadMain title="関東エリアの風俗店を探す" headLine="short">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
       </span>
       <p slot="btn" class="btn">
-        <ButtonLink class="is-bold is-middle" link-name="詳細検索"></ButtonLink>
+        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="詳細検索"></ButtonLink>
       </p>
       <p slot="lead" class="lead">各エリアの風俗情報をご紹介。お店や女の子検索もここから</p>
-    </MainSecondary>
+    </HeadMain>
     <ul class="search-area-list">
       <li>
         <a href>
@@ -50,12 +50,12 @@
 </template>
 
 <script>
-import MainSecondary from "~/components/parts/MainSecondary.vue"
+import HeadMain from "~/components/parts/HeadMain.vue"
 import IconMap from "~/components/icons/IconMap"
 import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
-    MainSecondary,
+    HeadMain,
     IconMap,
     ButtonLink,
   },

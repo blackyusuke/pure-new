@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style>
+.nav-list {
+  @apply py-16;
+}
 .nav-list .side {
   @apply flex flex-wrap;
   margin-right: -8px;

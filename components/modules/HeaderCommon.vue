@@ -65,14 +65,14 @@
           </form>
           <div class="link-wrapper">
             <div>
-              <ButtonLink link-name="ログイン" class="is-small is-bold">
+              <ButtonLink color="is-primary" link-name="ログイン" class="is-small is-bold">
                 <span slot="icon" class="icon">
                   <icon-login class="fill-current" width="18" height="18" />
                 </span>
               </ButtonLink>
             </div>
             <div>
-              <ButtonLink link-name="会員登録" class="is-small is-bold">
+              <ButtonLink color="is-primary" link-name="会員登録" class="is-small is-bold">
                 <span slot="icon" class="icon">
                   <icon-register class="fill-current" width="18" height="18" />
                 </span>

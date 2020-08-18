@@ -1,14 +1,14 @@
 <template>
   <div class="area-comic">
-    <MainSecondary title="関東の風俗体験マンガ" headLine="short">
+    <HeadMain title="関東の風俗体験マンガ" headLine="short">
       <span slot="icon" class="icon">
         <icon-comic class="fill-current" width="24" height="19" />
       </span>
       <p slot="btn" class="btn">
-        <ButtonLink class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
+        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="もっと見る"></ButtonLink>
       </p>
       <p slot="lead" class="lead">様々な業種の体験プレイを元にマンガでご紹介！</p>
-    </MainSecondary>
+    </HeadMain>
     <div class="contents">
       <ul>
         <li>
