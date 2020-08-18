@@ -11,6 +11,22 @@
             <icon-map class="fill-current" width="24" height="24" />
           </span>
         </MainSecondary>
+        <NavList flex="side">
+          <NavItem v-for="item in areaJson" :key="item.value" width="quarter">
+            <ButtonLink :link-name="item.value"></ButtonLink>
+          </NavItem>
+        </NavList>
+        <NavList flex="side">
+          <template v-for="item in areaJson">
+            <NavItem v-for="item2 in item.prefecture" :key="item2.order" width="quarter">
+              <template v-for="item3 in item2.city">
+                <template v-if="item3.order === 1">
+                  <ButtonLink :key="item3.value" :link-name="item3.value"></ButtonLink>
+                </template>
+              </template>
+            </NavItem>
+          </template>
+        </NavList>
       </div>
       <SideRight />
     </div>
@@ -22,12 +38,24 @@ import SideLeft from "~/components/modules/SideLeft.vue"
 import SideRight from "~/components/modules/SideRight.vue"
 import MainSecondary from "~/components/parts/MainSecondary.vue"
 import IconMap from "~/components/icons/IconMap"
+import areaJson from "~/data/area.json"
+import NavItem from "~/components/parts/NavItem.vue"
+import NavList from "~/components/parts/NavList.vue"
+import ButtonLink from "~/components/parts/ButtonLink"
 export default {
   components: {
     SideLeft,
     SideRight,
     MainSecondary,
-    IconMap
+    IconMap,
+    NavItem,
+    NavList,
+    ButtonLink,
+  },
+  data() {
+    return {
+      areaJson: areaJson,
+    };
   },
 };
 </script>

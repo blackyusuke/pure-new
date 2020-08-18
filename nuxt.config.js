@@ -1,5 +1,5 @@
 
-const area = require('./data/area.json')
+const areaList     = require('./data/area.json');
 module.exports = {
   /*
   ** Nuxt rendering mode
@@ -76,8 +76,8 @@ module.exports = {
   },
   generate: {
     routes() {
-      return area.items.map(item => {
-        return `${item.id}`
+      return areaList.map(item => {
+        return `${item.id}`;
       })
     }
   }
