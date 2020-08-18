@@ -67,7 +67,7 @@ export default {
   width: 680px;
 }
 .search-area-list {
-  @apply flex border-solid border-t border-white;
+  @apply flex border-t border-white;
 }
 .search-area-list li {
   @apply flex border-solid border-r border-white;

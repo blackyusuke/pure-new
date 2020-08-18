@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <HeaderCommon />
-    <div class="inner">
+    <div class="overlay">
       <nuxt />
     </div>
     <FooterCommon />
@@ -120,7 +120,7 @@ input:focus {
 *:after {
   @apply box-border m-0;
 }
-.wrap .inner {
+.wrap .overlay {
   @apply w-1100 m-auto;
 }
 
