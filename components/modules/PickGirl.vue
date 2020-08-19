@@ -14,7 +14,7 @@
         <swiper :options="swiperOption">
           <swiper-slide>
             <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
+              <img src="http://placehold.jp/150x150.png" alt="女の子" />
               <div class="infor">
                 <span class="girlName">かれん(18)</span>
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>

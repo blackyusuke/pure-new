@@ -77,7 +77,7 @@ module.exports = {
   generate: {
     routes() {
       return areaList.map(item => {
-        return `${item.id}`;
+        return `${item.id}`
       })
     }
   }

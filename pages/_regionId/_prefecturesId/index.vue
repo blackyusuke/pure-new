@@ -75,6 +75,9 @@
         <li>
           <PickGirl />
         </li>
+        <li>
+          <TimeSale />
+        </li>
       </ul>
     </SearchWrapper>
   </main>
@@ -86,6 +89,7 @@ import NavItem from "~/components/parts/NavItem.vue";
 import NavList from "~/components/parts/NavList.vue";
 import SearchWrapper from "~/components/modules/SearchWrapper.vue";
 import PickGirl from "~/components/modules/PickGirl.vue";
+import TimeSale from "~/components/modules/TimeSale.vue";
 export default {
   components: {
     HeadSearch,
@@ -93,6 +97,7 @@ export default {
     NavList,
     SearchWrapper,
     PickGirl,
+    TimeSale
   },
 };
 </script>

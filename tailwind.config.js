@@ -23,6 +23,7 @@ module.exports = {
         'border-red': '#E71212',
         'dark-gray': '#BDBDBD',
         'status-red': '#e81212',
+        'light-yellow': '#FFF001',
         orange: '#FF7E00',
         red: '#FF0000',
         primary: '#FD306A',
