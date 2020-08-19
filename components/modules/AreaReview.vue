@@ -11,7 +11,7 @@
     </HeadMain>
     <div class="review">
       <ul>
-        <li>
+        <!-- <li>
           <a href>
             <div class="thumb">
               <img src="http://placehold.jp/100x100.png" alt="店舗画像" />
@@ -94,6 +94,46 @@
               </div>
             </div>
           </a>
+        </li>-->
+        <li>
+          <article>
+            <p class="thumb">
+              <img src="http://placehold.jp/90x135.png" alt />
+            </p>
+            <div class="contents">
+              <h3>とても分かりやすく、初めてでもグッド!!</h3>
+              <p class="description">ふらりと立ち寄るには少々もったいないと感じるお店でした。 次はちゃんと調べて、お邪</p>
+              <p class="shop">完全密室 無抵抗</p>
+              <p class="infor">秋葉原･神田 / ファッションヘルス</p>
+              <div class="user">
+                <p class="name">手越祐也</p>
+                <time>
+                  6/31(月)23:00
+                  <span>UP</span>
+                </time>
+              </div>
+            </div>
+          </article>
+        </li>
+       <li>
+          <article>
+            <p class="thumb">
+              <img src="http://placehold.jp/90x135.png" alt />
+            </p>
+            <div class="contents">
+              <h3>とても分かりやすく、初めてでもグッド!!</h3>
+              <p class="description">ふらりと立ち寄るには少々もったいないと感じるお店でした。 次はちゃんと調べて、お邪</p>
+              <p class="shop">完全密室 無抵抗</p>
+              <p class="infor">秋葉原･神田 / ファッションヘルス</p>
+              <div class="user">
+                <p class="name">手越祐也</p>
+                <time>
+                  6/31(月)23:00
+                  <span>UP</span>
+                </time>
+              </div>
+            </div>
+          </article>
         </li>
       </ul>
     </div>
@@ -110,7 +150,10 @@ export default {
 </script>
 
 <style>
-.area-review .review ul li {
+.area-review .review ul li article {
+  @apply flex;
+}
+/* .area-review .review ul li {
   @apply py-16 px-12;
 }
 .area-review .review ul li a {
@@ -198,5 +241,5 @@ export default {
 .area-review .review ul li + li {
   @apply border-solid border-t-2;
   border-color: theme("colors.border-gray");
-}
+} */
 </style>

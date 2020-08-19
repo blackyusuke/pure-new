@@ -2,6 +2,7 @@
   <div class="wrap">
     <HeaderCommon />
     <div class="overlay">
+      <BreadCrumb />
       <nuxt />
     </div>
     <FooterCommon />
@@ -9,11 +10,13 @@
 </template>
 
 <script>
+import BreadCrumb from "~/components/modules/BreadCrumb.vue"
 import HeaderCommon from "~/components/modules/HeaderCommon.vue"
 import FooterCommon from "~/components/modules/FooterCommon.vue"
 
 export default {
   components: {
+    BreadCrumb,
     HeaderCommon,
     FooterCommon,
   },

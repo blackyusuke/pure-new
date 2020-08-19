@@ -10,7 +10,12 @@
         </NavList>
         <HeadSearch title="業種を選ぶ" />
         <ul>
-          <li></li>
+          <li>
+            <SearchItemCheck checkId="1" forId="1" value="ソープ" />
+          </li>
+          <li>
+            <SearchItemCheck checkId="2" forId="2" value="風俗" />
+          </li>
         </ul>
       </form>
     </SearchWrapper>
@@ -21,6 +26,7 @@
 import areaJson from "~/data/area.json";
 import NavItem from "~/components/parts/NavItem.vue";
 import NavList from "~/components/parts/NavList.vue";
+import SearchItemCheck from "~/components/parts/SearchItemCheck.vue";
 import ButtonLink from "~/components/parts/ButtonLink";
 import HeadSearch from "~/components/parts/HeadSearch";
 import SearchWrapper from "~/components/modules/SearchWrapper.vue";
@@ -31,6 +37,7 @@ export default {
     ButtonLink,
     HeadSearch,
     SearchWrapper,
+    SearchItemCheck
   },
   data() {
     return {

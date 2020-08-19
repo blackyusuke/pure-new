@@ -22,6 +22,7 @@ module.exports = {
         'light-blue': '#47AFFF',
         'border-red': '#E71212',
         'dark-gray': '#BDBDBD',
+        'status-red': '#e81212',
         orange: '#FF7E00',
         red: '#FF0000',
         primary: '#FD306A',
@@ -106,6 +107,9 @@ module.exports = {
       inset: {
         half: '50%',
       },
+      opacity: {
+        8: '0.8',
+      }
     }
   },
   variants: {},

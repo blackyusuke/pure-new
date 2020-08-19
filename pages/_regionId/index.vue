@@ -61,14 +61,14 @@
 </template>
 
 <script>
-import SideLeft from "~/components/modules/SideLeft.vue"
-import SideRight from "~/components/modules/SideRight.vue"
-import AreaSearch from "~/components/modules/AreaSearch.vue"
-import AreaMovie from "~/components/modules/AreaMovie.vue"
-import AreaComic from "~/components/modules/AreaComic.vue"
-import AreaRanking from "~/components/modules/AreaRanking.vue"
-import AreaReview from "~/components/modules/AreaReview.vue"
-import OtherArea from "~/components/modules/OtherArea.vue"
+import SideLeft from "~/components/modules/SideLeft.vue";
+import SideRight from "~/components/modules/SideRight.vue";
+import AreaSearch from "~/components/modules/AreaSearch.vue";
+import AreaMovie from "~/components/modules/AreaMovie.vue";
+import AreaComic from "~/components/modules/AreaComic.vue";
+import AreaRanking from "~/components/modules/AreaRanking.vue";
+import AreaReview from "~/components/modules/AreaReview.vue";
+import OtherArea from "~/components/modules/OtherArea.vue";
 export default {
   components: {
     SideLeft,
@@ -96,6 +96,12 @@ export default {
 </script>
 
 <style>
+#region .wrap {
+  @apply flex justify-between;
+}
+#region .wrap .content {
+  width: theme("width.680");
+}
 #region .slider + .wrap {
   @apply mt-20;
 }

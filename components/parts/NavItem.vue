@@ -1,7 +1,7 @@
 <template>
   <li
     class="nav-item"
-    :class="[{ 'is-quarter': width === 'quarter' }, {'is-third': width === 'third'}]"
+    :class="[{ 'is-quarter': width === 'quarter' }, {'is-third': width === 'third'},{'is-half': width === 'half'}]"
   >
     <slot />
   </li>
@@ -24,5 +24,8 @@ export default {
   }
   .nav-item.is-third {
     @apply w-1/3;
+  }
+  .nav-item.is-half {
+    @apply w-1/2;
   }
 </style>

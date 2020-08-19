@@ -8,16 +8,16 @@
       </HeadMain>
       <NavList flex="side">
         <NavItem v-for="item in areaJson" :key="item.value" width="quarter">
-          <ButtonLink color="is-default" :link-name="item.value"></ButtonLink>
+          <ButtonLink color="is-default" :link-name="item.value" />
         </NavItem>
       </NavList>
-      <HeadSearch title="人気エリアから探す"></HeadSearch>
+      <HeadSearch title="人気エリアから探す" />
       <NavList flex="side">
         <template v-for="item in areaJson">
           <NavItem v-for="item2 in item.prefecture" :key="item2.order" width="quarter">
             <template v-for="item3 in item2.city">
               <template v-if="item3.order === 1">
-                <ButtonLink :key="item3.value" color="is-default" :link-name="item3.value"></ButtonLink>
+                <ButtonLink :key="item3.value" color="is-default" :link-name="item3.value" />
               </template>
             </template>
           </NavItem>

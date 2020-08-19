@@ -2,9 +2,6 @@
   <div class="search-wrapper">
     <SideLeft />
     <div class="inner">
-      <p class="bnr">
-          <img src="http://placehold.jp/30/FFCCCC/FF0000/640x160.png?text=エリア検索トップレコメンド" alt="画像" />
-      </p>
       <slot />
     </div>
     <SideRight />
