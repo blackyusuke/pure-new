@@ -1,6 +1,6 @@
 <template>
   <main id="area">
-    <SearchWrapper>
+    <AllColumnWrapper>
       <HeadMain title="都道府県を選ぶ">
         <span slot="icon" class="icon">
           <icon-map class="fill-current" width="24" height="24" />
@@ -23,7 +23,7 @@
           </NavItem>
         </template>
       </NavList>
-    </SearchWrapper>
+    </AllColumnWrapper>
   </main>
 </template>
 
@@ -35,7 +35,7 @@ import NavItem from "~/components/parts/NavItem.vue";
 import NavList from "~/components/parts/NavList.vue";
 import ButtonLink from "~/components/parts/ButtonLink";
 import HeadSearch from "~/components/parts/HeadSearch";
-import SearchWrapper from "~/components/modules/SearchWrapper.vue";
+import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 export default {
   components: {
     HeadMain,
@@ -44,7 +44,7 @@ export default {
     NavList,
     ButtonLink,
     HeadSearch,
-    SearchWrapper,
+    AllColumnWrapper,
   },
   data() {
     return {

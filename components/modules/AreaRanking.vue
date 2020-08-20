@@ -20,17 +20,18 @@
         <div v-show="activetab === 1" class="inner">コンテンツ01</div>
         <div v-show="activetab === 2" class="inner">コンテンツ02</div>
         <div v-show="activetab === 3" class="inner">
+          <p class="total-ranking">総合ランキング</p>
           <ul class="ranking-list">
             <li class="first new is-first-new triangle">
-              <a href="">
+              <a href>
                 <img src="~/assets/images/sample/sample1.jpg" alt="女の子" />
                 <span class="number number-1">
                   <strong>1</strong>位
-                </span> 
+                </span>
               </a>
             </li>
             <li class="ranking-item triangle silver">
-              <a href="">
+              <a href>
                 <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
                 <span class="number number-2">
                   <strong>2</strong>位
@@ -41,7 +42,7 @@
               </a>
             </li>
             <li class="ranking-item triangle blonze">
-              <a href="">
+              <a href>
                 <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
                 <span class="number number-3">
                   <strong>3</strong>位
@@ -52,7 +53,7 @@
               </a>
             </li>
             <li class="ranking-item triangle gray">
-              <a href="">
+              <a href>
                 <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
                 <span class="number number-4">
                   <strong>4</strong>位
@@ -63,7 +64,7 @@
               </a>
             </li>
             <li class="ranking-item triangle gray new is-other-new">
-              <a href="">
+              <a href>
                 <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
                 <span class="number number-5">
                   <strong>5</strong>位
@@ -76,31 +77,31 @@
       </div>
     </div>
     <div class="more">
-      <a href="">
-         <span class="icon">
-           <icon-angle class="fill-current" width="18" height="22" />
-         </span>
-         <span class="icon">
-           <icon-angle class="fill-current" width="18" height="22" />
-         </span>
-         女の子ランキングをもっと見る
-         <span class="left icon">
-           <icon-angle class="fill-current" width="18" height="22" />
-         </span>
-         <span class="left icon">
-           <icon-angle class="fill-current" width="18" height="22" />
-         </span>
+      <a href>
+        <span class="icon">
+          <icon-angle class="fill-current" width="18" height="22" />
+        </span>
+        <span class="icon">
+          <icon-angle class="fill-current" width="18" height="22" />
+        </span>
+        女の子ランキングをもっと見る
+        <span class="left icon">
+          <icon-angle class="fill-current" width="18" height="22" />
+        </span>
+        <span class="left icon">
+          <icon-angle class="fill-current" width="18" height="22" />
+        </span>
       </a>
     </div>
   </div>
 </template>
 
 <script>
-import HeadMain from "~/components/parts/HeadMain.vue"
-import IconCrown from "~/components/icons/IconCrown"
-import IconArrow from "~/components/icons/IconArrow"
-import IconAngle from "~/components/icons/IconAngle"
-import ButtonLink from "~/components/parts/ButtonLink"
+import HeadMain from "~/components/parts/HeadMain.vue";
+import IconCrown from "~/components/icons/IconCrown";
+import IconArrow from "~/components/icons/IconArrow";
+import IconAngle from "~/components/icons/IconAngle";
+import ButtonLink from "~/components/parts/ButtonLink";
 export default {
   components: {
     HeadMain,
@@ -113,7 +114,7 @@ export default {
     return {
       activetab: 1,
     };
-  },
+  }
 };
 </script>
 
@@ -134,21 +135,22 @@ export default {
   @apply text-white;
   background: theme("colors.secondary");
 }
+.area-ranking .genre .contents-wrapper .total-ranking {
+  @apply flex items-center justify-center text-fz18 text-white leading-lh18 p-8;
+  background: theme("colors.secondary");
+}
 .area-ranking .genre .contents-wrapper .ranking-list {
   display: grid;
   grid-template-columns: [col1] 50% [col2] 25% [col3] 25%;
   grid-template-rows: [row1] 50% [row2] 50%;
   text-align: center;
 }
-.area-ranking .genre .contents-wrapper .ranking-list li {
-  @apply relative;
-}
 .area-ranking .genre .contents-wrapper .ranking-list li a img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
-  top: theme('inset.half');
-  left: theme('inset.half');
+  top: theme("inset.half");
+  left: theme("inset.half");
 }
-.area-ranking .genre .contents-wrapper .ranking-list li a:hover::before {
+/* .area-ranking .genre .contents-wrapper .ranking-list li a:hover::before {
   content: 'チェック';
   color: #ffffff;
   font-size: 20px;
@@ -161,20 +163,20 @@ export default {
 @keyframes check{
 	0%   { transform:translate(-50%, 0%);}
 	100% { transform:translate(0px, 0%);}
-}
+} */
 .area-ranking .genre .contents-wrapper .ranking-list .ranking-item::before {
   border-width: 70px 70px 0 0;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .triangle::before {
   content: "";
   @apply w-0 h-0 border-solid absolute border-transparent top-0 left-0 pointer-events-none;
-  z-index: theme('zIndex.1');
+  z-index: theme("zIndex.1");
 }
 .area-ranking .genre .contents-wrapper .ranking-list .first {
   @apply col-start-1;
   grid-row: 1 / 3;
 }
-.area-ranking .genre .contents-wrapper .ranking-list .first a  {
+.area-ranking .genre .contents-wrapper .ranking-list .first a {
   width: 340px;
   height: 454px;
 }
@@ -184,7 +186,7 @@ export default {
   left: 20px;
 }
 .area-ranking .genre .contents-wrapper .ranking-list li .number {
-  z-index: theme('zIndex.10');
+  z-index: theme("zIndex.10");
 }
 .area-ranking .genre .contents-wrapper .ranking-list .number-1 strong {
   @apply text-fz34;
@@ -198,7 +200,7 @@ export default {
   color: theme("colors.new-icon");
   background: theme("colors.red");
   border-radius: theme("borderRadius.4");
-  z-index: theme('zIndex.100');
+  z-index: theme("zIndex.100");
 }
 .area-ranking .genre .contents-wrapper .ranking-list .new.is-first-new::after {
   top: 60px;
@@ -212,16 +214,16 @@ export default {
 /* 三角形の背景色 */
 .area-ranking .genre .contents-wrapper .ranking-list .first::before {
   border-width: 120px 120px 0 0;
-  border-color: #FFCC21 transparent transparent transparent;
+  border-color: #ffcc21 transparent transparent transparent;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .silver::before {
-  border-color: #C3C0B1 transparent transparent transparent;
+  border-color: #c3c0b1 transparent transparent transparent;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .blonze::before {
-  border-color: #B29383 transparent transparent transparent;
+  border-color: #b29383 transparent transparent transparent;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .gray::before {
-  border-color: #8C8C8C transparent transparent transparent;
+  border-color: #8c8c8c transparent transparent transparent;
 }
 /* ------------------------------------------------------------------------- */
 
@@ -236,11 +238,17 @@ export default {
   @apply text-fz14 absolute font-bold;
 }
 .area-ranking .genre .contents-wrapper .ranking-list .ranking-item .number {
-  color: theme('colors.base');
+  color: theme("colors.base");
   @apply top-0;
   left: 5px;
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .number strong {
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .number
+  strong {
   @apply text-fz30 leading-lh43;
 }
 
@@ -249,47 +257,105 @@ export default {
   width: 26px;
   height: 26px;
   @apply border-solid border-2 absolute bg-white flex items-center justify-center;
-  z-index: theme('zIndex.1000');
-  border-radius: theme('borderRadius.2');
+  z-index: theme("zIndex.1000");
+  border-radius: theme("borderRadius.2");
   top: 40px;
   left: 10px;
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-top {
-  border-color: theme('colors.primary');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-top {
+  border-color: theme("colors.primary");
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-top svg {
-  color: theme('colors.primary');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-top
+  svg {
+  color: theme("colors.primary");
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-right {
-  border-color: theme('colors.green');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-right {
+  border-color: theme("colors.green");
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-right svg {
-  color: theme('colors.green');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-right
+  svg {
+  color: theme("colors.green");
   @apply transform rotate-90;
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-bottom {
-  border-color: theme('colors.light-blue');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-bottom {
+  border-color: theme("colors.light-blue");
 }
-.area-ranking .genre .contents-wrapper .ranking-list .ranking-item .arrow.is-bottom svg {
-  color: theme('colors.light-blue');
+.area-ranking
+  .genre
+  .contents-wrapper
+  .ranking-list
+  .ranking-item
+  .arrow.is-bottom
+  svg {
+  color: theme("colors.light-blue");
   @apply transform rotate-180;
 }
 /* -------------------------------------------------------------------------- */
- 
+
+/* hoverアニメーション */
+.area-ranking .genre .contents-wrapper .ranking-list li {
+  @apply relative;
+  transition: 0.25s;
+  --hover: #757575;
+}
+.area-ranking .genre .contents-wrapper .ranking-list li a {
+  @apply bg-black;
+}
+.area-ranking .genre .contents-wrapper .ranking-list li a img:hover {
+  @apply opacity-6;
+}
+.area-ranking .genre .contents-wrapper .ranking-list .triangle:hover {
+  animation: pulse 0.8s;
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  z-index: theme("zIndex.10");
+  background: rgba(0, 0, 0, 0.8);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+/* ---------------------------------------------------- */
+
 .area-ranking .more {
   @apply border-solid border-t-6;
-  border-color: theme('colors.border-red');
-  background: theme('colors.base');
+  border-color: theme("colors.border-red");
+  background: theme("colors.base");
 }
 .area-ranking .more a {
   @apply flex items-center justify-center text-fz20 font-bold leading-lh20 p-20;
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .area-ranking .more a .icon {
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .area-ranking .more a .icon:nth-child(1) {
-  margin-right: -8px
+  margin-right: -8px;
 }
 .area-ranking .more a .icon:nth-child(2) {
   @apply mr-4;

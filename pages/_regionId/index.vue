@@ -26,43 +26,39 @@
         </swiper>
       </client-only>
     </div>
-    <div class="wrap">
-      <SideLeft />
-      <div class="content">
-        <ul class="content-list">
-          <li class="content-list-item">
-            <AreaSearch />
-          </li>
-          <li class="content-list-item">
-            <AreaRanking />
-          </li>
-          <li class="content-list-item">
-            <AreaMovie />
-          </li>
-          <li class="content-list-item">
-            <AreaComic />
-          </li>
-          <li class="content-list-item">
-            <a href>
-              <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
-            </a>
-          </li>
-          <li class="content-list-item">
-            <AreaReview />
-          </li>
-          <li class="content-list-item">
-            <OtherArea />
-          </li>
-        </ul>
-      </div>
-      <SideRight />
-    </div>
+    <AllColumnWrapper>
+      <ul class="content-list">
+        <MainColumnItem>
+          <AreaSearch />
+        </MainColumnItem>
+        <MainColumnItem>
+          <AreaRanking />
+        </MainColumnItem>
+        <MainColumnItem>
+          <AreaMovie />
+        </MainColumnItem>
+        <MainColumnItem>
+          <AreaComic />
+        </MainColumnItem>
+        <MainColumnItem>
+          <a href>
+            <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+          </a>
+        </MainColumnItem>
+        <MainColumnItem>
+          <AreaReview />
+        </MainColumnItem>
+        <MainColumnItem>
+          <OtherArea />
+        </MainColumnItem>
+      </ul>
+    </AllColumnWrapper>
   </main>
 </template>
 
 <script>
-import SideLeft from "~/components/modules/SideLeft.vue";
-import SideRight from "~/components/modules/SideRight.vue";
+import MainColumnItem from "~/components/parts/MainColumnItem.vue";
+import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 import AreaSearch from "~/components/modules/AreaSearch.vue";
 import AreaMovie from "~/components/modules/AreaMovie.vue";
 import AreaComic from "~/components/modules/AreaComic.vue";
@@ -71,14 +67,14 @@ import AreaReview from "~/components/modules/AreaReview.vue";
 import OtherArea from "~/components/modules/OtherArea.vue";
 export default {
   components: {
-    SideLeft,
-    SideRight,
     AreaSearch,
     AreaRanking,
     AreaMovie,
     AreaComic,
     AreaReview,
     OtherArea,
+    MainColumnItem,
+    AllColumnWrapper,
   },
   data() {
     return {
@@ -96,19 +92,7 @@ export default {
 </script>
 
 <style>
-#region .wrap {
-  @apply flex justify-between;
-}
-#region .wrap .content {
-  width: theme("width.680");
-}
-#region .slider + .wrap {
+#region .slider + .all-column-wrapper {
   @apply mt-20;
-}
-#region .wrap .content .content-list .content-list-item + .content-list-item {
-  @apply mt-20;
-}
-#region .wrap .content .content-list .content-list-item:last-child {
-  padding-bottom: 120px;
 }
 </style>

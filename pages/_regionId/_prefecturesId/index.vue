@@ -64,7 +64,7 @@
         </nav>
       </li>
     </ul>
-    <SearchWrapper>
+    <AllColumnWrapper>
       <p class="bnr">
         <img src="http://placehold.jp/30/FFCCCC/FF0000/680x300.png?text=エリアリンク" alt="画像" />
       </p>
@@ -72,22 +72,23 @@
         <img src="http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク" alt="画像" />
       </p>
       <ul>
-        <li>
+        <MainColumnItem>
           <PickGirl />
-        </li>
-        <li>
+        </MainColumnItem>
+        <MainColumnItem>
           <TimeSale />
-        </li>
+        </MainColumnItem>
       </ul>
-    </SearchWrapper>
+    </AllColumnWrapper>
   </main>
 </template>
 
 <script>
+import MainColumnItem from "~/components/parts/MainColumnItem.vue";
 import HeadSearch from "~/components/parts/HeadSearch";
 import NavItem from "~/components/parts/NavItem.vue";
 import NavList from "~/components/parts/NavList.vue";
-import SearchWrapper from "~/components/modules/SearchWrapper.vue";
+import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 import PickGirl from "~/components/modules/PickGirl.vue";
 import TimeSale from "~/components/modules/TimeSale.vue";
 export default {
@@ -95,9 +96,10 @@ export default {
     HeadSearch,
     NavItem,
     NavList,
-    SearchWrapper,
+    AllColumnWrapper,
     PickGirl,
-    TimeSale
+    TimeSale,
+    MainColumnItem,
   },
 };
 </script>

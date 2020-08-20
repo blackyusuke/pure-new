@@ -61,6 +61,7 @@ module.exports = {
         fz18: '18px',
         fz20: '20px',
         fz24: '24px',
+        fz28: '28px',
         fz30: '30px',
         fz34: '34px',
       },
@@ -89,6 +90,7 @@ module.exports = {
         15: '15px',
         16: '16px',
         20: '20px',
+        24: '24px',
         36: '36px',
         40: '40px',
       },
@@ -109,6 +111,7 @@ module.exports = {
         half: '50%',
       },
       opacity: {
+        6: '0.6',
         8: '0.8',
       }
     }

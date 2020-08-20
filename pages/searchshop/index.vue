@@ -1,6 +1,6 @@
 <template>
   <main id="search-shop">
-    <SearchWrapper>
+    <AllColumnWrapper>
       <form action>
         <HeadSearch title="エリアを選ぶ" />
         <NavList flex="side">
@@ -18,7 +18,7 @@
           </li>
         </ul>
       </form>
-    </SearchWrapper>
+    </AllColumnWrapper>
   </main>
 </template>
  
@@ -29,14 +29,14 @@ import NavList from "~/components/parts/NavList.vue";
 import SearchItemCheck from "~/components/parts/SearchItemCheck.vue";
 import ButtonLink from "~/components/parts/ButtonLink";
 import HeadSearch from "~/components/parts/HeadSearch";
-import SearchWrapper from "~/components/modules/SearchWrapper.vue";
+import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 export default {
   components: {
     NavItem,
     NavList,
     ButtonLink,
     HeadSearch,
-    SearchWrapper,
+    AllColumnWrapper,
     SearchItemCheck
   },
   data() {
