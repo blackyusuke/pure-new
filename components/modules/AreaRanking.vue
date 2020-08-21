@@ -76,6 +76,28 @@
         <div v-show="activetab === 4" class="inner">コンテンツ04</div>
       </div>
     </div>
+    <div class="tab-wrap">
+      <input id="shop" type="radio" name="ranking" class="change" checked="checked" />
+      <label class="title" for="shop">お店</label>
+      <div class="tab-content">
+        れゆえ、花嫁の衣裳やら祝宴の御馳走やらを買いに、はるばる市にやって来たのだ。
+      </div>
+      <input id="review" type="radio" name="ranking" class="change" />
+      <label class="title" for="review">口コミ</label>
+      <div class="tab-content">
+        にメロスは、まちの様子を怪しく思った。ひっそりしている。、まちの様子を怪しく思った。ひっそりしてい、まちの様子を怪しく思った。ひっそりしてい
+      </div>
+      <input id="girl" type="radio" name="ranking" class="change" />
+      <label class="title" for="girl">女の子</label>
+      <div class="tab-content">
+        もう既に日も落ちて、まちの暗いは、あたりをはばかる低声で、わずか答えた。
+      </div>
+      <input id="movie" type="radio" name="ranking" class="change" />
+      <label class="title" for="movie">生動画</label>
+      <div class="tab-content">
+        もう既に日も落ちて、まちの暗いは、あたりをはばかる低声で、わずか答えた。
+      </div>
+    </div>
     <div class="more">
       <a href>
         <span class="icon">
@@ -114,11 +136,109 @@ export default {
     return {
       activetab: 1,
     };
-  }
+  },
 };
 </script>
 
 <style>
+.area-ranking .tab-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	padding: 0 0 20px;
+}
+
+.area-ranking .tab-wrap .title {
+	color: Gray;
+	cursor: pointer;
+	flex: 1;
+	font-weight: bold;
+	order: -1;
+	padding: 12px 24px;
+	position: relative;
+	text-align: center;
+	transition: cubic-bezier(0.4, 0, 0.2, 1) .2s;
+	user-select: none;
+	white-space: nowrap;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.area-ranking .tab-wrap .title:hover {
+	background: rgba(0, 191, 255,.1);
+}
+
+.area-ranking .tab-wrap .change:checked + .title {
+	color: DeepSkyBlue;
+}
+
+.area-ranking .tab-wrap .title::after {
+	background: DeepSkyBlue;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 3px;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	transform: translateX(100%);
+	transition: cubic-bezier(0.4, 0, 0.2, 1) .2s 80ms;
+	width: 100%;
+	z-index: 1;
+}
+
+.change:checked ~ .title::after {
+	transform: translateX(-100%);
+}
+
+.change:checked + .title::after {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.area-ranking .tab-wrap .tab-content {
+	height:0;
+	opacity:0;
+	padding: 0 20px;
+	pointer-events:none;
+	transform: translateX(-30%);
+	transition: transform .3s 80ms, opacity .3s 80ms;
+	width: 100%;
+}
+
+.change:checked ~ .tab-content {
+	transform: translateX(30%);
+}
+
+.change:checked + .title + .tab-content {
+	height: auto;
+	opacity: 1;
+	order: 1;
+	pointer-events:auto;
+	transform: translateX(0);
+}
+
+.area-ranking .tab-wrap::after {
+	content: '';
+	height: 20px;
+	order: -1;
+	width: 100%;
+}
+
+.area-ranking .tab-wrap .change {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 .area-ranking .genre .genre-list {
   @apply flex border-solid border-t-2 border-l-2 border-r-2;
   border-color: theme("colors.border-dark-gray");

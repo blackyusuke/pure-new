@@ -1,18 +1,20 @@
 <template>
-  <div class="wrap">
+  <div class="purelovers">
     <HeaderCommon />
-    <div class="overlay">
-      <BreadCrumb />
-      <nuxt />
+    <div class="purelovers-wrap">
+      <div class="purelovers-inner">
+        <BreadCrumb />
+        <nuxt />
+      </div>
     </div>
     <FooterCommon />
   </div>
 </template>
 
 <script>
-import BreadCrumb from "~/components/modules/BreadCrumb.vue"
-import HeaderCommon from "~/components/modules/HeaderCommon.vue"
-import FooterCommon from "~/components/modules/FooterCommon.vue"
+import BreadCrumb from "~/components/modules/BreadCrumb.vue";
+import HeaderCommon from "~/components/modules/HeaderCommon.vue";
+import FooterCommon from "~/components/modules/FooterCommon.vue";
 
 export default {
   components: {
@@ -123,8 +125,7 @@ input:focus {
 *:after {
   @apply box-border m-0;
 }
-.wrap .overlay {
+.purelovers .purelovers-wrap .purelovers-inner {
   @apply w-1100 m-auto;
 }
-
 </style>

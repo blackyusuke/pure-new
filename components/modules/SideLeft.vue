@@ -3,9 +3,9 @@
     <ul class="contents-list">
       <li>
         <div class="search">
-          <h2 class="title">
+          <SideSecondary fontSize="is-large">
             <icon-search class="fill-current" width="24" height="24" />詳細検索
-          </h2>
+          </SideSecondary>
           <form action>
             <div class="select-form">
               <div class="contents">
@@ -56,6 +56,7 @@ import IconMap from "~/components/icons/IconMap";
 import IconBusiness from "~/components/icons/IconBusiness";
 import IconGenre from "~/components/icons/IconGenre";
 import IconTicket from "~/components/icons/IconTicket";
+import SideSecondary from "~/components/parts/SideSecondary.vue";
 export default {
   components: {
     IconSearch,
@@ -63,6 +64,7 @@ export default {
     IconBusiness,
     IconGenre,
     IconTicket,
+    SideSecondary
   },
 };
 </script>
@@ -73,19 +75,6 @@ export default {
 }
 .side-left .contents-list li + li {
   @apply mt-20;
-}
-.side-left .title {
-  @apply flex items-center h-50 text-fz24 leading-lh24 font-bold text-white p-12 relative;
-  background: theme("colors.primary");
-}
-.side-left .title::after {
-  @apply absolute w-0 h-0 top-0 right-0 border-solid border-t-0 border-l-0;
-  content: "";
-  border-width: 0 20px 20px 0;
-  border-color: transparent #fff transparent transparent;
-}
-.side-left .title svg {
-  @apply mr-4;
 }
 .side-left .title.is-small {
   @apply text-fz16 leading-lh20;

@@ -10,10 +10,10 @@
       <p slot="lead" class="lead">風俗店が投稿した動画をチェック！</p>
     </HeadMain>
     <div class="movie">
-      <div class="top">
-        <a href class="thumb">
+      <a href="" class="top">
+        <div class="thumb">
           <img src="http://placehold.jp/FFCCCC/FF0000/430x242.png" alt="生動画" />
-        </a>
+        </div>
         <div class="description">
           <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
           <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
@@ -40,7 +40,7 @@
             <span>1000000</span>回再生
           </p>
         </div>
-      </div>
+      </a>
       <div class="other">
         <ul>
           <li>
@@ -139,7 +139,7 @@ export default {
   @apply flex;
 }
 .area-movie .movie .top .thumb {
-  @apply block relative;
+  @apply relative;
   width: 430px;
   height: 242px;
 }
