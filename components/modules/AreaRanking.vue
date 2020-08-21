@@ -186,16 +186,6 @@ export default {
 	width: 100%;
 	z-index: 1;
 }
-
-.change:checked ~ .title::after {
-	transform: translateX(-100%);
-}
-
-.change:checked + .title::after {
-	opacity: 1;
-	transform: translateX(0);
-}
-
 .area-ranking .tab-wrap .tab-content {
 	height:0;
 	opacity:0;
@@ -204,18 +194,6 @@ export default {
 	transform: translateX(-30%);
 	transition: transform .3s 80ms, opacity .3s 80ms;
 	width: 100%;
-}
-
-.change:checked ~ .tab-content {
-	transform: translateX(30%);
-}
-
-.change:checked + .title + .tab-content {
-	height: auto;
-	opacity: 1;
-	order: 1;
-	pointer-events:auto;
-	transform: translateX(0);
 }
 
 .area-ranking .tab-wrap::after {
@@ -229,7 +207,26 @@ export default {
 	display: none;
 }
 
+.area-ranking .tab-wrap .change:checked ~ .title::after {
+	transform: translateX(-100%);
+}
 
+.area-ranking .tab-wrap .change:checked + .title::after {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.area-ranking .tab-wrap .change:checked ~ .tab-content {
+	transform: translateX(30%);
+}
+
+.area-ranking .tab-wrap .change:checked + .title + .tab-content {
+	height: auto;
+	opacity: 1;
+	order: 1;
+	pointer-events:auto;
+	transform: translateX(0);
+}
 
 
 
