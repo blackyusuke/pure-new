@@ -57,11 +57,13 @@ import IconBusiness from "~/components/icons/IconBusiness";
 import IconGenre from "~/components/icons/IconGenre";
 import IconTicket from "~/components/icons/IconTicket";
 export default {
-  IconSearch,
-  IconMap,
-  IconBusiness,
-  IconGenre,
-  IconTicket,
+  components: {
+    IconSearch,
+    IconMap,
+    IconBusiness,
+    IconGenre,
+    IconTicket,
+  },
 };
 </script>
 
@@ -78,7 +80,7 @@ export default {
 }
 .side-left .title::after {
   @apply absolute w-0 h-0 top-0 right-0 border-solid border-t-0 border-l-0;
-  content: '';
+  content: "";
   border-width: 0 20px 20px 0;
   border-color: transparent #fff transparent transparent;
 }
