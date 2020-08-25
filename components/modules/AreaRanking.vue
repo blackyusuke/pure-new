@@ -13,6 +13,7 @@
       <input id="shop" type="radio" name="ranking" class="change" checked="checked" />
       <label class="title" for="shop">お店</label>
       <div class="genre-content">
+        <p class="total-ranking">総合ランキング</p>
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
@@ -21,13 +22,10 @@
                 <strong>1</strong>位
               </div>
               <div class="girl-infor is-first">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle silver">
@@ -40,13 +38,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle blonze">
@@ -59,13 +54,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray">
@@ -78,13 +70,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray new is-other-new">
@@ -94,20 +83,18 @@
                 <strong>5</strong>位
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
         </ul>
       </div>
       <input id="review" type="radio" name="ranking" class="change" />
       <label class="title" for="review">口コミ</label>
-       <div class="genre-content">
+      <div class="genre-content">
+        <p class="total-ranking">総合ランキング</p>
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
@@ -116,13 +103,10 @@
                 <strong>1</strong>位
               </div>
               <div class="girl-infor is-first">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle silver">
@@ -135,13 +119,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle blonze">
@@ -154,13 +135,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray">
@@ -173,13 +151,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray new is-other-new">
@@ -189,20 +164,18 @@
                 <strong>5</strong>位
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
         </ul>
       </div>
       <input id="girl" type="radio" name="ranking" class="change" />
       <label class="title" for="girl">女の子</label>
-     <div class="genre-content">
+      <div class="genre-content">
+        <p class="total-ranking">総合ランキング</p>
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
@@ -211,13 +184,10 @@
                 <strong>1</strong>位
               </div>
               <div class="girl-infor is-first">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle silver">
@@ -230,13 +200,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle blonze">
@@ -249,13 +216,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray">
@@ -268,13 +232,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray new is-other-new">
@@ -284,20 +245,18 @@
                 <strong>5</strong>位
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
         </ul>
       </div>
       <input id="movie" type="radio" name="ranking" class="change" />
       <label class="title" for="movie">生動画</label>
-       <div class="genre-content">
+      <div class="genre-content">
+        <p class="total-ranking">総合ランキング</p>
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
@@ -306,13 +265,10 @@
                 <strong>1</strong>位
               </div>
               <div class="girl-infor is-first">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle silver">
@@ -325,13 +281,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOILOILOILOILOILOILOILOILOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOILOILOILOILOILOILOILOILOI(22)</span>
+                <span class="area">新宿 / デリヘル新宿 / デリヘル新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle blonze">
@@ -344,13 +297,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray">
@@ -363,13 +313,10 @@
                 <icon-arrow class="fill-current" width="16" height="20" />
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
           <li class="ranking-item triangle gray new is-other-new">
@@ -379,13 +326,10 @@
                 <strong>5</strong>位
               </div>
               <div class="girl-infor is-other">
-                <span class="girl-name">
-                  LOI(22)
-                </span>
-                <span class="area">
-                  新宿 / デリヘル
-                </span>
+                <span class="girl-name">LOI(22)</span>
+                <span class="area">新宿 / デリヘル</span>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </li>
         </ul>
@@ -440,12 +384,12 @@ export default {
   flex-wrap: wrap;
   overflow: hidden;
 }
-.area-ranking .genre-wrap::after {
-  content: '';
+/* .area-ranking .genre-wrap::after {
+  content: "";
   height: 4px;
   order: -1;
   width: 100%;
-}
+} */
 .area-ranking .genre-wrap .title {
   @apply text-fz20 leading-lh20 text-black p-16;
   cursor: pointer;
@@ -459,30 +403,22 @@ export default {
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
-.area-ranking .genre-wrap .title:hover {
-}
-/* .area-ranking .genre-wrap .change:checked + .title {
-  @apply text-black;
-} */
 .area-ranking .genre-wrap .title::after {
-  @apply block bottom-0 left-0 opacity-0 pointer-events-none absolute w-full transform translate-x-full;
+  @apply block bottom-0 left-0 top-0 right-0 opacity-0 pointer-events-none absolute w-full h-full transform translate-x-full;
   background: theme("colors.red");
   z-index: theme("zIndex.1");
   content: "";
-  height: 8px;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 0.2s 80ms;
+  z-index: -1;
 }
+.area-ranking .genre-wrap .change:checked + .title {
+  @apply text-white;
+} 
 .area-ranking .genre-wrap .genre-content {
   @apply h-0 opacity-0 pointer-events-none w-full;
   transform: translateX(-30%);
   transition: transform 0.3s 80ms, opacity 0.3s 80ms;
 }
-/* .area-ranking .genre-wrap::after {
-	content: '';
-	height: 20px;
-	order: -1;
-	width: 100%;
-} */
 .area-ranking .genre-wrap .change {
   @apply hidden;
 }
@@ -498,7 +434,11 @@ export default {
 .area-ranking .genre-wrap .change:checked + .title + .genre-content {
   @apply h-auto opacity-100 pointer-events-auto order-1 transform translate-x-0;
 }
-/* ------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+.area-ranking .genre-wrap .genre-content .total-ranking {
+  @apply flex items-center justify-center text-white text-fz18 leading-lh18 p-8;
+  background: theme('colors.red');
+}
 .area-ranking .genre-wrap .genre-content .ranking-list {
   display: grid;
   grid-template-columns: [col1] 50% [col2] 25% [col3] 25%;
@@ -513,47 +453,88 @@ export default {
 .area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor {
   @apply bottom-0 absolute block bg-black bg-opacity-8 w-full text-white;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-first {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-first {
   @apply p-12;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-other {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-other {
   @apply p-8;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor .girl-name {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor
+  .girl-name {
   @apply block text-left font-bold truncate;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-first .girl-name {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-first
+  .girl-name {
   @apply text-fz24 leading-lh24;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-other .girl-name {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-other
+  .girl-name {
   @apply text-fz16 leading-lh16;
 }
 .area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor .area {
   @apply block text-left truncate;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-first .area  {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-first
+  .area {
   @apply text-fz14 leading-lh20;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor.is-other .area  {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor.is-other
+  .area {
   @apply text-fz12 leading-lh12;
 }
-.area-ranking .genre-wrap .genre-content .ranking-list li a .girl-infor .girl-name + .area {
+.area-ranking
+  .genre-wrap
+  .genre-content
+  .ranking-list
+  li
+  a
+  .girl-infor
+  .girl-name
+  + .area {
   @apply mt-4;
 }
-/* .area-ranking .genre-wrap .genre-content .ranking-list li a:hover::before {
-  content: 'チェック';
-  color: #ffffff;
-  font-size: 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 100px;
-  z-index: 50000;
-  animation:check ease-in-out 2s infinite alternate;
-}
-@keyframes check{
-	0%   { transform:translate(-50%, 0%);}
-	100% { transform:translate(0px, 0%);}
-} */
 .area-ranking .genre-wrap .genre-content .ranking-list .ranking-item::before {
   border-width: 70px 70px 0 0;
 }
@@ -715,11 +696,26 @@ export default {
 }
 /* -------------------------------------------------------------------------- */
 
+/* hoverアニメーション */
+.area-ranking .genre-wrap .genre-content .ranking-list li a .overlay {
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.6s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme('zIndex.1000');
+}
+.area-ranking .genre-wrap .genre-content .ranking-list li a:hover .overlay {
+  transform: scale(1);
+}
+/* --------------------------------------------------------------------------- */
+
 .area-ranking .genre-wrap .genre-content .ranking-list li {
   @apply relative;
 }
 .area-ranking .genre-wrap .genre-content .ranking-list li a {
-  @apply bg-black;
+  @apply bg-black relative overflow-hidden;
 }
 .area-ranking .more {
   @apply border-solid border-t-6;

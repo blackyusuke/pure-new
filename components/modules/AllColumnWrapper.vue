@@ -20,10 +20,10 @@ export default {
 <style>
 .all-column-wrapper {
   @apply flex justify-between;
+  padding-bottom: 120px;
 }
 .all-column-wrapper .main-column {
   width: theme('width.680');
-  padding-bottom: 120px;
 }
 .all-column-wrapper .main-column .bnr {
   @apply mb-20;

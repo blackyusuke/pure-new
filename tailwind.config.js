@@ -109,6 +109,9 @@ module.exports = {
         ponter: 'pointer'
       },
       inset: {
+        4: '4px',
+        6: '6px',
+        8: '8px',
         'underline':'-3px',
         half: '50%',
       },

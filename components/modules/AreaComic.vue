@@ -15,44 +15,48 @@
           <a href>
             <div class="thumb">
               <img src="http://placehold.jp/325x245.png" alt="マンガ" />
-              <span class="title">
-                <strong>十恋人～トレンド～</strong>
-                秋葉原･神田 / デリヘル(アロマ･エステ)
-              </span>
+              <div class="description">
+                <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
+                <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
+              </div>
             </div>
+            <div class="overlay">Check!!</div>
           </a>
         </li>
         <li>
           <a href>
             <div class="thumb">
               <img src="http://placehold.jp/325x245.png" alt="マンガ" />
-              <span class="title">
-                <strong>十恋人～トレンド～</strong>
-                秋葉原･神田 / デリヘル(アロマ･エステ)
-              </span>
+              <div class="description">
+                <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
+                <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
+              </div>
             </div>
+            <div class="overlay">Check!!</div>
           </a>
         </li>
         <li>
           <a href>
             <div class="thumb">
               <img src="http://placehold.jp/325x245.png" alt="マンガ" />
-              <span class="title">
-                <strong>十恋人～トレンド～</strong>
-                秋葉原･神田 / デリヘル(アロマ･エステ)
-              </span>
+              <div class="description">
+                <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
+                <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
+              </div>
             </div>
+            <div class="overlay">Check!!</div>
           </a>
         </li>
         <li>
           <a href>
             <div class="thumb">
               <img src="http://placehold.jp/325x245.png" alt="マンガ" />
-              <span class="title">
-                <strong>十恋人～トレンド～</strong>
-                秋葉原･神田 / デリヘル(アロマ･エステ)
-              </span>
+              <div class="description">
+                <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
+                <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
+              </div>
             </div>
+            <div class="overlay">Check!!</div>
           </a>
         </li>
       </ul>
@@ -82,24 +86,44 @@ export default {
   @apply pr-16 pb-8 w-1/2;
 }
 .area-comic .contents ul li a {
-  @apply block;
+  @apply block relative;
 }
 .area-comic .contents ul li a .thumb {
   @apply relative;
   width: 325px;
   height: 245px;
 }
-.area-comic .contents ul li a .thumb .title {
-  @apply absolute bottom-0 right-0 text-white text-fz12 leading-lh12 block p-8;
-  background: theme('colors.base');
-  background: rgba(51,51,51,0.8);
+.area-comic .contents ul li a .thumb .description {
+  @apply absolute bottom-0 text-white w-full p-8;
+   background: rgba(51,51,51,0.8);
 }
-.area-comic .contents ul li a .thumb .title strong {
-  @apply block text-fz14 leading-lh20;
+.area-comic .contents ul li a .thumb .description .title {
+  @apply text-fz14 leading-lh20 font-bold truncate;
+}
+.area-comic .contents ul li a .thumb .description .area-genre {
+  @apply text-fz12 leading-lh12 truncate;
+}
+.area-comic .contents ul li a .thumb .description .title + .area-genre {
+  @apply mt-4;
 }
 .area-comic .contents ul li a .thumb img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
   top: theme("inset.half");
   left: theme("inset.half");
 }
+
+/* hoverアニメーション */
+.area-comic .contents ul li a:hover .overlay {
+  transform: scale(1);
+}
+.area-comic .contents ul li a .overlay {
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
+}
+/* ------------------------------------------------------------------------------------- */
 </style>

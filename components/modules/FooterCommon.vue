@@ -394,7 +394,7 @@ export default {
   .sorting
   ul
   li {
-  @apply px-4;
+  @apply px-4 pb-4;
 }
 .footer-common
   .wrap

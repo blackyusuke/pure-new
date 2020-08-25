@@ -14,7 +14,7 @@
       <HeadSearch title="人気エリアから探す" />
       <NavList flex="side">
         <template v-for="item in areaJson">
-          <NavItem v-for="item2 in item.prefecture" :key="item2.order" width="quarter">
+          <NavItem v-for="item2 in item.prefecture" :key="item2.value" width="quarter">
             <template v-for="item3 in item2.city">
               <template v-if="item3.order === 1">
                 <ButtonLink :key="item3.value" color="is-default" :link-name="item3.value" />
