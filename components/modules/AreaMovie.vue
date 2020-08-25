@@ -130,7 +130,8 @@ export default {
   background: theme("colors.back-gray");
 }
 .area-movie .movie .top {
-  @apply flex relative;
+  @apply flex relative rounded-r-8;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
 }
 .area-movie .movie .top .thumb {
   @apply relative;
@@ -145,7 +146,7 @@ export default {
   bottom: theme('inset.8');
 }
 .area-movie .movie .top .thumb img {
-  @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
+  @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-l-8;
   top: theme("inset.half");
   left: theme("inset.half");
 }
@@ -209,7 +210,9 @@ export default {
   @apply pr-12;
 }
 .area-movie .movie .other ul li a {
-  @apply block relative;
+  @apply block relative rounded-b-8;
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+
 }
 .area-movie .movie .other ul li a .image {
   @apply relative;
@@ -224,9 +227,12 @@ export default {
   bottom: theme('inset.6');
 }
 .area-movie .movie .other ul li a .image img {
-  @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
+  @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-t-8;
   top: theme("inset.half");
   left: theme("inset.half");
+}
+.area-movie .movie .other ul li a .description {
+  @apply p-8;
 }
 .area-movie .movie .other ul li a .description .title {
   @apply text-fz14 font-bold;

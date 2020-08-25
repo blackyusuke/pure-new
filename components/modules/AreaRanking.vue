@@ -701,7 +701,7 @@ export default {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
   transform: scale(0);
   color: theme("colors.primary");
   z-index: theme('zIndex.1000');
