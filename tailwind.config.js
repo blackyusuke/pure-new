@@ -43,6 +43,7 @@ module.exports = {
         36: '36px',
         46: '46px',
         50: '50px',
+        'underline': '2px',
       },
       borderRadius: {
         2: '2px',
@@ -108,12 +109,16 @@ module.exports = {
         ponter: 'pointer'
       },
       inset: {
+        'underline':'-3px',
         half: '50%',
       },
       opacity: {
         6: '0.6',
         8: '0.8',
-      }
+      },
+      transformOrigin: {
+        'underline': 'left top'
+      },
     }
   },
   variants: {},
