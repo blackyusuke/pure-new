@@ -1,7 +1,7 @@
 <template>
-  <main id="region">
-    <div class="slider">
-      <client-only>
+  <no-ssr>
+    <main id="region">
+      <div class="slider">
         <swiper :options="swiperOption">
           <swiper-slide>
             <a href>
@@ -24,34 +24,34 @@
             </a>
           </swiper-slide>
         </swiper>
-      </client-only>
-    </div>
-    <AllColumnWrapper>
-      <MainColumnSection>
-        <AreaSearch />
-      </MainColumnSection>
-      <MainColumnSection>
-        <AreaRanking />
-      </MainColumnSection>
-      <MainColumnSection>
-        <AreaMovie />
-      </MainColumnSection>
-      <MainColumnSection>
-        <AreaComic />
-      </MainColumnSection>
-      <MainColumnSection>
-        <a href>
-          <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
-        </a>
-      </MainColumnSection>
-      <MainColumnSection>
-        <AreaReview />
-      </MainColumnSection>
-      <MainColumnSection>
-        <OtherArea />
-      </MainColumnSection>
-    </AllColumnWrapper>
-  </main>
+      </div>
+      <AllColumnWrapper>
+        <MainColumnSection>
+          <AreaSearch />
+        </MainColumnSection>
+        <MainColumnSection>
+          <AreaRanking />
+        </MainColumnSection>
+        <MainColumnSection>
+          <AreaMovie />
+        </MainColumnSection>
+        <MainColumnSection>
+          <AreaComic />
+        </MainColumnSection>
+        <MainColumnSection>
+          <a href>
+            <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+          </a>
+        </MainColumnSection>
+        <MainColumnSection>
+          <AreaReview />
+        </MainColumnSection>
+        <MainColumnSection>
+          <OtherArea />
+        </MainColumnSection>
+      </AllColumnWrapper>
+    </main>
+  </no-ssr>
 </template>
 
 <script>

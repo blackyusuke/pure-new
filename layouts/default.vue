@@ -8,6 +8,13 @@
       </div>
     </div>
     <FooterCommon />
+    <transition name="fade">
+      <div v-show="scY > 300" class="back-to-top" @click="toTop">
+        <div class="top-arrow">
+          <span></span>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -21,6 +28,31 @@ export default {
     BreadCrumb,
     HeaderCommon,
     FooterCommon,
+  },
+  data() {
+    return {
+      scTimer: 0,
+      scY: 0,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll: function () {
+      if (this.scTimer) return;
+      this.scTimer = setTimeout(() => {
+        this.scY = window.scrollY;
+        clearTimeout(this.scTimer);
+        this.scTimer = 0;
+      }, 100);
+    },
+    toTop: function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
   },
 };
 </script>
@@ -125,7 +157,37 @@ input:focus {
 *:after {
   @apply box-border m-0;
 }
+.purelovers {
+  @apply relative;
+}
 .purelovers .purelovers-wrap .purelovers-inner {
   @apply w-1100 m-auto;
+}
+.purelovers .back-to-top {
+  @apply fixed rounded-half border-solid border-5 cursor-pointer;
+  width: 60px;
+  height: 60px;
+  right: 70px;
+  bottom: 50px;
+  border-color: theme('colors.primary');
+}
+.purelovers .back-to-top .top-arrow {
+  @apply absolute transform -translate-y-1/2 -translate-x-1/2;
+  top: theme("inset.half");
+  left: theme("inset.half");
+}
+.purelovers .back-to-top .top-arrow span{
+  @apply relative block;
+  width: 12px;
+  height: 25px;
+  background: theme('colors.primary');
+}
+.purelovers .back-to-top .top-arrow::before {
+  @apply absolute transform -rotate-90;
+  border: 18px solid transparent;
+  border-left: 18px solid #FD306A;
+  top: -25px;
+  left: -12px;
+  content: '';
 }
 </style>
