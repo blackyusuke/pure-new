@@ -27,37 +27,35 @@
       </client-only>
     </div>
     <AllColumnWrapper>
-      <ul class="content-list">
-        <MainColumnItem>
-          <AreaSearch />
-        </MainColumnItem>
-        <MainColumnItem>
-          <AreaRanking />
-        </MainColumnItem>
-        <MainColumnItem>
-          <AreaMovie />
-        </MainColumnItem>
-        <MainColumnItem>
-          <AreaComic />
-        </MainColumnItem>
-        <MainColumnItem>
-          <a href>
-            <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
-          </a>
-        </MainColumnItem>
-        <MainColumnItem>
-          <AreaReview />
-        </MainColumnItem>
-        <MainColumnItem>
-          <OtherArea />
-        </MainColumnItem>
-      </ul>
+      <MainColumnSection>
+        <AreaSearch />
+      </MainColumnSection>
+      <MainColumnSection>
+        <AreaRanking />
+      </MainColumnSection>
+      <MainColumnSection>
+        <AreaMovie />
+      </MainColumnSection>
+      <MainColumnSection>
+        <AreaComic />
+      </MainColumnSection>
+      <MainColumnSection>
+        <a href>
+          <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+        </a>
+      </MainColumnSection>
+      <MainColumnSection>
+        <AreaReview />
+      </MainColumnSection>
+      <MainColumnSection>
+        <OtherArea />
+      </MainColumnSection>
     </AllColumnWrapper>
   </main>
 </template>
 
 <script>
-import MainColumnItem from "~/components/parts/MainColumnItem.vue";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 import AreaSearch from "~/components/modules/AreaSearch.vue";
 import AreaMovie from "~/components/modules/AreaMovie.vue";
@@ -73,7 +71,7 @@ export default {
     AreaComic,
     AreaReview,
     OtherArea,
-    MainColumnItem,
+    MainColumnSection,
     AllColumnWrapper,
   },
   data() {

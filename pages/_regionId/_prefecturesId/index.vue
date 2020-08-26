@@ -72,19 +72,19 @@
         <img src="http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク" alt="画像" />
       </p>
       <ul>
-        <MainColumnItem>
+        <MainColumnSection>
           <PickGirl />
-        </MainColumnItem>
-        <MainColumnItem>
+        </MainColumnSection>
+        <MainColumnSection>
           <TimeSale />
-        </MainColumnItem>
+        </MainColumnSection>
       </ul>
     </AllColumnWrapper>
   </main>
 </template>
 
 <script>
-import MainColumnItem from "~/components/parts/MainColumnItem.vue";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 import HeadSearch from "~/components/parts/HeadSearch";
 import NavItem from "~/components/parts/NavItem.vue";
 import NavList from "~/components/parts/NavList.vue";
@@ -99,7 +99,7 @@ export default {
     AllColumnWrapper,
     PickGirl,
     TimeSale,
-    MainColumnItem,
+    MainColumnSection,
   },
 };
 </script>
