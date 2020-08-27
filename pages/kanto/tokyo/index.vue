@@ -71,14 +71,12 @@
       <p class="bnr">
         <img src="http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク" alt="画像" />
       </p>
-      <ul>
-        <MainColumnSection>
-          <PickGirl />
-        </MainColumnSection>
-        <MainColumnSection>
-          <TimeSale />
-        </MainColumnSection>
-      </ul>
+      <MainColumnSection>
+        <PickGirl />
+      </MainColumnSection>
+      <MainColumnSection>
+        <TimeSale />
+      </MainColumnSection>
     </AllColumnWrapper>
   </main>
 </template>

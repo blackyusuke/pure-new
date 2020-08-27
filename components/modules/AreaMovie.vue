@@ -15,6 +15,9 @@
           <div class="thumb">
             <img src="http://placehold.jp/FFCCCC/FF0000/430x242.png" alt="生動画" />
             <span class="play-time">25:30</span>
+            <span class="play-icon">
+              <icon-triangle class="fill-current" width="24" height="24" />
+            </span>
           </div>
           <div class="description">
             <p class="title">ウフフな40.。ムフフな50。ムフフな50。。(横浜ハレ系)</p>
@@ -22,19 +25,19 @@
             <div class="tagArea">
               <ul>
                 <li>
-                  <a href>#巨乳</a>
+                  <span>#巨乳</span>
                 </li>
                 <li>
-                  <a href>#3P</a>
+                  <span>#3P</span>
                 </li>
                 <li>
-                  <a href>#フェラ</a>
+                  <span>#フェラ</span>
                 </li>
                 <li>
-                  <a href>#ギャル</a>
+                  <span>#ギャル</span>
                 </li>
                 <li>
-                  <a href>#素人</a>
+                  <span>#素人</span>
                 </li>
               </ul>
             </div>
@@ -53,6 +56,9 @@
                 <div class="image">
                   <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
                   <span class="play-time">59:59</span>
+                  <span class="play-icon">
+                    <icon-triangle class="fill-current" width="18" height="18" />
+                  </span>
                 </div>
                 <div class="description">
                   <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
@@ -71,6 +77,9 @@
                 <div class="image">
                   <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
                   <span class="play-time">59:59</span>
+                  <span class="play-icon">
+                    <icon-triangle class="fill-current" width="18" height="18" />
+                  </span>
                 </div>
                 <div class="description">
                   <p class="title">ウフフな40.。ムフフな50ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
@@ -89,6 +98,9 @@
                 <div class="image">
                   <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
                   <span class="play-time">59:59</span>
+                  <span class="play-icon">
+                    <icon-triangle class="fill-current" width="18" height="18" />
+                  </span>
                 </div>
                 <div class="description">
                   <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
@@ -107,6 +119,9 @@
                 <div class="image">
                   <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
                   <span class="play-time">59:59</span>
+                  <span class="play-icon">
+                    <icon-triangle class="fill-current" width="18" height="18" />
+                  </span>
                 </div>
                 <div class="description">
                   <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
@@ -127,9 +142,11 @@
 
 <script>
 import IconFilm from "~/components/icons/IconFilm";
+import IconTriangle from "~/components/icons/IconTriangle";
 export default {
   components: {
     IconFilm,
+    IconTriangle,
   },
 };
 </script>
@@ -154,6 +171,16 @@ export default {
   border-radius: theme("borderRadius.4");
   right: theme("inset.6");
   bottom: theme("inset.8");
+}
+.area-movie .movie article .top .thumb .play-icon {
+  @apply absolute flex items-center justify-center transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-8 rounded-half;
+  top: theme("inset.half");
+  left: theme("inset.half");
+  width: theme("width.50");
+  height: theme("height.50");
+}
+.area-movie .movie article .top .thumb .play-icon svg {
+  @apply text-white mr-negative4;
 }
 .area-movie .movie article .top .thumb img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-l-8;
@@ -185,7 +212,7 @@ export default {
 .area-movie .movie article .top .description .tagArea ul li {
   @apply pr-4 pb-4;
 }
-.area-movie .movie article .top .description .tagArea ul li article a {
+.area-movie .movie article .top .description .tagArea ul li span {
   @apply block border-solid border-2 bg-white text-fz14 leading-lh20 py-2 px-8;
   border-color: theme("colors.primary");
   border-radius: theme("borderRadius.4");
@@ -234,6 +261,16 @@ export default {
   border-radius: theme("borderRadius.4");
   right: theme("inset.4");
   bottom: theme("inset.6");
+}
+.area-movie .movie .other ul li article a .image .play-icon {
+  @apply absolute flex items-center justify-center transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-8 rounded-half;
+  top: theme("inset.half");
+  left: theme("inset.half");
+  width: 35px;
+  height: 35px;
+}
+.area-movie .movie .other ul li article a .image .play-icon svg {
+  @apply text-white mr-negative4;
 }
 .area-movie .movie .other ul li article a .image img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-t-8;

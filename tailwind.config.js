@@ -34,6 +34,7 @@ module.exports = {
         green: '#58B000',
       },
       width: {
+        50: '50px',
         190: '190px',
         1100: '1100px',
         680: '680px',
@@ -83,6 +84,7 @@ module.exports = {
         lh49: '49px',
       },
       spacing: {
+        'negative4':'-4px',
         2: '2px',
         4: '4px',
         5: '5px',
