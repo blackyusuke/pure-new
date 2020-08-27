@@ -126,7 +126,7 @@
                 <template v-for="item in areaJson">
                   <ul v-if="item.id === 'kanto'" :key="item.value" class="other-list">
                     <template v-for="item2 in item.prefecture">
-                      <li :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
+                      <li v-if=" item2.order < 3 || item2.order === 4 || item2.order === 6" :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
                       <template v-for="item3 in item2.city">
                         <li v-if="item3.hoteheru === 1" :key="item3.value" class="area">
                           <a href>{{ item3.value }}</a>
@@ -143,7 +143,7 @@
                 <template v-for="item in areaJson">
                   <ul v-if="item.id === 'kanto'" :key="item.value" class="other-list">
                     <template v-for="item2 in item.prefecture">
-                      <li :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
+                      <li v-if="item2.order < 6" :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
                       <template v-for="item3 in item2.city">
                         <li v-if="item3.health === 1" :key="item3.value" class="area">
                           <a href>{{ item3.value }}</a>
@@ -160,7 +160,7 @@
                 <template v-for="item in areaJson">
                   <ul v-if="item.id === 'kanto'" :key="item.value" class="other-list">
                     <template v-for="item2 in item.prefecture">
-                      <li :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
+                      <li v-if="item2.order < 7" :key="item2.value" class="prefecture">【{{ item2.value }}】</li>
                       <template v-for="item3 in item2.city">
                         <li v-if="item3.soap === 1" :key="item3.value" class="area">
                           <a href>{{ item3.value }}</a>

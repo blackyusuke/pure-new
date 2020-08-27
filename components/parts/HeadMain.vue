@@ -1,15 +1,15 @@
 <template>
   <div class="head-main">
     <div class="title">
-      <h2 :class="{ 'head-short': headLine === 'short' }">
-        <span class="headline">
+      <div class="wrap" :class="{ 'head-short': headLine === 'short' }">
+        <h2 class="headline">
           <slot
             name="icon"
           >
           </slot>
           {{ title }}
-        </span>
-      </h2>
+        </h2>
+      </div>
       <slot
         name="btn"
       >
@@ -40,7 +40,7 @@ export default {
 .head-main .title .head-short {
   width: 520px;
 }
-.head-main h2 {
+.head-main .wrap {
   @apply flex items-center w-full;
   transform: skew(45deg);
   background: theme('colors.primary');
@@ -48,12 +48,12 @@ export default {
   height: 46px;
   padding: 12px;
 }
-.head-main .title h2 .headline {
+.head-main .title .wrap .headline {
   transform: skew(-45deg);
   @apply flex items-center text-white text-fz24 leading-lh24 font-bold;
   margin-left: 25px;
 }
-.head-main .title h2 .headline .icon {
+.head-main .title .wrap .headline .icon {
   @apply mr-4;
 }
 .head-main .lead {

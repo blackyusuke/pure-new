@@ -1,3 +1,4 @@
+
 <template>
   <div class="area-movie">
     <HeadMain title="関東の風俗体験動画" headLine="short">
@@ -48,94 +49,93 @@
           <div class="overlay">Check!!</div>
         </a>
       </article>
-      <div class="other">
-        <ul>
-          <li>
-            <article>
-              <a href>
-                <div class="image">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
-                  <span class="play-time">59:59</span>
-                  <span class="play-icon">
-                    <icon-triangle class="fill-current" width="18" height="18" />
-                  </span>
-                </div>
-                <div class="description">
-                  <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
-                  <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
-                  <p class="views">
-                    <span>1000000</span>回再生
-                  </p>
-                </div>
-                <div class="overlay">Check!!</div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href>
-                <div class="image">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
-                  <span class="play-time">59:59</span>
-                  <span class="play-icon">
-                    <icon-triangle class="fill-current" width="18" height="18" />
-                  </span>
-                </div>
-                <div class="description">
-                  <p class="title">ウフフな40.。ムフフな50ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
-                  <p class="infor">横浜(関内･曙町) / ファッションヘルス横浜(関内･曙町) / ファッションヘルス</p>
-                  <p class="views">
-                    <span>1000000</span>回再生
-                  </p>
-                </div>
-                <div class="overlay">Check!!</div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href>
-                <div class="image">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
-                  <span class="play-time">59:59</span>
-                  <span class="play-icon">
-                    <icon-triangle class="fill-current" width="18" height="18" />
-                  </span>
-                </div>
-                <div class="description">
-                  <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
-                  <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
-                  <p class="views">
-                    <span>1000000</span>回再生
-                  </p>
-                </div>
-                <div class="overlay">Check!!</div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href>
-                <div class="image">
-                  <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
-                  <span class="play-time">59:59</span>
-                  <span class="play-icon">
-                    <icon-triangle class="fill-current" width="18" height="18" />
-                  </span>
-                </div>
-                <div class="description">
-                  <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
-                  <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
-                  <p class="views">
-                    <span>1000000</span>回再生
-                  </p>
-                </div>
-                <div class="overlay">Check!!</div>
-              </a>
-            </article>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="other-list">
+        <li>
+          <article>
+            <a href>
+              <div class="image">
+                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <span class="play-time">59:59</span>
+                <span class="play-icon">
+                  <icon-triangle class="fill-current" width="18" height="18" />
+                </span>
+              </div>
+              <div class="description">
+                <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
+                <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
+                <p class="views">
+                  <span>1000000</span>回再生
+                </p>
+              </div>
+              <div class="overlay">Check!!</div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href>
+              <div class="image">
+                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <span class="play-time">59:59</span>
+                <span class="play-icon">
+                  <icon-triangle class="fill-current" width="18" height="18" />
+                </span>
+              </div>
+              <div class="description">
+                <p class="title">ウフフな40.。ムフフな50ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
+                <p class="infor">横浜(関内･曙町) / ファッションヘルス横浜(関内･曙町) / ファッションヘルス</p>
+                <p class="views">
+                  <span>1000000</span>回再生
+                </p>
+              </div>
+              <div class="overlay">Check!!</div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href>
+              <div class="image">
+                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <span class="play-time">59:59</span>
+                <span class="play-icon">
+                  <icon-triangle class="fill-current" width="18" height="18" />
+                </span>
+              </div>
+              <div class="description">
+                <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
+                <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
+                <p class="views">
+                  <span>1000000</span>回再生
+                </p>
+              </div>
+              <div class="overlay">Check!!</div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href>
+              <div class="image">
+                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <span class="play-time">59:59</span>
+                <span class="play-icon">
+                  <icon-triangle class="fill-current" width="18" height="18" />
+                </span>
+              </div>
+              <div class="description">
+                <p class="title">ウフフな40.。ムフフな50。。(横浜ハレ系)</p>
+                <p class="infor">横浜(関内･曙町) / ファッションヘルス</p>
+                <p class="views">
+                  <span>1000000</span>回再生
+                </p>
+              </div>
+              <div class="overlay">Check!!</div>
+            </a>
+          </article>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -235,52 +235,51 @@ export default {
   color: theme("colors.primary");
   @apply font-bold text-fz24;
 }
-
-.area-movie .movie article + .other {
+.area-movie .movie article + .other-list {
   @apply mt-8;
 }
-.area-movie .movie .other ul {
+.area-movie .movie .other-list {
   @apply flex;
   margin-right: -12px;
 }
-.area-movie .movie .other ul li {
+.area-movie .movie .other-list li {
   @apply pr-12;
 }
-.area-movie .movie .other ul li article a {
+.area-movie .movie .other-list li article a {
   @apply block relative rounded-8;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.area-movie .movie .other ul li article a .image {
+.area-movie .movie .other-list li article a .image {
   @apply relative;
   width: 157px;
   height: 88px;
 }
-.area-movie .movie .other ul li article a .image .play-time {
+.area-movie .movie .other-list li article a .image .play-time {
   @apply absolute text-fz14 text-white px-4;
   background: theme("colors.base");
   border-radius: theme("borderRadius.4");
   right: theme("inset.4");
   bottom: theme("inset.6");
 }
-.area-movie .movie .other ul li article a .image .play-icon {
+.area-movie .movie .other-list li article a .image .play-icon {
   @apply absolute flex items-center justify-center transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-8 rounded-half;
   top: theme("inset.half");
   left: theme("inset.half");
   width: 35px;
   height: 35px;
 }
-.area-movie .movie .other ul li article a .image .play-icon svg {
+.area-movie .movie .other-list li article a .image .play-icon svg {
   @apply text-white mr-negative4;
 }
-.area-movie .movie .other ul li article a .image img {
+.area-movie .movie .other-list li article a .image img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-t-8;
   top: theme("inset.half");
   left: theme("inset.half");
 }
-.area-movie .movie .other ul li article a .description {
+.area-movie .movie .other-list li article a .description {
   @apply p-8;
 }
-.area-movie .movie .other ul li article a .description .title {
+.area-movie .movie .other-list li article a .description .title {
   @apply text-fz14 font-bold;
   color: theme("colors.base");
   display: -webkit-box;
@@ -290,7 +289,7 @@ export default {
   word-break: break-all;
   word-wrap: break-word;
 }
-.area-movie .movie .other ul li article a .description .infor {
+.area-movie .movie .other-list li article a .description .infor {
   @apply text-fz12;
   color: theme("colors.base");
   display: -webkit-box;
@@ -300,14 +299,13 @@ export default {
   word-break: break-all;
   word-wrap: break-word;
 }
-.area-movie .movie .other ul li article a .description .views {
+.area-movie .movie .other-list li article a .description .views {
   @apply text-fz14;
 }
-.area-movie .movie .other ul li article a .description .views span {
+.area-movie .movie .other-list li article a .description .views span {
   @apply text-fz20 font-bold;
   color: theme("colors.primary");
 }
-
 /* hoverアニメーション */
 .area-movie .movie .top .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
@@ -321,7 +319,7 @@ export default {
 .area-movie .movie .top:hover .overlay {
   transform: scale(1);
 }
-.area-movie .movie .other ul li article a .overlay {
+.area-movie .movie .other-list li article a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -330,7 +328,7 @@ export default {
   color: theme("colors.primary");
   z-index: theme("zIndex.1000");
 }
-.area-movie .movie .other ul li article a:hover .overlay {
+.area-movie .movie .other-list li article a:hover .overlay {
   transform: scale(1);
 }
 /* ---------------------------------------------------------------------------------------------- */

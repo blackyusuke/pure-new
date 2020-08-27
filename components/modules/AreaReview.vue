@@ -99,8 +99,8 @@
                   <p class="user">yusukeyuskeyus</p>
                 </div>
                 <p class="description">ふらりと立ち寄るには少々もったいないと感じるお店でした。 次はちゃんと調べて、お邪</p>
-                <p class="shopName">横浜人妻デリヘル RE:PRESIDENT-プレジデント-</p>
-                <p class="infor">秋葉原･神田 / ファッションヘルス</p>
+                <p class="shopName">横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-</p>
+                <p class="infor">秋葉原･神田 / ファッションヘルス秋葉原･神田 / ファッションヘルス秋葉原･神田 / ファッションヘルス</p>
               </div>
             </a>
           </article>
@@ -158,10 +158,6 @@ export default {
 .area-review .review ul li + li {
   @apply mt-16;
 }
-.area-review .review ul li .shop {
-}
-.area-review .review ul li .girl {
-}
 .area-review .review ul li article a {
   @apply flex bg-white;
   transition: 0.1s;
@@ -187,7 +183,7 @@ export default {
   width: calc(100% - 90px);
 }
 .area-review .review ul li article a .contents .shopName {
-  @apply text-fz14 leading-lh14;
+  @apply text-fz14 leading-lh14 truncate;
   color: theme("colors.font-gray");
 }
 .area-review .review ul li article a .contents .shopName + .infor {
@@ -237,11 +233,11 @@ export default {
   @apply mt-4;
 }
 .area-review .review ul li article a .contents .thumb-name {
-  @apply text-fz16 leading-lh16 font-bold;
+  @apply text-fz16 leading-lh16 font-bold truncate;
   color: theme("colors.base");
 }
 .area-review .review ul li article a .contents .infor {
-  @apply text-fz14 leading-lh14;
+  @apply text-fz14 leading-lh14 truncate;
   color: theme("colors.font-gray");
 }
 .area-review .review ul li article a .contents .valuer {

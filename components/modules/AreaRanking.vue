@@ -413,7 +413,7 @@ export default {
 }
 .area-ranking .genre-wrap .change:checked + .title {
   @apply text-white;
-} 
+}
 .area-ranking .genre-wrap .genre-content {
   @apply h-0 opacity-0 pointer-events-none w-full;
   transform: translateX(-30%);
@@ -437,7 +437,7 @@ export default {
 /* --------------------------------------------------------------------------------------------------------------- */
 .area-ranking .genre-wrap .genre-content .total-ranking {
   @apply flex items-center justify-center text-white text-fz18 leading-lh18 p-8;
-  background: theme('colors.red');
+  background: theme("colors.red");
 }
 .area-ranking .genre-wrap .genre-content .ranking-list {
   display: grid;
@@ -704,7 +704,7 @@ export default {
   transition: all 0.3s ease;
   transform: scale(0);
   color: theme("colors.primary");
-  z-index: theme('zIndex.1000');
+  z-index: theme("zIndex.1000");
 }
 .area-ranking .genre-wrap .genre-content .ranking-list li a:hover .overlay {
   transform: scale(1);

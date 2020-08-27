@@ -1,5 +1,5 @@
 
-const areaList     = require('./data/area.json');
+// const areaList     = require('./data/area.json');
 module.exports = {
   /*
   ** Nuxt rendering mode

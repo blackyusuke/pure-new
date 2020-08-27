@@ -38,11 +38,11 @@
         <MainColumnSection>
           <AreaComic />
         </MainColumnSection>
-        <MainColumnSection>
+        <div class="bnr">
           <a href>
             <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
           </a>
-        </MainColumnSection>
+        </div>
         <MainColumnSection>
           <AreaReview />
         </MainColumnSection>
