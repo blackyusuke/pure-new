@@ -77,11 +77,15 @@ module.exports = {
   generate: {
     routes() {
       const i = [];
-      areaList.map(item => {
+      // areaList.map(item => {
+      //   i.push(`${item.id}`);
+      // });
+      areaList.forEach(item => {
         i.push(`${item.id}`);
+        i.push(`${item.id}/${item.prefecture['id']}`);
       });
-      return i;
 
+      return i;
     }
   }
 }
