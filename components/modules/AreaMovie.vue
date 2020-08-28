@@ -1,6 +1,6 @@
 
 <template>
-  <div class="area-movie">
+  <article class="area-movie">
     <HeadMain title="関東の風俗体験動画" headLine="short">
       <span slot="icon" class="icon">
         <icon-film class="fill-current" width="22" height="17" />
@@ -137,7 +137,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

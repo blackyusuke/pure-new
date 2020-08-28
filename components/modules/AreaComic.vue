@@ -1,5 +1,5 @@
 <template>
-  <div class="area-comic">
+  <article class="area-comic">
     <HeadMain title="関東の風俗体験マンガ" headLine="short">
       <span slot="icon" class="icon">
         <icon-comic class="fill-current" width="24" height="19" />
@@ -61,7 +61,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </article>
 </template>
 <script>
 import IconComic from "~/components/icons/IconComic"

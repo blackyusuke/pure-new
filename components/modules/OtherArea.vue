@@ -1,5 +1,5 @@
 <template>
-  <div class="other-area">
+  <article class="other-area">
     <HeadMain title="他の地方の風俗店を探す">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -10,7 +10,7 @@
         <ButtonLink class="is-middle" :link-name="item.value"></ButtonLink>
       </NavItem>
     </NavList>
-  </div>
+  </article>
 </template>
 
 <script>

@@ -1,8 +1,6 @@
 <template>
   <section class="main-column-section">
-    <article>
-      <slot />
-    </article>
+    <slot />
   </section>
 </template>
 

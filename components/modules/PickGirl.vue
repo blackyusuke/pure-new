@@ -1,5 +1,5 @@
 <template>
-  <div class="pick-girl">
+  <article class="pick-girl">
     <HeadMain title="今すぐ遊べるピックアップ嬢" headLine="short">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -95,7 +95,7 @@
         </swiper>
       </client-only>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

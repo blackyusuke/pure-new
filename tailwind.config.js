@@ -5,6 +5,12 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
+  purge: [
+    "./pages/**/*.vue", 
+    "./pages/**/**/*.vue", 
+    "./components/**/*.vue", 
+    "./parts/**/*.vue", 
+  ],
   theme: {
     extend: {
       fontFamily: {

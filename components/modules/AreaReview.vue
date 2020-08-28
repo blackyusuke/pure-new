@@ -1,5 +1,5 @@
 <template>
-  <div class="area-review">
+  <article class="area-review">
     <HeadMain title="風俗店の新着口コミ" headLine="short">
       <span slot="icon" class="icon">
         <icon-review class="fill-current" width="24" height="19" />
@@ -139,7 +139,7 @@
         <!-- 女の子口コミここまで -->
       </ul>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

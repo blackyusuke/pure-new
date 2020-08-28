@@ -1,5 +1,5 @@
 <template>
-  <div class="area-ranking">
+  <article class="area-ranking">
     <HeadMain title="関東の風俗ランキング" headLine="short">
       <span slot="icon" class="icon">
         <icon-crown class="fill-current" width="24" height="24" />
@@ -352,7 +352,7 @@
         </span>
       </a>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

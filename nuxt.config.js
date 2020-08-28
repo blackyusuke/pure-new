@@ -1,5 +1,5 @@
 
-// const areaList     = require('./data/area.json');
+const areaList = require('./data/area.json');
 module.exports = {
   /*
   ** Nuxt rendering mode
@@ -59,7 +59,7 @@ module.exports = {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-    extend (config, ctx) {
+    extend(config, ctx) {
       // ESlintの実行
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -75,10 +75,13 @@ module.exports = {
     ]
   },
   generate: {
-    // routes() {
-    //   return areaList.map(item => {
-    //     return `${item.id}`;
-    //   })
-    // }
+    routes() {
+      const i = [];
+      areaList.map(item => {
+        i.push(`${item.id}`);
+      });
+      return i;
+
+    }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="search-area">
+  <article class="search-area">
     <HeadMain title="関東エリアの風俗店を探す" headLine="short">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -46,7 +46,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </article>
 </template>
 
 <script>
