@@ -28,7 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-
+    
   ],
   /*
   ** Plugins to load before mounting the App
@@ -84,7 +84,8 @@ export default {
     // CSS圧縮の設定
     purgeCSS: {
       mode: 'postcss',
-      whitelistPatternsChildren: [/swiper/]
+      //プラグインのCSSの読み込みを許可
+      whitelistPatternsChildren: [/swiper-bundle/]
     },
     extend(config, ctx) {
       // ESlintの実行
