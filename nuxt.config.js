@@ -84,7 +84,7 @@ export default {
     // CSS圧縮の設定
     purgeCSS: {
       mode: 'postcss',
-      whitelistPatterns: [/swiper/]
+      whitelistPatternsChildren: [/swiper/]
     },
     extend(config, ctx) {
       // ESlintの実行
