@@ -85,7 +85,7 @@ export default {
     purgeCSS: {
       mode: 'postcss',
       //プラグインのCSSの読み込みを許可
-      whitelistPatternsChildren: [/swiper/]
+      whitelistPatternsChildren: [/swiper-bundle/]
     },
     extend(config, ctx) {
       // ESlintの実行
