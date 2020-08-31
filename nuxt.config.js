@@ -1,6 +1,5 @@
 
-const areaList = require('./data/area.json');
-module.exports = {
+export default {
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -53,12 +52,38 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-purgecss'
   ],
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extractCSS: {
+      ignoreOrder:true
+    },
+    optimization: {
+      splitChunks: {
+        name: true
+      }
+    },
+    filenames: {
+      app: () => '[name].js',
+      chunk: () => '[name].js',
+      css: () => '[name].css',
+      img: () => '[path][name].[ext]'
+    },
+    // TailwindCSSの設定をPostCSSで有効化
+    postcss: {
+      plugins: {
+        tailwindcss: 'tailwind.config.js'
+      }
+    },
+
+    // CSS圧縮の設定
+    purgeCSS: {
+      mode: 'postcss'
+    },
     extend(config, ctx) {
       // ESlintの実行
       if (ctx.isDev && ctx.isClient) {
@@ -73,19 +98,5 @@ module.exports = {
     vendor: [
       'vue-awesome-swiper'
     ]
-  },
-  generate: {
-    routes() {
-      const i = [];
-      // areaList.map(item => {
-      //   i.push(`${item.id}`);
-      // });
-      areaList.forEach(item => {
-        i.push(`${item.id}`);
-        i.push(`${item.id}/${item.prefecture['id']}`);
-      });
-
-      return i;
-    }
   }
 }
