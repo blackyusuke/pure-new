@@ -28,6 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
+
   ],
   /*
   ** Plugins to load before mounting the App
@@ -60,7 +61,7 @@ export default {
   */
   build: {
     extractCSS: {
-      ignoreOrder:true
+      ignoreOrder: true
     },
     optimization: {
       splitChunks: {
@@ -82,7 +83,8 @@ export default {
 
     // CSS圧縮の設定
     purgeCSS: {
-      mode: 'postcss'
+      mode: 'postcss',
+      whitelistPatterns: [/swiper/]
     },
     extend(config, ctx) {
       // ESlintの実行
