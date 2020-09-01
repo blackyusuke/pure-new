@@ -14,7 +14,7 @@
       <label class="title" for="shop">お店</label>
       <div class="genre-content">
         <p class="total-ranking">総合ランキング</p>
-        <ul class="ranking-list">
+        <ol class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
               <img src="~/assets/images/sample/sample1.jpg" alt="女の子" />
@@ -89,7 +89,7 @@
               <div class="overlay">Check!!</div>
             </a>
           </li>
-        </ul>
+        </ol>
       </div>
       <input id="review" type="radio" name="ranking" class="change" />
       <label class="title" for="review">口コミ</label>
