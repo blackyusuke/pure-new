@@ -28,7 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'swiper/swiper-bundle.css'
+    'swiper/swiper-bundle.min.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -85,7 +85,7 @@ export default {
     purgeCSS: {
       mode: 'postcss',
       //プラグインのCSSの読み込みを許可
-      whitelistPatternsChildren: [/swiper/]
+      whitelistPatternsChildren: [/ swiper /]
     },
     extend(config, ctx) {
       // ESlintの実行
