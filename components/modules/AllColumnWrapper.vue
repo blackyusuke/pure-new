@@ -31,4 +31,7 @@ export default {
 .all-column-wrapper .main-column .bnr + .main-column-section {
   @apply mt-20;
 }
+.all-column-wrapper .bnr + .bnr {
+  @apply mt-20;
+}
 </style>

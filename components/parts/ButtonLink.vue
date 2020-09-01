@@ -9,7 +9,9 @@
       class="icon"
     >
     </slot>
-    <span class="link-name">
+    <span
+      class="link-name"
+    >
       {{ linkName }}
     </span>
   </a>

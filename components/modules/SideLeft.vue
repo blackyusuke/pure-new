@@ -3,7 +3,7 @@
     <ul class="contents-list">
       <li>
         <div class="search">
-          <SideSecondary fontSize="is-large">
+          <SideSecondary fontSize="large">
             <icon-search class="fill-current" width="24" height="24" />詳細検索
           </SideSecondary>
           <form action>
@@ -36,11 +36,13 @@
       <li>
         <a href>
           <img src="~/assets/images/bnr/bnr1.jpg" alt="ソープ" />
+          <div class="overlay">Check!!</div>
         </a>
       </li>
       <li>
         <a href>
           <img src="~/assets/images/bnr/bnr2.jpg" alt="プレゼント" />
+          <div class="overlay">Check!!</div>
         </a>
       </li>
       <li>
@@ -64,7 +66,7 @@ export default {
     IconBusiness,
     IconGenre,
     IconTicket,
-    SideSecondary
+    SideSecondary,
   },
 };
 </script>
@@ -94,5 +96,20 @@ export default {
 .side-left .select-form input[type="submit"] {
   @apply w-full h-40 text-white text-fz20 leading-lh25 font-bold;
   background: theme("colors.yellow");
+}
+.side-left .contents-list li a {
+  @apply block relative;
+}
+.side-left .contents-list li a:hover .overlay {
+  transform: scale(1);
+}
+.side-left .contents-list li a .overlay {
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
 }
 </style>
