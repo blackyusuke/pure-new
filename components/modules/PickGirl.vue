@@ -1,16 +1,16 @@
 <template>
-  <article class="pick-girl">
-    <HeadMain title="今すぐ遊べるピックアップ嬢" headLine="short">
-      <span slot="icon" class="icon">
-        <icon-map class="fill-current" width="24" height="24" />
-      </span>
-      <p slot="btn" class="btn">
-        <ButtonLink color="is-primary" class="is-bold is-middle" link-name="もっと見る" />
-      </p>
-      <p slot="lead" class="lead">待たずに遊べる女の子をピックアップ！</p>
-    </HeadMain>
-    <div class="girl-list">
-      <client-only>
+  <no-ssr>
+    <article class="pick-girl">
+      <HeadMain title="今すぐ遊べるピックアップ嬢" headLine="short">
+        <span slot="icon" class="icon">
+          <icon-map class="fill-current" width="24" height="24" />
+        </span>
+        <p slot="btn" class="btn">
+          <ButtonLink color="is-primary" class="is-bold is-middle" link-name="もっと見る" />
+        </p>
+        <p slot="lead" class="lead">待たずに遊べる女の子をピックアップ！</p>
+      </HeadMain>
+      <div class="girl-list">
         <swiper :options="swiperOption">
           <swiper-slide>
             <a href>
@@ -93,9 +93,9 @@
             </a>
           </swiper-slide>
         </swiper>
-      </client-only>
-    </div>
-  </article>
+      </div>
+    </article>
+  </no-ssr>
 </template>
 
 <script>
