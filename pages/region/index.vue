@@ -1,7 +1,7 @@
 <template>
-  <no-ssr>
-    <main id="region">
-      <div class="slider">
+  <main id="region">
+    <div class="slider">
+      <no-ssr>
         <swiper :options="swiperOption">
           <swiper-slide v-for="index in 5" :key="index">
             <a href>
@@ -9,26 +9,26 @@
             </a>
           </swiper-slide>
         </swiper>
+      </no-ssr>
+    </div>
+    <AllColumnWrapper>
+      <MainColumnSection v-for="(num, index) in 4" :key="num.index">
+        <AreaSearch v-if="index === 0" />
+        <AreaRanking v-else-if="index === 1" />
+        <AreaMovie v-else-if="index === 2" />
+        <AreaComic v-else-if="index === 3" />
+      </MainColumnSection>
+      <div class="bnr">
+        <a href>
+          <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+        </a>
       </div>
-      <AllColumnWrapper>
-        <MainColumnSection v-for="(num, index) in 4" :key="num.index">
-          <AreaSearch v-if="index === 0" />
-          <AreaRanking v-else-if="index === 1" />
-          <AreaMovie v-else-if="index === 2" />
-          <AreaComic v-else-if="index === 3" />
-        </MainColumnSection>
-        <div class="bnr">
-          <a href>
-            <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
-          </a>
-        </div>
-        <MainColumnSection v-for="(num, index) in 2" :key="num.index">
-          <AreaReview v-if="index === 0" />
-          <OtherArea v-else-if="index === 1" />
-        </MainColumnSection>
-      </AllColumnWrapper>
-    </main>
-  </no-ssr>
+      <MainColumnSection v-for="(num, index) in 2" :key="num.index">
+        <AreaReview v-if="index === 0" />
+        <OtherArea v-else-if="index === 1" />
+      </MainColumnSection>
+    </AllColumnWrapper>
+  </main>
 </template>
 
 <script>
