@@ -61,7 +61,7 @@ export default {
   */
   build: {
     extractCSS: {
-      ignoreOrder: true
+      ignoreOrder:true
     },
     optimization: {
       splitChunks: {

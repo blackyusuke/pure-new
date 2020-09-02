@@ -2,13 +2,17 @@
   <main id="region">
     <div class="slider">
       <no-ssr>
-        <swiper :options="swiperOption">
-          <swiper-slide v-for="index in 5" :key="index">
-            <a href>
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
-            </a>
-          </swiper-slide>
-        </swiper>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <swiper :options="swiperOption">
+              <swiper-slide v-for="index in 5" :key="index">
+                <a href>
+                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+                </a>
+              </swiper-slide>
+            </swiper>
+          </div>
+        </div>
       </no-ssr>
     </div>
     <AllColumnWrapper>
