@@ -40,7 +40,6 @@ import AreaComic from "~/components/modules/AreaComic.vue";
 import AreaRanking from "~/components/modules/AreaRanking.vue";
 import AreaReview from "~/components/modules/AreaReview.vue";
 import OtherArea from "~/components/modules/OtherArea.vue";
-import "swiper/swiper-bundle.css";
 export default {
   components: {
     AreaSearch,

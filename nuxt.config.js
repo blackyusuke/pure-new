@@ -28,7 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-    
+    'swiper/swiper-bundle.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -74,15 +74,15 @@ export default {
       css: () => '[name].css',
       img: () => '[path][name].[ext]'
     },
-    postcss: {
-      plugins: {
-        tailwindcss: 'tailwind.config.js'
-      }
-    },
+    // postcss: {
+    //   plugins: {
+    //     tailwindcss: 'tailwind.config.js'
+    //   }
+    // },
 
-    purgeCSS: {
-      mode: 'postcss',
-    },
+    // purgeCSS: {
+    //   mode: 'postcss',
+    // },
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
