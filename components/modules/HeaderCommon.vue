@@ -45,7 +45,7 @@
       <div class="container">
         <div class="title">
           <a href>
-            <img src="~/assets/images/pure-logo.png" alt="風俗情報ぴゅあらば" />
+            <img v-lazy="require('~/assets/images/pure-logo.png')" alt="風俗情報ぴゅあらば">
           </a>
           <h1>
             関東の
@@ -54,7 +54,7 @@
         </div>
         <div class="variety-wrapper">
           <p class="ban-icon">
-            <img src="~/assets/images/ban.png" alt="18未満禁止" />
+            <img v-lazy="require('~/assets/images/ban.png')" alt="18未満禁止">
           </p>
           <p class="ban-text">18歳未満の御利用は<br />固くお断りいたします。</p>
           <form>

@@ -16,7 +16,7 @@
           <article>
             <a href>
               <div class="thumb">
-                <img src="~assets/images/sample/shop.jpg" alt />
+                <img v-lazy="require('~/assets/images/sample/shop.jpg')" alt="">
               </div>
               <div class="contents is-shop">
                 <div class="valuer">
@@ -46,7 +46,7 @@
           <article>
             <a href>
               <div class="thumb">
-                <img src="~assets/images/sample/shop.jpg" alt />
+                <img v-lazy="require('~/assets/images/sample/shop.jpg')" alt="">
               </div>
               <div class="contents is-shop">
                 <div class="valuer">
@@ -78,7 +78,7 @@
           <article>
             <a href>
               <div class="thumb">
-                <img src="~assets/images/sample/90-135.jpg" alt />
+                <img v-lazy="require('~/assets/images/sample/90-135.jpg')" alt="">
                 <span class="girlName">まりあまりあまりあまりあまりあ(50)</span>
               </div>
               <div class="contents is-girl">
@@ -109,7 +109,7 @@
           <article>
             <a href>
               <div class="thumb">
-                <img src="~assets/images/sample/90-135.jpg" alt />
+                <img v-lazy="require('~/assets/images/sample/90-135.jpg')" alt="">
                 <span class="girlName">まりあまりあまりあまりあまりあ(50)</span>
               </div>
               <div class="contents">

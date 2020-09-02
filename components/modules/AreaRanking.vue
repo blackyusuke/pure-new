@@ -17,7 +17,7 @@
         <ol class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img src="~/assets/images/sample/sample1.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample1.jpg')" alt="">
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -30,7 +30,7 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -46,7 +46,7 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -62,7 +62,7 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img src="http://placehold.jp/150x150.png" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-4">
                 <strong>4</strong>位
               </span>
@@ -78,7 +78,7 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -98,7 +98,7 @@
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img src="~/assets/images/sample/sample1.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample1.jpg')" alt="">
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -111,7 +111,7 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -127,7 +127,7 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -159,7 +159,7 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -192,7 +192,7 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -208,7 +208,7 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -240,7 +240,7 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -273,7 +273,7 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -289,7 +289,7 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -321,7 +321,7 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img src="~/assets/images/sample/sample2.jpg" alt="女の子" />
+              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" alt="">
               <div class="number number-5">
                 <strong>5</strong>位
               </div>

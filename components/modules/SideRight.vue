@@ -2,13 +2,13 @@
   <ul class="side-right">
     <li>
       <a href>
-        <img src="~/assets/images/bnr/bnr3.jpg" alt="ヒメチャンネル" />
+        <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" alt="">
         <div class="overlay">Check!!</div>
       </a>
     </li>
     <li>
       <a href>
-        <img src="~/assets/images/bnr/bnr4.jpg" alt="カバーグラビア" />
+        <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" alt="">
         <div class="overlay">Check!!</div>
       </a>
     </li>

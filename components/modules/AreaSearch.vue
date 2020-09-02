@@ -12,37 +12,37 @@
     <ul class="search-area-list">
       <li>
         <a href>
-          <img src="~/assets/images/area/tokyo.jpg" alt="東京" />
+          <img v-lazy="require('~/assets/images/area/tokyo.jpg')" alt="東京">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/kanagawa.jpg" alt="神奈川" />
+          <img v-lazy="require('~/assets/images/area/kanagawa.jpg')" alt="神奈川">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/saitama.jpg" alt="埼玉" />
+          <img v-lazy="require('~/assets/images/area/saitama.jpg')" alt="埼玉">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/tiba.jpg" alt="千葉" />
+          <img v-lazy="require('~/assets/images/area/tiba.jpg')" alt="千葉">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/ibaraki.jpg" alt="茨城" />
+          <img v-lazy="require('~/assets/images/area/ibaraki.jpg')" alt="茨城">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/tochigi.jpg" alt="栃木" />
+          <img v-lazy="require('~/assets/images/area/tochigi.jpg')" alt="栃木">
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/area/gunma.jpg" alt="群馬" />
+          <img v-lazy="require('~/assets/images/area/gunma.jpg')" alt="群馬">
         </a>
       </li>
     </ul>

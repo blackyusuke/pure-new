@@ -35,7 +35,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~plugins/vue-awesome-swiper', mode: 'client' }
+    { src: '~plugins/vue-awesome-swiper', mode: 'client' },
+    { src: '~/plugins/lazyload.js', ssr: false }
   ],
   /*
   ** Auto import components

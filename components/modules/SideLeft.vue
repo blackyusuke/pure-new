@@ -35,13 +35,13 @@
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/bnr/bnr1.jpg" alt="ソープ" />
+          <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" alt="">
           <div class="overlay">Check!!</div>
         </a>
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/bnr/bnr2.jpg" alt="プレゼント" />
+          <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" alt="">
           <div class="overlay">Check!!</div>
         </a>
       </li>
