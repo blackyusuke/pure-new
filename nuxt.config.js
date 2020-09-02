@@ -74,21 +74,16 @@ export default {
       css: () => '[name].css',
       img: () => '[path][name].[ext]'
     },
-    // TailwindCSSの設定をPostCSSで有効化
     postcss: {
       plugins: {
         tailwindcss: 'tailwind.config.js'
       }
     },
 
-    // CSS圧縮の設定
     purgeCSS: {
       mode: 'postcss',
-      //プラグインのCSSの読み込みを許可
-      whitelistPatternsChildren: [/swiper/]
     },
     extend(config, ctx) {
-      // ESlintの実行
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
