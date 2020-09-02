@@ -3,22 +3,7 @@
     <main id="region">
       <div class="slider">
         <swiper :options="swiperOption">
-          <swiper-slide>
-            <a href>
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
-            </a>
-          </swiper-slide>
-          <swiper-slide>
+          <swiper-slide v-for="index in 5" :key="index">
             <a href>
               <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
             </a>
@@ -26,28 +11,20 @@
         </swiper>
       </div>
       <AllColumnWrapper>
-        <MainColumnSection>
-          <AreaSearch />
-        </MainColumnSection>
-        <MainColumnSection>
-          <AreaRanking />
-        </MainColumnSection>
-        <MainColumnSection>
-          <AreaMovie />
-        </MainColumnSection>
-        <MainColumnSection>
-          <AreaComic />
+        <MainColumnSection v-for="(num, index) in 4" :key="num.index">
+          <AreaSearch v-if="index === 0" />
+          <AreaRanking v-else-if="index === 1" />
+          <AreaMovie v-else-if="index === 2" />
+          <AreaComic v-else-if="index === 3" />
         </MainColumnSection>
         <div class="bnr">
           <a href>
             <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
           </a>
         </div>
-        <MainColumnSection>
-          <AreaReview />
-        </MainColumnSection>
-        <MainColumnSection>
-          <OtherArea />
+        <MainColumnSection v-for="(num, index) in 2" :key="num.index">
+          <AreaReview v-if="index === 0" />
+          <OtherArea v-else-if="index === 1" />
         </MainColumnSection>
       </AllColumnWrapper>
     </main>
