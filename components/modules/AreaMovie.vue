@@ -14,7 +14,7 @@
       <article>
         <a href class="top">
           <div class="thumb">
-            <img src="http://placehold.jp/FFCCCC/FF0000/430x242.png" alt="生動画" />
+            <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/430x242.png'" />
             <span class="play-time">25:30</span>
             <span class="play-icon">
               <icon-triangle class="fill-current" width="24" height="24" />
@@ -55,7 +55,7 @@
           <article>
             <a href>
               <div class="image">
-                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -76,7 +76,7 @@
           <article>
             <a href>
               <div class="image">
-                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -97,7 +97,7 @@
           <article>
             <a href>
               <div class="image">
-                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -118,7 +118,7 @@
           <article>
             <a href>
               <div class="image">
-                <img src="http://placehold.jp/FFCCCC/FF0000/157x88.png" alt="生動画" />
+                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />

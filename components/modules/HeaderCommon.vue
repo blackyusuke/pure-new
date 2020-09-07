@@ -86,8 +86,8 @@
       >{都道府県}・{都道府県}・{都道府県}など{関東}の安心して遊べるおすすめ風俗店情報をご紹介!デリヘルやソープ・セクキャバなどの割引クーポン・人気ランキング・体験動画・口コミ情報など風俗店探しに役立つコンテンツをご覧いただけます。</p>
     </div>
     <nav class="header-nav">
-      <ul class="global-list">
-        <li class="global-item">
+      <ul class="list">
+        <li class="item">
           <a href class="home">
             <icon-home class="fill-current" width="29" height="26" />
           </a>
@@ -95,7 +95,7 @@
         <li
           v-for="(num, index) in 7"
           :key="index"
-          class="global-item"
+          class="item"
           :class="{ 'icon': index === 0 || index=== 1 || index=== 2 || index=== 6}"
           @mouseover="mouseOverAction(index)"
           @mouseleave="mouseLemoveAction(index)"
@@ -345,8 +345,6 @@ export default {
 .header-common .contents-wrapper .container .variety-wrapper .link-wrapper {
   @apply flex items-center;
 }
-.header-common .contents-wrapper .container .variety-wrapper .link-wrapper div {
-}
 .header-common
   .contents-wrapper
   .container
@@ -368,32 +366,32 @@ export default {
   @apply border-b-4 border-solid;
   border-color: theme("colors.base");
 }
-.header-common .header-nav .global-list {
+.header-common .header-nav .list {
   @apply flex m-auto w-1100;
   height: 60px;
 }
-.header-common .header-nav .global-list .global-item {
+.header-common .header-nav .list .item {
   @apply flex items-center justify-center border-r border-solid relative;
   border-color: theme("colors.border-thin-gray");
   width: 150px;
 }
-.header-common .header-nav .global-list .global-item .home {
+.header-common .header-nav .list .item .home {
   @apply flex justify-center items-center w-full h-full;
 }
-.header-common .header-nav .global-list .global-item .title {
+.header-common .header-nav .list .item .title {
   @apply text-white text-fz14 leading-lh28 font-bold w-full h-full flex items-center justify-center;
 }
-.header-common .header-nav .global-list .global-item nav {
+.header-common .header-nav .list .item nav {
   @apply border-4 border-solid absolute py-5 px-10 bottom-0 left-0 bg-white;
   transform: translate(0, 100%);
   border-color: theme("colors.primary");
   width: 240px;
   z-index: theme("zIndex.10");
 }
-.header-common .header-nav .global-list .icon {
+.header-common .header-nav .list .icon {
   @apply relative;
 }
-.header-common .header-nav .global-list .icon::after {
+.header-common .header-nav .list .icon::after {
   @apply absolute;
   content: "";
   bottom: 10px;
@@ -402,14 +400,14 @@ export default {
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 }
-.header-common .header-nav .global-list .global-item nav ul li + li {
+.header-common .header-nav .list .item nav ul li + li {
   @apply border-solid border-t-2;
   border-color: theme("colors.primary");
 }
-.header-common .header-nav .global-list .global-item nav ul li a {
+.header-common .header-nav .list .item nav ul li a {
   @apply relative pl-16 py-8 block font-bold text-fz14;
 }
-.header-common .header-nav .global-list .global-item nav ul li a::before {
+.header-common .header-nav .list .item nav ul li a::before {
   @apply absolute top-0 bottom-0 m-auto border-solid border-t-4 border-r-4;
   left: 3px;
   content: "";
@@ -419,13 +417,13 @@ export default {
   border-color: theme("colors.base");
   transform: rotate(45deg);
 }
-.header-common .header-nav .global-list .global-item nav ul li a:hover::before {
+.header-common .header-nav .list .item nav ul li a:hover::before {
   border-color: theme("colors.primary");
 }
-.header-common .header-nav .global-list .global-item nav ul li a:hover {
+.header-common .header-nav .list .item nav ul li a:hover {
   color: theme("colors.primary");
 }
-.header-common .header-nav .global-list .global-item:first-child {
+.header-common .header-nav .list .item:first-child {
   @apply border-l border-solid;
   width: 70px;
   border-color: theme("colors.border-thin-gray");

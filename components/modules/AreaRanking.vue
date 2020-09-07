@@ -143,7 +143,7 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img src="http://placehold.jp/150x150.png" alt="女の子" />
+              <img v-lazy="'http://placehold.jp/150x150.png'" />
               <span class="number number-4">
                 <strong>4</strong>位
               </span>
@@ -224,7 +224,7 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img src="http://placehold.jp/150x150.png" alt="女の子" />
+              <img v-lazy="'http://placehold.jp/150x150.png'" />
               <span class="number number-4">
                 <strong>4</strong>位
               </span>
@@ -305,7 +305,7 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img src="http://placehold.jp/150x150.png" alt="女の子" />
+              <img v-lazy="'http://placehold.jp/150x150.png'" />
               <span class="number number-4">
                 <strong>4</strong>位
               </span>

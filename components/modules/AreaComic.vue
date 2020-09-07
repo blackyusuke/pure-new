@@ -14,7 +14,7 @@
         <li>
           <a href>
             <div class="thumb">
-              <img src="http://placehold.jp/325x245.png" alt="マンガ" />
+              <img v-lazy="'http://placehold.jp/325x245.png'" />
               <div class="description">
                 <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
                 <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
@@ -26,7 +26,7 @@
         <li>
           <a href>
             <div class="thumb">
-              <img src="http://placehold.jp/325x245.png" alt="マンガ" />
+              <img v-lazy="'http://placehold.jp/325x245.png'" />
               <div class="description">
                 <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
                 <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
@@ -38,7 +38,7 @@
         <li>
           <a href>
             <div class="thumb">
-              <img src="http://placehold.jp/325x245.png" alt="マンガ" />
+              <img v-lazy="'http://placehold.jp/325x245.png'" />
               <div class="description">
                 <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
                 <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>
@@ -50,7 +50,7 @@
         <li>
           <a href>
             <div class="thumb">
-              <img src="http://placehold.jp/325x245.png" alt="マンガ" />
+              <img v-lazy="'http://placehold.jp/325x245.png'" />
               <div class="description">
                 <p class="title">十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～>十恋人～トレンド～</p>
                 <p class="area-genre">秋葉原･神田 / デリヘル(アロマ･エステ)秋葉原･神田 / デリヘル(アロマ･エステ)</p>

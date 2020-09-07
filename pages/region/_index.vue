@@ -24,7 +24,7 @@
       </MainColumnSection>
       <div class="bnr">
         <a href>
-          <img src="http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル" alt="地方画像" />
+          <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'" />
         </a>
       </div>
       <MainColumnSection v-for="(num, index) in 2" :key="num.index">

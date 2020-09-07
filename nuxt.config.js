@@ -36,7 +36,7 @@ export default {
   */
   plugins: [
     { src: '~plugins/vue-awesome-swiper', mode: 'client' },
-    { src: '~/plugins/lazyload.js', ssr: false }
+    { src: '~/plugins/lazyload.js', mode: 'client' }
   ],
   /*
   ** Auto import components
@@ -96,6 +96,16 @@ export default {
     },
     vendor: [
       'vue-awesome-swiper'
+    ],
+  },
+  generate: {
+    routes: [
+      '/region/1',
+      '/region/2',
+      '/region/3',
+      '/prefecture/1',
+      '/prefecture/2',
+      '/prefecture/3',
     ]
   }
 }
