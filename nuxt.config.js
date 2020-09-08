@@ -75,15 +75,15 @@ export default {
       css: () => '[name].css',
       img: () => '[path][name].[ext]'
     },
-    // postcss: {
-    //   plugins: {
-    //     tailwindcss: 'tailwind.config.js'
-    //   }
-    // },
+    postcss: {
+      plugins: {
+        tailwindcss: 'tailwind.config.js'
+      }
+    },
 
-    // purgeCSS: {
-    //   mode: 'postcss',
-    // },
+    purgeCSS: {
+      mode: 'postcss',
+    },
     extend(config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -103,9 +103,13 @@ export default {
       '/region/1',
       '/region/2',
       '/region/3',
+      '/region/4',
+      '/region/5',
       '/prefecture/1',
       '/prefecture/2',
       '/prefecture/3',
+      '/prefecture/4',
+      '/prefecture/5',
     ]
   }
 }

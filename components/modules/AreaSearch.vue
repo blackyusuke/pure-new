@@ -70,7 +70,7 @@ export default {
   @apply flex border-t border-white;
 }
 .search-area-list li {
-  @apply flex border-solid border-r border-white;
+  @apply flex border-r border-white;
 }
 .search-area-list li:last-child {
   @apply border-r-0;

@@ -11,12 +11,12 @@ module.exports = {
     "./pages/**/**/*.vue",
     "./components/**/*.vue",
     "./parts/**/*.vue",
-   ]
+   ],
   },
   theme: {
     extend: {
       fontFamily: {
-        default: '"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif'
+        default: '-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif',
     },
     colors: {
       'font-gray': '#747474',

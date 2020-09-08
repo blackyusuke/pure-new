@@ -10,52 +10,51 @@ export default {
   props: {
     checkId: String,
     forId: String,
-    value: String
-  }
-}
+    value: String,
+  },
+};
 </script>
 
 <style>
-input[type="checkbox"] { display: none; }
-
-input[type="checkbox"] + label {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  font: 14px/20px 'Open Sans', Arial, sans-serif;
-  color: #ddd;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+.search-item-check input[type="checkbox"] {
+  @apply hidden;
 }
-
-input[type="checkbox"] + label:last-child { margin-bottom: 0; }
-
-input[type="checkbox"] + label:before {
-  content: '';
-  display: block;
+/* チェックボックスの代わりを成すラベル */
+.search-item-check input[type="checkbox"] + label {
+  @apply inline-block relative;
+  cursor: theme('cursor.pointer');
+  padding-left: 25px;
+  padding-right: 10px;
+}
+/* ラベルの左に表示させる正方形のボックス□ */
+.search-item-check input[type="checkbox"] + label::before {
+  @apply absolute block left-0 rounded-4;
+  content: "";
   width: 20px;
   height: 20px;
-  border: 1px solid #6cc0e5;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: .6;
-  -webkit-transition: all .12s, border-color .08s;
-  transition: all .12s, border-color .08s;
+  margin-top: -10px;
+  top: 50%;
+  border: 1px solid;
+  border-color: theme('colors.border-gray');
+  background-color: #fff; /* 背景の色変更 お好きな色を */
 }
-
-input[type="checkbox"]:checked + label:before {
-  width: 10px;
-  top: -5px;
-  left: 5px;
-  border-radius: 0;
-  opacity: 1;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+/* チェックが入った時のレ点 */
+.search-item-check input[type="checkbox"]:checked + label::before {
+  background: theme('colors.green');
+}
+.search-item-check input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 14px;
+  height: 9px;
+  margin-top: -7px;
+  top: 50%;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  @apply border-white;
 }
 </style>
