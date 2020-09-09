@@ -7,11 +7,12 @@
 module.exports = {
   purge: {
     content: [
-      "./pages/**/*.vue",
-      "./pages/**/**/*.vue",
-      "./components/**/*.vue",
-      "./parts/**/*.vue",
-    ],
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
   },
   theme: {
     extend: {
