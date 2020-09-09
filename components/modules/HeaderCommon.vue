@@ -45,7 +45,7 @@
       <div class="container">
         <div class="title">
           <a href>
-            <img v-lazy="require('~/assets/images/pure-logo.png')" alt="風俗情報ぴゅあらば">
+            <img v-lazy="require('~/assets/images/pure-logo.png')" width="164" height="63" alt="風俗情報ぴゅあらば">
           </a>
           <h1>
             関東の

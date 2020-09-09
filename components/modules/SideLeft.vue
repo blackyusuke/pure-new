@@ -35,13 +35,13 @@
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" alt="">
+          <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" width="190" height="555" alt="">
           <div class="overlay">Check!!</div>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" alt="">
+          <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" width="190" height="230" alt="">
           <div class="overlay">Check!!</div>
         </a>
       </li>

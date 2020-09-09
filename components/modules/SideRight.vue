@@ -2,13 +2,13 @@
   <ul class="side-right">
     <li>
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" alt="">
+        <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" width="190" height="377" alt="">
         <div class="overlay">Check!!</div>
       </a>
     </li>
     <li>
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" alt="">
+        <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" width="190" height="150" alt="">
         <div class="overlay">Check!!</div>
       </a>
     </li>

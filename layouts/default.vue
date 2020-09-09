@@ -70,18 +70,13 @@ button,
 textarea,
 select {
   /* デフォルトスタイルをリセット */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  @apply appearance-none;
 
   /* font-familyを継承しないので、継承させる */
   font-family: inherit;
 
   /* iOSの角丸をリセット */
-  border-radius: 0;
-
-  /* box-size */
-  box-sizing: border-box;
+  @apply rounded-none;
 
   /* 文字色を親から継承 */
   color: inherit;
@@ -105,9 +100,7 @@ input[type="time"]::-webkit-outer-spin-button,
 input[type="time"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-outer-spin-button,
 input[type="date"]::-webkit-inner-spin-button {
-  /*-webkit-appearance: none;
-  margin: 0;*/
-  display: none;
+  @apply hidden;
 }
 
 /* スピンボタン非表示(firefox) */
@@ -131,26 +124,22 @@ input[type="week"]::-webkit-clear-button {
 /* input */
 input {
   /* 背景色(任意の色を指定) */
-  background-color: #fff;
+  @apply bg-white;
 
   /* inputの枠線を消す */
   border: 1px solid transparent;
+  @apply border border-transparent;
   transition: border 0.2s ease-out;
 
   /* 文字色を親から継承 */
   color: inherit;
 
   /*inputのフォーカス時の枠線を消す*/
-  outline: 0;
+  @apply outline-none;
 }
 
 input[type="submit"] {
-  cursor: pointer;
-}
-
-/* inputにフォーカスが当たっている時 */
-input:focus {
-  border-bottom: 1px solid#e74c3c;
+  @apply cursor-pointer;
 }
 *,
 *:before,

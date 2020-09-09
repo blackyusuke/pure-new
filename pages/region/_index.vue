@@ -7,7 +7,7 @@
             <swiper :options="swiperOption">
               <swiper-slide v-for="index in 5" :key="index">
                 <a href>
-                  <img src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
+                  <img width="540" height="135" src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
                 </a>
               </swiper-slide>
             </swiper>
@@ -24,7 +24,7 @@
       </MainColumnSection>
       <div class="bnr">
         <a href>
-          <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'" />
+          <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'" width="750" height="360" />
         </a>
       </div>
       <MainColumnSection v-for="(num, index) in 2" :key="num.index">
