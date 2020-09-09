@@ -107,7 +107,8 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 5,
+        slidesPerView: "auto",
+        spaceBetween: 8,
         loop: false,
       },
     };
@@ -148,10 +149,7 @@ export default {
   width: 100px;
   bottom: 60px;
 }
-.pick-girl .girl-list .swiper-container {
-  margin-right: -50px;
-}
 .pick-girl .girl-list .swiper-container .swiper-wrapper .swiper-slide {
-  @apply mr-8;
+  width: 22% !important;
 }
 </style>
