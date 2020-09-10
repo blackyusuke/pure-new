@@ -16,27 +16,24 @@
       </no-ssr>
     </div>
     <AllColumnWrapper>
-      <MainColumnSection v-for="(num, index) in 4" :key="num.index">
-        <AreaSearch v-if="index === 0" />
-        <AreaRanking v-else-if="index === 1" />
-        <AreaExperienceMovie v-else-if="index === 2" />
-        <AreaComic v-else-if="index === 3" />
-      </MainColumnSection>
-      <div class="bnr">
-        <a href>
-          <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'" width="750" height="360" />
-        </a>
-      </div>
-      <MainColumnSection v-for="(num, index) in 2" :key="num.index">
-        <AreaReview v-if="index === 0" />
-        <OtherArea v-else-if="index === 1" />
-      </MainColumnSection>
+      <AreaSearch />
+      <AreaRanking />
+      <AreaExperienceMovie />
+      <AreaComic />
+      <a href class="bnr">
+        <img
+          v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'"
+          width="750"
+          height="360"
+        />
+      </a>
+      <AreaReview />
+      <OtherArea />
     </AllColumnWrapper>
   </main>
 </template>
 
 <script>
-import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 import AreaSearch from "~/components/modules/AreaSearch.vue";
 import AreaExperienceMovie from "~/components/modules/AreaExperienceMovie.vue";
@@ -52,7 +49,6 @@ export default {
     AreaComic,
     AreaReview,
     OtherArea,
-    MainColumnSection,
     AllColumnWrapper,
   },
   data() {

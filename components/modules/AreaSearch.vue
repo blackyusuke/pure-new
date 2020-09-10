@@ -1,5 +1,5 @@
 <template>
-  <article class="search-area">
+  <MainColumnSection class="search-area">
     <HeadMain title="関東エリアの風俗店を探す" headLine="short">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -46,18 +46,20 @@
         </a>
       </li>
     </ul>
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
 import HeadMain from "~/components/parts/HeadMain.vue"
 import IconMap from "~/components/icons/IconMap"
 import ButtonLink from "~/components/parts/ButtonLink"
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     HeadMain,
     IconMap,
     ButtonLink,
+    MainColumnSection
   },
 };
 </script>

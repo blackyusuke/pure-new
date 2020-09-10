@@ -1,5 +1,5 @@
 <template>
-  <article class="area-ranking">
+  <MainColumnSection class="area-ranking">
     <HeadMain title="関東の風俗ランキング" headLine="short">
       <span slot="icon" class="icon">
         <icon-crown class="fill-current" width="24" height="24" />
@@ -411,7 +411,7 @@
       </div>
     </div>
     <LinkSeeMore height="is-middle" link-name="女の子ランキングをもっと見る" />
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
@@ -420,6 +420,7 @@ import LinkSeeMore from "~/components/parts/LinkSeeMore.vue";
 import IconCrown from "~/components/icons/IconCrown";
 import IconArrow from "~/components/icons/IconArrow";
 import ButtonLink from "~/components/parts/ButtonLink";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     HeadMain,
@@ -427,6 +428,7 @@ export default {
     IconArrow,
     ButtonLink,
     LinkSeeMore,
+    MainColumnSection
   },
   data() {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <article class="area-comic">
+  <MainColumnSection class="area-comic">
     <HeadMain title="関東の風俗体験マンガ" headLine="short">
       <span slot="icon" class="icon">
         <icon-comic class="fill-current" width="24" height="19" />
@@ -61,13 +61,15 @@
         </li>
       </ul>
     </div>
-  </article>
+  </MainColumnSection>
 </template>
 <script>
 import IconComic from "~/components/icons/IconComic"
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconComic,
+    MainColumnSection
   },
 };
 </script>

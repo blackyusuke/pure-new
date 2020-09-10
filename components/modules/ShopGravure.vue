@@ -1,5 +1,5 @@
 <template>
-  <article class="shop-gravure">
+  <MainColumnSection class="shop-gravure">
     <HeadMain title="お店蔵出しグラビア" headLine="short">
       <span slot="icon" class="icon">
         <icon-gravure class="fill-current" width="24" height="19" />
@@ -68,14 +68,16 @@
         </li>
       </ul>
     </div>
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
 import IconGravure from "~/components/icons/IconGravure";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconGravure,
+    MainColumnSection
   },
 };
 </script>

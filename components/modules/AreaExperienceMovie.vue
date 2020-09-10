@@ -1,6 +1,6 @@
 
 <template>
-  <article class="area-experience-movie">
+  <MainColumnSection class="area-experience-movie">
     <HeadMain title="関東の風俗体験動画" headLine="short">
       <span slot="icon" class="icon">
         <icon-film class="fill-current" width="22" height="17" />
@@ -137,16 +137,18 @@
         </li>
       </ul>
     </div>
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
 import IconFilm from "~/components/icons/IconFilm";
 import IconTriangle from "~/components/icons/IconTriangle";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconFilm,
     IconTriangle,
+    MainColumnSection
   },
 };
 </script>

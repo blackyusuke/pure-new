@@ -1,5 +1,5 @@
 <template>
-  <article class="area-raw-movie">
+  <MainColumnSection class="area-raw-movie">
     <HeadMain title="東京の投稿！生動画" headLine="short">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -21,7 +21,7 @@
                   height="214"
                   alt="生動画"
                 />
-                <span class="play-time">59:40</span>
+                <p class="play-time">59:40</p>
               </div>
               <div class="contents">
                 <h3>衝撃映像流出!! 痴女の腰使いがヤバイ！</h3>
@@ -38,7 +38,7 @@
             <a href>
               <div class="thumb">
                 <img v-lazy="'http://placehold.jp/100x100.png'" width="100" height="100" />
-                <span class="play-time">59:40</span>
+                <p class="play-time">59:40</p>
               </div>
               <div class="contents">
                 <h3>衝撃映像流出!! 痴女の腰使いがヤバイ！衝撃映像流出!! 痴女の腰使いがヤバイ！</h3>
@@ -52,13 +52,15 @@
         </li>
       </ul>
     </div>
-  </article>
+  </MainColumnSection>
 </template>
 <script>
 import IconMap from "~/components/icons/IconMap";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconMap,
+    MainColumnSection
   },
 };
 </script>

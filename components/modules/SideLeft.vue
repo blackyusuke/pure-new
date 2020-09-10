@@ -1,54 +1,52 @@
 <template>
   <div class="side-left">
-    <ul class="contents-list">
-      <li>
-        <div class="search">
-          <SideSecondary fontSize="large">
-            <icon-search class="fill-current" width="24" height="24" />詳細検索
-          </SideSecondary>
-          <form action>
-            <div class="select-form">
-              <div class="contents">
-                <p>
-                  <icon-map class="fill-current" width="24" height="24" />エリア
-                </p>
-              </div>
-              <div class="contents">
-                <p>
-                  <icon-business class="fill-current" width="24" height="24" />業種
-                </p>
-              </div>
-              <div class="contents">
-                <p>
-                  <icon-genre class="fill-current" width="24" height="24" />ジャンル
-                </p>
-              </div>
-              <div class="contents">
-                <p>
-                  <icon-ticket class="fill-current" width="24" height="24" />クーポン
-                </p>
-              </div>
-              <input type="submit" name="search" value="検索" />
+    <div class="side-item">
+      <div class="search">
+        <SideSecondary fontSize="large">
+          <icon-search class="fill-current" width="24" height="24" />詳細検索
+        </SideSecondary>
+        <form action>
+          <div class="select-form">
+            <div class="contents">
+              <p>
+                <icon-map class="fill-current" width="24" height="24" />エリア
+              </p>
             </div>
-          </form>
-        </div>
-      </li>
-      <li>
-        <a href>
-          <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" width="190" height="555" alt="">
-          <div class="overlay">Check!!</div>
-        </a>
-      </li>
-      <li>
-        <a href>
-          <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" width="190" height="230" alt="">
-          <div class="overlay">Check!!</div>
-        </a>
-      </li>
-      <li>
-        <h2 class="title is-small">大手グループ風俗店</h2>
-      </li>
-    </ul>
+            <div class="contents">
+              <p>
+                <icon-business class="fill-current" width="24" height="24" />業種
+              </p>
+            </div>
+            <div class="contents">
+              <p>
+                <icon-genre class="fill-current" width="24" height="24" />ジャンル
+              </p>
+            </div>
+            <div class="contents">
+              <p>
+                <icon-ticket class="fill-current" width="24" height="24" />クーポン
+              </p>
+            </div>
+            <input type="submit" name="search" value="検索" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="side-item">
+      <a href>
+        <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" width="190" height="555" alt />
+        <div class="overlay">Check!!</div>
+      </a>
+    </div>
+    <div class="side-item">
+      <a href>
+        <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" width="190" height="230" alt />
+        <div class="overlay">Check!!</div>
+      </a>
+    </div>
+    <div class="side-item">
+      <h2 class="title is-small">大手グループ風俗店</h2>
+    </div>
   </div>
 </template>
 
@@ -75,7 +73,7 @@ export default {
 .side-left {
   @apply w-190;
 }
-.side-left .contents-list li + li {
+.side-left .side-item + .side-item {
   @apply mt-20;
 }
 .side-left .title.is-small {
@@ -97,13 +95,13 @@ export default {
   @apply w-full h-40 text-white text-fz20 leading-lh25 font-bold;
   background: theme("colors.yellow");
 }
-.side-left .contents-list li a {
+.side-left .side-item a {
   @apply block relative;
 }
-.side-left .contents-list li a:hover .overlay {
+.side-left .side-item a:hover .overlay {
   transform: scale(1);
 }
-.side-left .contents-list li a .overlay {
+.side-left .side-item a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;

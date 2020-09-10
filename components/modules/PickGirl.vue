@@ -1,6 +1,6 @@
 <template>
   <no-ssr>
-    <article class="pick-girl">
+    <MainColumnSection class="pick-girl">
       <HeadMain title="今すぐ遊べるピックアップ嬢" headLine="short">
         <span slot="icon" class="icon">
           <icon-map class="fill-current" width="24" height="24" />
@@ -46,15 +46,17 @@
           </swiper-slide>
         </swiper>
       </div>
-    </article>
+    </MainColumnSection>
   </no-ssr>
 </template>
 
 <script>
 import HeadMain from "~/components/parts/HeadMain.vue";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     HeadMain,
+    MainColumnSection
   },
   data() {
     return {

@@ -1,5 +1,5 @@
 <template>
-  <article class="other-area">
+  <MainColumnSection class="other-area">
     <HeadMain title="他の地方の風俗店を探す">
       <span slot="icon" class="icon">
         <icon-map class="fill-current" width="24" height="24" />
@@ -10,7 +10,7 @@
         <ButtonLink class="is-middle" :link-name="item.value"></ButtonLink>
       </NavItem>
     </NavList>
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
@@ -20,6 +20,7 @@ import NavList from "~/components/parts/NavList.vue"
 import IconMap from "~/components/icons/IconMap"
 import ButtonLink from "~/components/parts/ButtonLink"
 import areaJson from "~/data/area.json"
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     HeadMain,
@@ -27,6 +28,7 @@ export default {
     NavItem,
     NavList,
     ButtonLink,
+    MainColumnSection
   },
   data() {
     return {

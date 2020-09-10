@@ -1,18 +1,18 @@
 <template>
-  <ul class="side-right">
-    <li>
+  <div class="side-right">
+    <div class="side-item">
       <a href>
         <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" width="190" height="377" alt="">
         <div class="overlay">Check!!</div>
       </a>
-    </li>
-    <li>
+    </div>
+    <div class="side-item">
       <a href>
         <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" width="190" height="150" alt="">
         <div class="overlay">Check!!</div>
       </a>
-    </li>
-    <li>
+    </div>
+    <div class="side-item">
       <SideSecondary>
         ピックアップガール
         <p
@@ -23,8 +23,8 @@
           トお昼の12時頃に更時!!
         </p>
       </SideSecondary>
-    </li>
-  </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -40,16 +40,16 @@ export default {
 .side-right {
   @apply w-190;
 }
-.side-right li + li {
+.side-right .side-item + .side-item {
   @apply mt-20;
 }
-.side-right li a {
+.side-right .side-item a {
   @apply relative block;
 }
-.side-right li a:hover .overlay {
+.side-right .side-item a:hover .overlay {
   transform: scale(1);
 }
-.side-right li a .overlay {
+.side-right .side-item a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;

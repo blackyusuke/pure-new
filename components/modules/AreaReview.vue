@@ -1,5 +1,5 @@
 <template>
-  <article class="area-review">
+  <MainColumnSection class="area-review">
     <HeadMain title="風俗店の新着口コミ" headLine="short">
       <span slot="icon" class="icon">
         <icon-review class="fill-current" width="24" height="19" />
@@ -139,14 +139,16 @@
         <!-- 女の子口コミここまで -->
       </ul>
     </div>
-  </article>
+  </MainColumnSection>
 </template>
 
 <script>
 import IconReview from "~/components/icons/IconReview";
+import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconReview,
+    MainColumnSection
   },
 };
 </script>
