@@ -20,9 +20,10 @@
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
               </div>
               <span class="status">16:00～待機中</span>
+              <div class="overlay">Check!!</div>
             </a>
           </swiper-slide>
-          <swiper-slide>
+          <swiper-slide v-for="index in 8" :key="index">
             <a href>
               <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
               <div class="infor">
@@ -30,66 +31,7 @@
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
               </div>
               <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
-            </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
-              <div class="infor">
-                <span class="girlName">かれん(18)</span>
-                <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
-              </div>
-              <span class="status">16:00～待機中</span>
+              <div class="overlay">Check!!</div>
             </a>
           </swiper-slide>
         </swiper>
@@ -152,4 +94,19 @@ export default {
 .pick-girl .girl-list .swiper-container .swiper-wrapper .swiper-slide {
   width: 22% !important;
 }
+
+/* hoverアニメーション */
+.pick-girl .girl-list a .overlay{
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
+}
+.pick-girl .girl-list a:hover .overlay {
+  transform: scale(1);
+}
+/* ---------------------------------------------------------------------------------------------- */
 </style>

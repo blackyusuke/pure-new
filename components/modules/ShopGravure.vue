@@ -11,7 +11,7 @@
     </HeadMain>
     <div class="gravure-wrap">
       <ul class="gravure-list">
-        <li class="gravure-item">
+        <li v-for="index in 3" :key="index" class="gravure-item">
           <article>
             <a href>
               <div class="thumb">
@@ -37,6 +37,7 @@
                   </div>
                 </div>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </article>
         </li>
@@ -61,64 +62,7 @@
                   </div>
                 </div>
               </div>
-            </a>
-          </article>
-        </li>
-        <li class="gravure-item">
-          <article>
-            <a href>
-              <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-324.jpg')"
-                  width="332"
-                  height="324"
-                  alt="グラビア"
-                />
-                <div class="data">
-                  <ul class="tag-list">
-                    <li class="tag-item">
-                      <p>#スレンダー</p>
-                    </li>
-                    <li class="tag-item">
-                      <p>#巨乳</p>
-                    </li>
-                  </ul>
-                  <div class="infor">
-                    <h3>KANA(22)</h3>
-                    <p class="shop-name">素人妻達☆マイふぇらレディー</p>
-                    <p class="area-genre">蒲田 / エステ･性感マッサージ</p>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li class="gravure-item">
-          <article>
-            <a href>
-              <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-324.jpg')"
-                  width="332"
-                  height="324"
-                  alt="グラビア"
-                />
-                <div class="data">
-                  <ul class="tag-list">
-                    <li class="tag-item">
-                      <p>#スレンダー</p>
-                    </li>
-                    <li class="tag-item">
-                      <p>#巨乳</p>
-                    </li>
-                  </ul>
-                  <div class="infor">
-                    <h3>KANA(22)KANA(22)KANA(22)KANA(22)KANA(22)KANA(22)KANA(22)KANA(22)KANA(22)</h3>
-                    <p class="shop-name">素人妻達☆マイふぇらレディー素人妻達☆マイふぇらレディー素人妻達☆マイふぇらレディー素人妻達☆マイふぇらレディー</p>
-                    <p class="area-genre">蒲田 / エステ･性感マッサージ蒲田 / エステ･性感マッサージ蒲田 / エステ･性感マッサージ</p>
-                  </div>
-                </div>
-              </div>
+              <div class="overlay">Check!!</div>
             </a>
           </article>
         </li>
@@ -150,7 +94,7 @@ export default {
   @apply w-1/2 pr-12 pb-8;
 }
 .shop-gravure .gravure-wrap .gravure-list .gravure-item article a {
-  @apply block;
+  @apply block relative;
 }
 .shop-gravure .gravure-wrap .gravure-list .gravure-item article a .thumb {
   @apply w-full relative;
@@ -263,4 +207,18 @@ export default {
   .shop-name + .area-genre {
   @apply mt-4;
 }
+/* hoverアニメーション */
+.shop-gravure .gravure-wrap .gravure-list .gravure-item article a .overlay{
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
+}
+.shop-gravure .gravure-wrap .gravure-list .gravure-item article a:hover .overlay {
+  transform: scale(1);
+}
+/* ---------------------------------------------------------------------------------------------- */
 </style>

@@ -71,18 +71,12 @@
 			<p class="bnr">
 				<img src="http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク" alt="画像" />
 			</p>
-			<MainColumnSection>
-				<PickGirl />
-			</MainColumnSection>
-			<MainColumnSection>
-				<TimeSale />
-			</MainColumnSection>
-      <MainColumnSection>
-				<AreaRawMovie />
-			</MainColumnSection>
-      <MainColumnSection>
-				<ShopGravure />
-			</MainColumnSection>
+      <MainColumnSection v-for="(num, index) in 4" :key="num.index">
+        <PickGirl v-if="index === 0" />
+        <TimeSale v-else-if="index === 1" />
+        <AreaRawMovie v-else-if="index === 2" />
+        <ShopGravure v-else-if="index === 3" />
+      </MainColumnSection>
 		</AllColumnWrapper>
 	</main>
 </template>

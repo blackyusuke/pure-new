@@ -11,7 +11,7 @@
     </HeadMain>
     <div class="list-wrap">
       <ul>
-        <li>
+        <li v-for="index in 3" :key="index">
           <article>
             <a href>
               <div class="thumb">
@@ -29,48 +29,7 @@
                 <p class="area-genre">品川 / デリヘル,エステ･性感マッサージ</p>
                 <p class="views">7,681回視聴</p>
               </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href>
-              <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-214.jpg')"
-                  width="332"
-                  height="214"
-                  alt="生動画"
-                />
-                <span class="play-time">59:40</span>
-              </div>
-              <div class="contents">
-                <h3>衝撃映像流出!! 痴女の腰使いがヤバイ！</h3>
-                <p class="shop-name">ノーハンドで楽しませる人妻 品川店</p>
-                <p class="area-genre">品川 / デリヘル,エステ･性感マッサージ</p>
-                <p class="views">7,681回視聴</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article>
-            <a href>
-              <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-214.jpg')"
-                  width="332"
-                  height="214"
-                  alt="生動画"
-                />
-                <span class="play-time">59:40</span>
-              </div>
-              <div class="contents">
-                <h3>衝撃映像流出!! 痴女の腰使いがヤバイ！</h3>
-                <p class="shop-name">ノーハンドで楽しませる人妻 品川店</p>
-                <p class="area-genre">品川 / デリヘル,エステ･性感マッサージ</p>
-                <p class="views">7,681回視聴</p>
-              </div>
+              <div class="overlay">Check!!</div>
             </a>
           </article>
         </li>
@@ -87,6 +46,7 @@
                 <p class="area-genre">品川 / デリヘル,エステ･性感マッサージ品川 / デリヘル,エステ･性感マッサージ</p>
                 <p class="views">7,681回視聴</p>
               </div>
+              <div class="overlay">Check!!</div>
             </a>
           </article>
         </li>
@@ -117,7 +77,7 @@ export default {
   @apply w-1/2 pr-8 pb-8;
 }
 .area-raw-movie .list-wrap ul li article a {
-  @apply block;
+  @apply block relative;
 }
 .area-raw-movie .list-wrap ul li article a .thumb {
   @apply relative w-full;
@@ -157,4 +117,18 @@ export default {
  @apply text-fz10 leading-lh10;
  color: theme('colors.dark-gray');
 }
+/* hoverアニメーション */
+.area-raw-movie .list-wrap ul li article a .overlay{
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
+}
+.area-raw-movie .list-wrap ul li article a:hover .overlay {
+  transform: scale(1);
+}
+/* ---------------------------------------------------------------------------------------------- */
 </style>

@@ -19,7 +19,7 @@
       <time>2時間32分54秒</time>
     </p>
     <ul class="time-sale-list">
-      <li>
+      <li v-for="index in 4" :key="index">
         <a href>
           <img
             v-lazy="require('~/assets/images/sample/170-227.jpg')"
@@ -42,81 +42,7 @@
               <span class="number">99</span>
             </div>
           </div>
-        </a>
-      </li>
-      <li>
-        <a href>
-          <img
-            v-lazy="require('~/assets/images/sample/170-227.jpg')"
-            width="170"
-            height="227"
-            alt="女の子"
-          />
-          <div class="infor">
-            <span class="girlName">ひなみ(28)</span>
-            <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
-          </div>
-          <div class="discount">
-            <div class="badge">
-              <img
-                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
-                width="57"
-                height="57"
-                alt="女の子"
-              />
-              <span class="number">99</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href>
-          <img
-            v-lazy="require('~/assets/images/sample/170-227.jpg')"
-            width="170"
-            height="227"
-            alt="女の子"
-          />
-          <div class="infor">
-            <span class="girlName">ひなみ(28)</span>
-            <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
-          </div>
-          <div class="discount">
-            <div class="badge">
-              <img
-                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
-                width="57"
-                height="57"
-                alt="女の子"
-              />
-              <span class="number">99</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href>
-          <img
-            v-lazy="require('~/assets/images/sample/170-227.jpg')"
-            width="170"
-            height="227"
-            alt="女の子"
-          />
-          <div class="infor">
-            <span class="girlName">ひなみ(28)</span>
-            <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
-          </div>
-          <div class="discount">
-            <div class="badge">
-              <img
-                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
-                width="57"
-                height="57"
-                alt="女の子"
-              />
-              <span class="number">99</span>
-            </div>
-          </div>
+          <div class="overlay">Check!!</div>
         </a>
       </li>
     </ul>
@@ -182,4 +108,19 @@ export default {
   left: 8px;
   transform: rotate(-15deg);
 }
+
+/* hoverアニメーション */
+.time-sale .time-sale-list li a .overlay{
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
+}
+.time-sale .time-sale-list li a:hover .overlay {
+  transform: scale(1);
+}
+/* ---------------------------------------------------------------------------------------------- */
 </style> 
