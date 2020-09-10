@@ -65,12 +65,12 @@
 			</li>
 		</ul>
 		<AllColumnWrapper>
-			<p class="bnr">
-				<img src="http://placehold.jp/30/FFCCCC/FF0000/680x300.png?text=エリアリンク" alt="画像" />
-			</p>
-			<p class="bnr">
-				<img src="http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク" alt="画像" />
-			</p>
+			<a href="" class="bnr">
+        <img v-lazy="'http://placehold.jp/30/FFCCCC/FF0000/680x300.png?text=エリアリンク'" width="680" height="300" />
+			</a>
+			<a href="" class="bnr">
+        <img v-lazy="'http://placehold.jp/30/FFCCCC/FF0000/680x140.png?text=クーポンリンク'" width="680" height="140" />
+			</a>
       <MainColumnSection v-for="(num, index) in 4" :key="num.index">
         <PickGirl v-if="index === 0" />
         <TimeSale v-else-if="index === 1" />

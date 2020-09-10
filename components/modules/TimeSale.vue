@@ -19,7 +19,7 @@
       <time>2時間32分54秒</time>
     </p>
     <ul class="time-sale-list">
-      <li v-for="index in 4" :key="index">
+      <li v-for="index in 3" :key="index">
         <a href>
           <img
             v-lazy="require('~/assets/images/sample/170-227.jpg')"
@@ -40,6 +40,32 @@
                 alt="女の子"
               />
               <span class="number">99</span>
+            </div>
+          </div>
+          <div class="overlay">Check!!</div>
+        </a>
+      </li>
+      <li>
+        <a href>
+          <img
+            v-lazy="require('~/assets/images/sample/170-227.jpg')"
+            width="170"
+            height="227"
+            alt="女の子"
+          />
+          <div class="infor">
+            <span class="girlName">ひなみ(28)</span>
+            <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
+          </div>
+          <div class="discount">
+            <div class="badge">
+              <img
+                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                width="57"
+                height="57"
+                alt="女の子"
+              />
+              <span class="number">1</span>
             </div>
           </div>
           <div class="overlay">Check!!</div>
@@ -102,11 +128,12 @@ export default {
   @apply relative;
 }
 .time-sale .time-sale-list li a .discount .badge .number {
-  @apply absolute text-fz24 leading-lh25 font-bold;
+  @apply absolute text-fz24 leading-lh25 font-bold text-center;
   color: theme("colors.red");
   top: 8px;
   left: 8px;
   transform: rotate(-15deg);
+  width: 28px;
 }
 
 /* hoverアニメーション */

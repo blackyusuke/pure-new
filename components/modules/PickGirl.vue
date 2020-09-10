@@ -14,7 +14,12 @@
         <swiper :options="swiperOption">
           <swiper-slide>
             <a href>
-              <img src="http://placehold.jp/150x150.png" alt="女の子" />
+              <img
+                v-lazy="'http://placehold.jp/FFCCCC/FF0000/150x150.png'"
+                width="150"
+                height="150"
+                alt="女の子"
+              />
               <div class="infor">
                 <span class="girlName">かれん(18)</span>
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
@@ -25,7 +30,12 @@
           </swiper-slide>
           <swiper-slide v-for="index in 8" :key="index">
             <a href>
-              <img src="~/assets/images/sample/150-200.jpg" alt="女の子" />
+              <img
+                v-lazy="require('~/assets/images/sample/150-200.jpg')"
+                width="150"
+                height="200"
+                alt="女の子"
+              />
               <div class="infor">
                 <span class="girlName">かれん(18)</span>
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>
@@ -96,7 +106,7 @@ export default {
 }
 
 /* hoverアニメーション */
-.pick-girl .girl-list a .overlay{
+.pick-girl .girl-list a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;

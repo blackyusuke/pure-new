@@ -25,6 +25,9 @@ export default {
 .all-column-wrapper .main-column {
   width: theme('width.680');
 }
+.all-column-wrapper .main-column .bnr {
+  @apply block;
+}
 .all-column-wrapper .main-column .main-column-section + .bnr {
   @apply mt-20;
 }
