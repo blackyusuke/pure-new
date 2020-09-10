@@ -2,23 +2,26 @@
   <div class="side-right">
     <div class="side-item">
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" width="190" height="377" alt="">
+        <picture>
+          <source srcset="~/assets/images/bnr/bnr3.webp" type="image/webp" />
+          <img v-lazy="require('~/assets/images/bnr/bnr3.jpg')" width="190" height="377" />
+        </picture>
         <div class="overlay">Check!!</div>
       </a>
     </div>
     <div class="side-item">
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" width="190" height="150" alt="">
+        <picture>
+          <source srcset="~/assets/images/bnr/bnr4.webp" type="image/webp" />
+          <img v-lazy="require('~/assets/images/bnr/bnr4.jpg')" width="190" height="150" />
+        </picture>
         <div class="overlay">Check!!</div>
       </a>
     </div>
     <div class="side-item">
       <SideSecondary>
         ピックアップガール
-        <p
-          slot="lead"
-          class="lead"
-        >
+        <p slot="lead" class="lead">
           ぴゅあらば運営が毎日セレク
           トお昼の12時頃に更時!!
         </p>

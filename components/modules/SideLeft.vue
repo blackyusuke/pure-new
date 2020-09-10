@@ -34,13 +34,19 @@
     </div>
     <div class="side-item">
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" width="190" height="555" alt />
+        <picture>
+          <source srcset="~/assets/images/bnr/bnr1.webp" type="image/webp" />
+          <img v-lazy="require('~/assets/images/bnr/bnr1.jpg')" width="190" height="555" />
+        </picture>
         <div class="overlay">Check!!</div>
       </a>
     </div>
     <div class="side-item">
       <a href>
-        <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" width="190" height="230" alt />
+         <picture>
+          <source srcset="~/assets/images/bnr/bnr2.webp" type="image/webp" />
+          <img v-lazy="require('~/assets/images/bnr/bnr2.jpg')" width="190" height="230" />
+        </picture>
         <div class="overlay">Check!!</div>
       </a>
     </div>

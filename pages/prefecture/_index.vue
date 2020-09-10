@@ -5,16 +5,7 @@
         <div class="contents">
           <HeadSearch title="エリアから探す" />
           <NavList flex="side">
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="池袋" />
-            </NavItem>
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="池袋" />
-            </NavItem>
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="池袋" />
-            </NavItem>
-            <NavItem width="half">
+            <NavItem v-for="index in 4" :key="index" width="half">
               <ButtonLink class="is-middle" link-name="池袋" />
             </NavItem>
           </NavList>
@@ -27,17 +18,11 @@
         <div class="contents">
           <HeadSearch title="業種から探す" />
           <NavList flex="side">
-            <NavItem width="half">
-              <ButtonLink class="is-middle" padding="is-none" link-name="デリヘル" />
-            </NavItem>
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="ソープ" />
-            </NavItem>
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="エステ･性感マッサージ" />
-            </NavItem>
-            <NavItem width="half">
-              <ButtonLink class="is-middle" link-name="ピンサロ" />
+            <NavItem v-for="(num, index) in 4" :key="index" width="half">
+              <ButtonLink v-if="index === 0" class="is-middle" padding="is-none" link-name="デリヘル" />
+              <ButtonLink v-else-if="index === 1" class="is-middle" link-name="ソープ" />
+              <ButtonLink v-else-if="index === 2" class="is-middle" link-name="エステ･性感マッサージ" />
+              <ButtonLink v-else-if="index === 3" class="is-middle" link-name="ピンサロ" />
             </NavItem>
           </NavList>
           <div class="more-btn">

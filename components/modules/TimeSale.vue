@@ -77,10 +77,6 @@
       </li>
     </ul>
     <LinkSeeMore height="is-tall" link-name="激安タイムセールをもっと見る" />
-    <picture>
-		<source srcset="~/assets/images/bnr/bnr1.webp" type="image/webp">
-		<img src="~/assets/images/bnr/bnr1.jpg">
-	</picture>
   </MainColumnSection>
 </template>
 
