@@ -1,24 +1,44 @@
 <template>
   <article class="time-sale">
     <p>
-      <img src="~/assets/images/timesale/timesale_bnr.jpg" alt="ぴゅあらばタイムセール" />
+      <img
+        v-lazy="require('~/assets/images/timesale/timesale_bnr.jpg')"
+        width="680"
+        height="180"
+        alt="ぴゅあらばタイムセール"
+      />
     </p>
     <p class="count-down">
       <span class="limited">掲載残り時間</span>
-      <img src="~/assets/images/timesale/angle-arrow.png" alt="矢印" />
+      <img
+        v-lazy="require('~/assets/images/timesale/angle-arrow.png')"
+        width="40"
+        height="30"
+        alt="矢印"
+      />
       <time>2時間32分54秒</time>
     </p>
     <ul class="time-sale-list">
       <li>
         <a href>
-          <img src="~/assets/images/sample/170-227.jpg" alt="女の子" />
+          <img
+            v-lazy="require('~/assets/images/sample/170-227.jpg')"
+            width="170"
+            height="227"
+            alt="女の子"
+          />
           <div class="infor">
             <span class="girlName">ひなみ(28)</span>
             <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
           </div>
           <div class="discount">
             <div class="badge">
-              <img src="~/assets/images/timesale/timesale_off.png" alt />
+              <img
+                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                width="57"
+                height="57"
+                alt="女の子"
+              />
               <span class="number">99</span>
             </div>
           </div>
@@ -26,14 +46,24 @@
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/sample/170-227.jpg" alt="女の子" />
+          <img
+            v-lazy="require('~/assets/images/sample/170-227.jpg')"
+            width="170"
+            height="227"
+            alt="女の子"
+          />
           <div class="infor">
             <span class="girlName">ひなみ(28)</span>
             <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
           </div>
           <div class="discount">
             <div class="badge">
-              <img src="~/assets/images/timesale/timesale_off.png" alt />
+              <img
+                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                width="57"
+                height="57"
+                alt="女の子"
+              />
               <span class="number">99</span>
             </div>
           </div>
@@ -41,14 +71,24 @@
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/sample/170-227.jpg" alt="女の子" />
+          <img
+            v-lazy="require('~/assets/images/sample/170-227.jpg')"
+            width="170"
+            height="227"
+            alt="女の子"
+          />
           <div class="infor">
             <span class="girlName">ひなみ(28)</span>
             <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
           </div>
           <div class="discount">
             <div class="badge">
-              <img src="~/assets/images/timesale/timesale_off.png" alt />
+              <img
+                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                width="57"
+                height="57"
+                alt="女の子"
+              />
               <span class="number">99</span>
             </div>
           </div>
@@ -56,22 +96,42 @@
       </li>
       <li>
         <a href>
-          <img src="~/assets/images/sample/170-227.jpg" alt="女の子" />
+          <img
+            v-lazy="require('~/assets/images/sample/170-227.jpg')"
+            width="170"
+            height="227"
+            alt="女の子"
+          />
           <div class="infor">
             <span class="girlName">ひなみ(28)</span>
             <span class="area">横浜(関内･曙町) / デリヘル・ソープ</span>
           </div>
           <div class="discount">
             <div class="badge">
-              <img src="~/assets/images/timesale/timesale_off.png" alt />
+              <img
+                v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                width="57"
+                height="57"
+                alt="女の子"
+              />
               <span class="number">99</span>
             </div>
           </div>
         </a>
       </li>
     </ul>
+    <LinkSeeMore height="is-tall" link-name="激安タイムセールをもっと見る" />
   </article>
 </template>
+
+<script>
+import LinkSeeMore from "~/components/parts/LinkSeeMore.vue";
+export default {
+  components: {
+    LinkSeeMore,
+  },
+};
+</script>
 
 <style>
 .time-sale .count-down {

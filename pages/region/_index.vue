@@ -19,7 +19,7 @@
       <MainColumnSection v-for="(num, index) in 4" :key="num.index">
         <AreaSearch v-if="index === 0" />
         <AreaRanking v-else-if="index === 1" />
-        <AreaMovie v-else-if="index === 2" />
+        <AreaExperienceMovie v-else-if="index === 2" />
         <AreaComic v-else-if="index === 3" />
       </MainColumnSection>
       <div class="bnr">
@@ -39,7 +39,7 @@
 import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 import AreaSearch from "~/components/modules/AreaSearch.vue";
-import AreaMovie from "~/components/modules/AreaMovie.vue";
+import AreaExperienceMovie from "~/components/modules/AreaExperienceMovie.vue";
 import AreaComic from "~/components/modules/AreaComic.vue";
 import AreaRanking from "~/components/modules/AreaRanking.vue";
 import AreaReview from "~/components/modules/AreaReview.vue";
@@ -48,7 +48,7 @@ export default {
   components: {
     AreaSearch,
     AreaRanking,
-    AreaMovie,
+    AreaExperienceMovie,
     AreaComic,
     AreaReview,
     OtherArea,

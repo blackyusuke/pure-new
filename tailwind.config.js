@@ -59,6 +59,7 @@ module.exports = {
         2: '2px',
         4: '4px',
         8: '8px',
+        12: '12px',
         30: '30px',
         half: '50%'
       },
@@ -68,6 +69,7 @@ module.exports = {
         6: '6px'
       },
       fontSize: {
+        fz10: '10px',
         fz12: '12px',
         fz14: '14px',
         fz16: '16px',
@@ -79,6 +81,7 @@ module.exports = {
         fz34: '34px',
       },
       lineHeight: {
+        lh10: '10px',
         lh12: '12px',
         lh14: '14px',
         lh16: '16px',
@@ -105,6 +108,7 @@ module.exports = {
         16: '16px',
         20: '20px',
         24: '24px',
+        28: '28px',
         36: '36px',
         40: '40px',
       },
@@ -131,6 +135,7 @@ module.exports = {
       opacity: {
         6: '0.6',
         8: '0.8',
+        9: '0.9',
       },
       transformOrigin: {
         'underline': 'left top'

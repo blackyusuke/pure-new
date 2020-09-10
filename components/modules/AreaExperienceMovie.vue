@@ -1,6 +1,6 @@
 
 <template>
-  <article class="area-movie">
+  <article class="area-experience-movie">
     <HeadMain title="関東の風俗体験動画" headLine="short">
       <span slot="icon" class="icon">
         <icon-film class="fill-current" width="22" height="17" />
@@ -152,45 +152,45 @@ export default {
 </script>
 
 <style>
-.area-movie .movie {
+.area-experience-movie .movie {
   @apply p-8;
   background: theme("colors.back-gray");
 }
-.area-movie .movie article .top {
+.area-experience-movie .movie article .top {
   @apply flex relative rounded-8;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.area-movie .movie article .top .thumb {
+.area-experience-movie .movie article .top .thumb {
   @apply relative;
   width: 430px;
   height: 242px;
 }
-.area-movie .movie article .top .thumb .play-time {
+.area-experience-movie .movie article .top .thumb .play-time {
   @apply absolute text-fz14 text-white px-4;
   background: theme("colors.base");
   border-radius: theme("borderRadius.4");
   right: theme("inset.6");
   bottom: theme("inset.8");
 }
-.area-movie .movie article .top .thumb .play-icon {
+.area-experience-movie .movie article .top .thumb .play-icon {
   @apply absolute flex items-center justify-center transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-8 rounded-half;
   top: theme("inset.half");
   left: theme("inset.half");
   width: theme("width.50");
   height: theme("height.50");
 }
-.area-movie .movie article .top .thumb .play-icon svg {
+.area-experience-movie .movie article .top .thumb .play-icon svg {
   @apply text-white mr-negative4;
 }
-.area-movie .movie article .top .thumb img {
+.area-experience-movie .movie article .top .thumb img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-l-8;
   top: theme("inset.half");
   left: theme("inset.half");
 }
-.area-movie .movie article .top .description {
+.area-experience-movie .movie article .top .description {
   @apply flex-1 p-12;
 }
-.area-movie .movie article .top .description .title {
+.area-experience-movie .movie article .top .description .title {
   @apply font-bold text-fz18 leading-lh18;
   color: theme("colors.base");
   display: -webkit-box;
@@ -200,86 +200,86 @@ export default {
   word-break: break-all;
   word-wrap: break-word;
 }
-.area-movie .movie article .top .description .infor {
+.area-experience-movie .movie article .top .description .infor {
   color: theme("colors.base");
   @apply text-fz14 leading-lh14;
 }
-.area-movie .movie article .top .description .tagArea ul {
+.area-experience-movie .movie article .top .description .tagArea ul {
   @apply flex flex-wrap;
   margin-right: -4px;
   margin-bottom: -4px;
 }
-.area-movie .movie article .top .description .tagArea ul li {
+.area-experience-movie .movie article .top .description .tagArea ul li {
   @apply pr-4 pb-4;
 }
-.area-movie .movie article .top .description .tagArea ul li span {
+.area-experience-movie .movie article .top .description .tagArea ul li span {
   @apply block border-solid border-2 bg-white text-fz14 leading-lh20 py-2 px-8;
   border-color: theme("colors.primary");
   border-radius: theme("borderRadius.4");
   color: theme("colors.primary");
 }
-.area-movie .movie article .top .description .title + .infor {
+.area-experience-movie .movie article .top .description .title + .infor {
   @apply mt-12;
 }
-.area-movie .movie article .top .description .infor + .tagArea {
+.area-experience-movie .movie article .top .description .infor + .tagArea {
   @apply mt-20;
 }
-.area-movie .movie article .top .description .tagArea + .views {
+.area-experience-movie .movie article .top .description .tagArea + .views {
   @apply mt-20;
 }
-.area-movie .movie article .top .description .views {
+.area-experience-movie .movie article .top .description .views {
   @apply text-fz14;
   color: theme("colors.base");
 }
-.area-movie .movie article .top .description .views span {
+.area-experience-movie .movie article .top .description .views span {
   color: theme("colors.primary");
   @apply font-bold text-fz24;
 }
-.area-movie .movie article + .other-list {
+.area-experience-movie .movie article + .other-list {
   @apply mt-8;
 }
-.area-movie .movie .other-list {
+.area-experience-movie .movie .other-list {
   @apply flex;
   margin-right: -12px;
 }
-.area-movie .movie .other-list li {
+.area-experience-movie .movie .other-list li {
   @apply pr-12;
 }
-.area-movie .movie .other-list li article a {
+.area-experience-movie .movie .other-list li article a {
   @apply block relative rounded-8;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.area-movie .movie .other-list li article a .image {
+.area-experience-movie .movie .other-list li article a .image {
   @apply relative;
   width: 157px;
   height: 88px;
 }
-.area-movie .movie .other-list li article a .image .play-time {
+.area-experience-movie .movie .other-list li article a .image .play-time {
   @apply absolute text-fz14 text-white px-4;
   background: theme("colors.base");
   border-radius: theme("borderRadius.4");
   right: theme("inset.4");
   bottom: theme("inset.6");
 }
-.area-movie .movie .other-list li article a .image .play-icon {
+.area-experience-movie .movie .other-list li article a .image .play-icon {
   @apply absolute flex items-center justify-center transform -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-8 rounded-half;
   top: theme("inset.half");
   left: theme("inset.half");
   width: 35px;
   height: 35px;
 }
-.area-movie .movie .other-list li article a .image .play-icon svg {
+.area-experience-movie .movie .other-list li article a .image .play-icon svg {
   @apply text-white mr-negative4;
 }
-.area-movie .movie .other-list li article a .image img {
+.area-experience-movie .movie .other-list li article a .image img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2 rounded-t-8;
   top: theme("inset.half");
   left: theme("inset.half");
 }
-.area-movie .movie .other-list li article a .description {
+.area-experience-movie .movie .other-list li article a .description {
   @apply p-8;
 }
-.area-movie .movie .other-list li article a .description .title {
+.area-experience-movie .movie .other-list li article a .description .title {
   @apply text-fz14 font-bold;
   color: theme("colors.base");
   display: -webkit-box;
@@ -289,7 +289,7 @@ export default {
   word-break: break-all;
   word-wrap: break-word;
 }
-.area-movie .movie .other-list li article a .description .infor {
+.area-experience-movie .movie .other-list li article a .description .infor {
   @apply text-fz12;
   color: theme("colors.base");
   display: -webkit-box;
@@ -299,15 +299,15 @@ export default {
   word-break: break-all;
   word-wrap: break-word;
 }
-.area-movie .movie .other-list li article a .description .views {
+.area-experience-movie .movie .other-list li article a .description .views {
   @apply text-fz14;
 }
-.area-movie .movie .other-list li article a .description .views span {
+.area-experience-movie .movie .other-list li article a .description .views span {
   @apply text-fz20 font-bold;
   color: theme("colors.primary");
 }
 /* hoverアニメーション */
-.area-movie .movie .top .overlay {
+.area-experience-movie .movie .top .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -316,10 +316,10 @@ export default {
   color: theme("colors.primary");
   z-index: theme("zIndex.1000");
 }
-.area-movie .movie .top:hover .overlay {
+.area-experience-movie .movie .top:hover .overlay {
   transform: scale(1);
 }
-.area-movie .movie .other-list li article a .overlay {
+.area-experience-movie .movie .other-list li article a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -328,7 +328,7 @@ export default {
   color: theme("colors.primary");
   z-index: theme("zIndex.1000");
 }
-.area-movie .movie .other-list li article a:hover .overlay {
+.area-experience-movie .movie .other-list li article a:hover .overlay {
   transform: scale(1);
 }
 /* ---------------------------------------------------------------------------------------------- */

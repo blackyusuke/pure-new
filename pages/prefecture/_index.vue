@@ -77,6 +77,12 @@
 			<MainColumnSection>
 				<TimeSale />
 			</MainColumnSection>
+      <MainColumnSection>
+				<AreaRawMovie />
+			</MainColumnSection>
+      <MainColumnSection>
+				<ShopGravure />
+			</MainColumnSection>
 		</AllColumnWrapper>
 	</main>
 </template>
@@ -88,7 +94,9 @@
 	import NavList from "~/components/parts/NavList.vue";
 	import AllColumnWrapper from "~/components/modules/AllColumnWrapper.vue";
 	import PickGirl from "~/components/modules/PickGirl.vue";
-	import TimeSale from "~/components/modules/TimeSale.vue";
+  import TimeSale from "~/components/modules/TimeSale.vue";
+  import AreaRawMovie from "~/components/modules/AreaRawMovie.vue";
+  import ShopGravure from "~/components/modules/ShopGravure.vue";
 	export default {
 		components: {
 			HeadSearch,
@@ -97,7 +105,9 @@
 			AllColumnWrapper,
 			PickGirl,
 			TimeSale,
-			MainColumnSection,
+      MainColumnSection,
+      AreaRawMovie,
+      ShopGravure
 		},
 	};
 </script>

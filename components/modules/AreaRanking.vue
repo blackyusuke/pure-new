@@ -17,7 +17,12 @@
         <ol class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample1.jpg')" width="340" height="454" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                width="340"
+                height="454"
+                alt
+              />
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -30,7 +35,12 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -46,7 +56,12 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -62,7 +77,12 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-4">
                 <strong>4</strong>位
               </span>
@@ -78,7 +98,12 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -98,7 +123,12 @@
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample1.jpg')" width="340" height="454" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                width="340"
+                height="454"
+                alt
+              />
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -111,7 +141,12 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -127,7 +162,12 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -159,7 +199,12 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -192,7 +237,12 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -208,7 +258,12 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -240,7 +295,12 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -273,7 +333,12 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -289,7 +354,12 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -321,7 +391,12 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img v-lazy="require('~/assets/images/sample/sample2.jpg')" width="170" height="227" alt="">
+              <img
+                v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                width="170"
+                height="227"
+                alt
+              />
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -335,39 +410,23 @@
         </ul>
       </div>
     </div>
-    <div class="more">
-      <a href>
-        <span class="icon">
-          <icon-angle class="fill-current" width="18" height="22" />
-        </span>
-        <span class="icon">
-          <icon-angle class="fill-current" width="18" height="22" />
-        </span>
-        女の子ランキングをもっと見る
-        <span class="left icon">
-          <icon-angle class="fill-current" width="18" height="22" />
-        </span>
-        <span class="left icon">
-          <icon-angle class="fill-current" width="18" height="22" />
-        </span>
-      </a>
-    </div>
+    <LinkSeeMore height="is-middle" link-name="女の子ランキングをもっと見る" />
   </article>
 </template>
 
 <script>
 import HeadMain from "~/components/parts/HeadMain.vue";
+import LinkSeeMore from "~/components/parts/LinkSeeMore.vue";
 import IconCrown from "~/components/icons/IconCrown";
 import IconArrow from "~/components/icons/IconArrow";
-import IconAngle from "~/components/icons/IconAngle";
 import ButtonLink from "~/components/parts/ButtonLink";
 export default {
   components: {
     HeadMain,
     IconCrown,
     IconArrow,
-    IconAngle,
     ButtonLink,
+    LinkSeeMore,
   },
   data() {
     return {
@@ -380,27 +439,13 @@ export default {
 <style>
 /* cssスライダー */
 .area-ranking .genre-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
+  @apply flex flex-wrap overflow-hidden border-solid border-b-6;
+  border-color: theme("colors.border-red");
 }
-/* .area-ranking .genre-wrap::after {
-  content: "";
-  height: 4px;
-  order: -1;
-  width: 100%;
-} */
 .area-ranking .genre-wrap .title {
-  @apply text-fz20 leading-lh20 text-black p-16;
-  cursor: pointer;
-  flex: 1;
-  font-weight: bold;
+  @apply text-fz20 leading-lh20 text-black p-16 cursor-pointer flex-1 font-bold relative text-center select-none whitespace-no-wrap;
   order: -1;
-  position: relative;
-  text-align: center;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-  user-select: none;
-  white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
 .area-ranking .genre-wrap .title::after {
@@ -440,10 +485,9 @@ export default {
   background: theme("colors.red");
 }
 .area-ranking .genre-wrap .genre-content .ranking-list {
-  display: grid;
+  @apply grid text-center;
   grid-template-columns: [col1] 50% [col2] 25% [col3] 25%;
   grid-template-rows: [row1] 50% [row2] 50%;
-  text-align: center;
 }
 .area-ranking .genre-wrap .genre-content .ranking-list li a img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
@@ -716,32 +760,5 @@ export default {
 }
 .area-ranking .genre-wrap .genre-content .ranking-list li a {
   @apply bg-black relative overflow-hidden;
-}
-.area-ranking .more {
-  @apply border-solid border-t-6;
-  border-color: theme("colors.border-red");
-  background: theme("colors.base");
-}
-.area-ranking .more a {
-  @apply flex items-center justify-center text-fz20 font-bold leading-lh20 p-20;
-  color: theme("colors.primary");
-}
-.area-ranking .more a .icon {
-  color: theme("colors.primary");
-}
-.area-ranking .more a .icon:nth-child(1) {
-  margin-right: -8px;
-}
-.area-ranking .more a .icon:nth-child(2) {
-  @apply mr-4;
-}
-.area-ranking .more a .icon:nth-child(3) {
-  @apply ml-4;
-}
-.area-ranking .more a .icon:nth-child(4) {
-  margin-left: -8px;
-}
-.area-ranking .more a .left {
-  @apply transform rotate-180;
 }
 </style>
