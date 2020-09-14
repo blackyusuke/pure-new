@@ -47,7 +47,7 @@
           <a href>
             <picture>
               <source srcset="~/assets/images/pure-logo.webp" type="image/webp" />
-              <img v-lazy="require('~/assets/images/pure-logo.png')" width="164" height="63" alit="風俗情報ぴゅあらば" />
+              <img v-lazy="require('~/assets/images/pure-logo.png')" width="164" height="63" alt="風俗情報ぴゅあらば" />
             </picture>
           </a>
           <h1>
@@ -59,7 +59,7 @@
           <p class="ban-icon">
             <picture>
               <source srcset="~/assets/images/ban.webp" type="image/webp" />
-              <img v-lazy="require('~/assets/images/ban.png')" width="36" height="34" alit="18未満禁止" />
+              <img v-lazy="require('~/assets/images/ban.png')" width="36" height="34" alt="18未満禁止" />
             </picture>
           </p>
           <p class="ban-text">

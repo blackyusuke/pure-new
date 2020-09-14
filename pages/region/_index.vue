@@ -1,7 +1,7 @@
 <template>
-  <main id="region">
-    <div class="slider">
-      <no-ssr>
+  <no-ssr>
+    <main id="region">
+      <div class="slider">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <swiper :options="swiperOption">
@@ -13,24 +13,24 @@
             </swiper>
           </div>
         </div>
-      </no-ssr>
-    </div>
-    <AllColumnWrapper>
-      <AreaSearch />
-      <AreaRanking />
-      <AreaExperienceMovie />
-      <AreaComic />
-      <a href class="bnr">
-        <img
-          v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'"
-          width="750"
-          height="360"
-        />
-      </a>
-      <AreaReview />
-      <OtherArea />
-    </AllColumnWrapper>
-  </main>
+      </div>
+      <AllColumnWrapper>
+        <AreaSearch />
+        <AreaRanking />
+        <AreaExperienceMovie />
+        <AreaComic />
+        <a href class="bnr">
+          <img
+            v-lazy="'http://placehold.jp/FFCCCC/FF0000/750x360.png?text=地方トップスペシャル'"
+            width="750"
+            height="360"
+          />
+        </a>
+        <AreaReview />
+        <OtherArea />
+      </AllColumnWrapper>
+    </main>
+  </no-ssr>
 </template>
 
 <script>
