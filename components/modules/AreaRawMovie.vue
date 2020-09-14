@@ -15,12 +15,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-214.jpg')"
-                  width="332"
-                  height="214"
-                  alt="生動画"
-                />
+                <picture>
+                  <source srcset="~/assets/images/sample/332-214.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/332-214.jpg')"
+                    width="332"
+                    height="214"
+                    alt="生動画"
+                  />
+                </picture>
                 <p class="play-time">59:40</p>
               </div>
               <div class="contents">
@@ -60,7 +63,7 @@ import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconMap,
-    MainColumnSection
+    MainColumnSection,
   },
 };
 </script>
@@ -83,7 +86,7 @@ export default {
 }
 .area-raw-movie .list-wrap ul li article a .thumb {
   @apply relative w-full;
-  background: theme('colors.back-gray');
+  background: theme("colors.back-gray");
   height: 214px;
 }
 .area-raw-movie .list-wrap ul li article a .thumb img {
@@ -101,7 +104,7 @@ export default {
 }
 .area-raw-movie .list-wrap ul li article a .contents h3 {
   @apply text-fz14 font-bold truncate;
-  color: theme('colors.primary');
+  color: theme("colors.primary");
 }
 .area-raw-movie .list-wrap ul li article a .contents .shop-name {
   @apply text-fz14 leading-lh20 truncate text-white;
@@ -116,11 +119,11 @@ export default {
   @apply mt-4;
 }
 .area-raw-movie .list-wrap ul li article a .contents .views {
- @apply text-fz10 leading-lh10;
- color: theme('colors.dark-gray');
+  @apply text-fz10 leading-lh10;
+  color: theme("colors.dark-gray");
 }
 /* hoverアニメーション */
-.area-raw-movie .list-wrap ul li article a .overlay{
+.area-raw-movie .list-wrap ul li article a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;

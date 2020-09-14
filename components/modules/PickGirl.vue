@@ -30,12 +30,15 @@
           </swiper-slide>
           <swiper-slide v-for="index in 8" :key="index">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/150-200.jpg')"
-                width="150"
-                height="200"
-                alt="女の子"
-              />
+               <picture>
+                  <source srcset="~/assets/images/sample/150-200.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/150-200.jpg')"
+                    width="150"
+                    height="200"
+                    alt="女の子"
+                  />
+                </picture>
               <div class="infor">
                 <span class="girlName">かれん(18)</span>
                 <span class="area">吉祥寺･国分寺 / エステシャン吉祥寺･国分寺 / エステシャン</span>

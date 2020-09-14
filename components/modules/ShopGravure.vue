@@ -15,12 +15,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img
-                  v-lazy="require('~/assets/images/sample/332-324.jpg')"
-                  width="332"
-                  height="324"
-                  alt="グラビア"
-                />
+                <picture>
+                  <source srcset="~/assets/images/sample/332-324.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/332-324.jpg')"
+                    width="332"
+                    height="324"
+                    alt="グラビア"
+                  />
+                </picture>
                 <div class="data">
                   <ul class="tag-list">
                     <li class="tag-item">
@@ -77,7 +80,7 @@ import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconGravure,
-    MainColumnSection
+    MainColumnSection,
   },
 };
 </script>
@@ -101,7 +104,7 @@ export default {
 .shop-gravure .gravure-wrap .gravure-list .gravure-item article a .thumb {
   @apply w-full relative;
   height: 324px;
-  background: theme('colors.back-gray');
+  background: theme("colors.back-gray");
 }
 .shop-gravure .gravure-wrap .gravure-list .gravure-item article a .thumb img {
   @apply absolute max-w-full max-h-full transform -translate-y-1/2 -translate-x-1/2;
@@ -206,11 +209,12 @@ export default {
   .thumb
   .data
   .infor
-  .shop-name + .area-genre {
+  .shop-name
+  + .area-genre {
   @apply mt-4;
 }
 /* hoverアニメーション */
-.shop-gravure .gravure-wrap .gravure-list .gravure-item article a .overlay{
+.shop-gravure .gravure-wrap .gravure-list .gravure-item article a .overlay {
   @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
@@ -219,7 +223,13 @@ export default {
   color: theme("colors.primary");
   z-index: theme("zIndex.1000");
 }
-.shop-gravure .gravure-wrap .gravure-list .gravure-item article a:hover .overlay {
+.shop-gravure
+  .gravure-wrap
+  .gravure-list
+  .gravure-item
+  article
+  a:hover
+  .overlay {
   transform: scale(1);
 }
 /* ---------------------------------------------------------------------------------------------- */

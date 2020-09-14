@@ -16,7 +16,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img v-lazy="require('~/assets/images/sample/shop.jpg')" alt="">
+                <picture>
+                  <source srcset="~/assets/images/sample/shop.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/shop.jpg')"
+                    width="90"
+                    height="135"
+                    alt="お店口コミ"
+                  />
+                </picture>
               </div>
               <div class="contents is-shop">
                 <div class="valuer">
@@ -46,7 +54,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img v-lazy="require('~/assets/images/sample/shop.jpg')" alt="">
+                <picture>
+                  <source srcset="~/assets/images/sample/shop.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/shop.jpg')"
+                    width="90"
+                    height="135"
+                    alt="お店口コミ"
+                  />
+                </picture>
               </div>
               <div class="contents is-shop">
                 <div class="valuer">
@@ -78,7 +94,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img v-lazy="require('~/assets/images/sample/90-135.jpg')" alt="">
+                <picture>
+                  <source srcset="~/assets/images/sample/90-135.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/90-135.jpg')"
+                    width="90"
+                    height="135"
+                    alt="お店口コミ"
+                  />
+                </picture>
                 <span class="girlName">まりあまりあまりあまりあまりあ(50)</span>
               </div>
               <div class="contents is-girl">
@@ -99,7 +123,9 @@
                   <p class="user">yusukeyuskeyus</p>
                 </div>
                 <p class="description">ふらりと立ち寄るには少々もったいないと感じるお店でした。 次はちゃんと調べて、お邪</p>
-                <p class="shopName">横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-</p>
+                <p
+                  class="shopName"
+                >横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-横浜人妻デリヘル RE:PRESIDENT-プレジデント-</p>
                 <p class="infor">秋葉原･神田 / ファッションヘルス秋葉原･神田 / ファッションヘルス秋葉原･神田 / ファッションヘルス</p>
               </div>
             </a>
@@ -109,7 +135,15 @@
           <article>
             <a href>
               <div class="thumb">
-                <img v-lazy="require('~/assets/images/sample/90-135.jpg')" alt="">
+                <picture>
+                  <source srcset="~/assets/images/sample/90-135.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/90-135.jpg')"
+                    width="90"
+                    height="135"
+                    alt="お店口コミ"
+                  />
+                </picture>
                 <span class="girlName">まりあまりあまりあまりあまりあ(50)</span>
               </div>
               <div class="contents">
@@ -148,7 +182,7 @@ import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     IconReview,
-    MainColumnSection
+    MainColumnSection,
   },
 };
 </script>
@@ -274,7 +308,7 @@ export default {
   transition: 0.25s;
 }
 .area-review .review ul .shop {
-  --hover: #C0D7F6;
+  --hover: #c0d7f6;
 }
 .area-review .review ul .shop:hover {
   background: rgba(0, 0, 0, 0.8);
@@ -285,7 +319,7 @@ export default {
   z-index: theme("zIndex.10");
 }
 .area-review .review ul .girl {
-  --hover: #FD94B2;
+  --hover: #fd94b2;
 }
 .area-review .review ul .girl:hover {
   background: rgba(0, 0, 0, 0.8);

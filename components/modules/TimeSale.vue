@@ -1,45 +1,57 @@
 <template>
   <MainColumnSection class="time-sale">
     <p>
-      <img
-        v-lazy="require('~/assets/images/timesale/timesale_bnr.jpg')"
-        width="680"
-        height="180"
-        alt="ぴゅあらばタイムセール"
-      />
+      <picture>
+        <source srcset="~/assets/images/timesale/timesale_bnr.webp" type="image/webp" />
+        <img
+          v-lazy="require('~/assets/images/timesale/timesale_bnr.jpg')"
+          width="680"
+          height="180"
+          alt="ぴゅあらばタイムセール"
+        />
+      </picture>
     </p>
     <p class="count-down">
       <span class="limited">掲載残り時間</span>
-      <img
-        v-lazy="require('~/assets/images/timesale/angle-arrow.png')"
-        width="40"
-        height="30"
-        alt="矢印"
-      />
+      <picture>
+        <source srcset="~/assets/images/timesale/angle-arrow.webp" type="image/webp" />
+        <img
+          v-lazy="require('~/assets/images/timesale/angle-arrow.png')"
+          width="40"
+          height="30"
+          alt="矢印"
+        />
+      </picture>
       <time>2時間32分54秒</time>
     </p>
     <ul class="time-sale-list">
       <li v-for="index in 3" :key="index">
         <article>
           <a href>
-            <img
-              v-lazy="require('~/assets/images/sample/170-227.jpg')"
-              width="170"
-              height="227"
-              alt="女の子"
-            />
+            <picture>
+              <source srcset="~/assets/images/sample/170-227.webp" type="image/webp" />
+              <img
+                v-lazy="require('~/assets/images/sample/170-227.jpg')"
+                width="170"
+                height="227"
+                alt="女の子"
+              />
+            </picture>
             <div class="infor">
               <h3 class="girlName">ひなみ(28)</h3>
               <p class="area">横浜(関内･曙町) / デリヘル・ソープ</p>
             </div>
             <div class="discount">
               <div class="badge">
-                <img
-                  v-lazy="require('~/assets/images/timesale/timesale_off.png')"
-                  width="57"
-                  height="57"
-                  alt="女の子"
-                />
+                <picture>
+                  <source srcset="~/assets/images/timesale/timesale_off.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                    width="57"
+                    height="57"
+                    alt="女の子"
+                  />
+                </picture>
                 <p class="number">99</p>
               </div>
             </div>
@@ -50,24 +62,30 @@
       <li>
         <article>
           <a href>
-            <img
-              v-lazy="require('~/assets/images/sample/170-227.jpg')"
-              width="170"
-              height="227"
-              alt="女の子"
-            />
+            <picture>
+              <source srcset="~/assets/images/sample/170-227.webp" type="image/webp" />
+              <img
+                v-lazy="require('~/assets/images/sample/170-227.jpg')"
+                width="170"
+                height="227"
+                alt="女の子"
+              />
+            </picture>
             <div class="infor">
               <h3 class="girlName">ひなみ(28)</h3>
               <p class="area">横浜(関内･曙町) / デリヘル・ソープ</p>
             </div>
             <div class="discount">
               <div class="badge">
-                <img
-                  v-lazy="require('~/assets/images/timesale/timesale_off.png')"
-                  width="57"
-                  height="57"
-                  alt="女の子"
-                />
+                <picture>
+                  <source srcset="~/assets/images/timesale/timesale_off.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/timesale/timesale_off.png')"
+                    width="57"
+                    height="57"
+                    alt="女の子"
+                  />
+                </picture>
                 <span class="number">1</span>
               </div>
             </div>

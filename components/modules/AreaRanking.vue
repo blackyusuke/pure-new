@@ -17,12 +17,15 @@
         <ol class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample1.jpg')"
-                width="340"
-                height="454"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample1.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                  width="340"
+                  height="454"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -35,12 +38,15 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -56,12 +62,15 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -77,12 +86,15 @@
           </li>
           <li class="ranking-item triangle gray">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-4">
                 <strong>4</strong>位
               </span>
@@ -98,12 +110,15 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -123,12 +138,15 @@
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample1.jpg')"
-                width="340"
-                height="454"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample1.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                  width="340"
+                  height="454"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -141,12 +159,15 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -162,12 +183,15 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -199,12 +223,15 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -224,7 +251,15 @@
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img src="~/assets/images/sample/sample1.jpg" width="340" height="454" alt="女の子" />
+              <picture>
+                <source srcset="~/assets/images/sample/sample1.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                  width="340"
+                  height="454"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -237,12 +272,15 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -258,12 +296,15 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -295,12 +336,15 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -320,7 +364,15 @@
         <ul class="ranking-list">
           <li class="first new is-first-new triangle">
             <a href>
-              <img src="~/assets/images/sample/sample1.jpg" width="340" height="454" alt="女の子" />
+              <picture>
+                <source srcset="~/assets/images/sample/sample1.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample1.jpg')"
+                  width="340"
+                  height="454"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-1">
                 <strong>1</strong>位
               </div>
@@ -333,12 +385,15 @@
           </li>
           <li class="ranking-item triangle silver">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-2">
                 <strong>2</strong>位
               </span>
@@ -354,12 +409,15 @@
           </li>
           <li class="ranking-item triangle blonze">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <span class="number number-3">
                 <strong>3</strong>位
               </span>
@@ -391,12 +449,15 @@
           </li>
           <li class="ranking-item triangle gray new is-other-new">
             <a href>
-              <img
-                v-lazy="require('~/assets/images/sample/sample2.jpg')"
-                width="170"
-                height="227"
-                alt
-              />
+              <picture>
+                <source srcset="~/assets/images/sample/sample2.webp" type="image/webp" />
+                <img
+                  v-lazy="require('~/assets/images/sample/sample2.jpg')"
+                  width="170"
+                  height="227"
+                  alt="女の子"
+                />
+              </picture>
               <div class="number number-5">
                 <strong>5</strong>位
               </div>
@@ -428,7 +489,7 @@ export default {
     IconArrow,
     ButtonLink,
     LinkSeeMore,
-    MainColumnSection
+    MainColumnSection,
   },
   data() {
     return {

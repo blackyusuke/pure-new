@@ -12,37 +12,58 @@
     <ul class="search-area-list">
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/tokyo.jpg')" width="96" height="297" alt="東京">
+          <picture>
+            <source srcset="~/assets/images/area/tokyo.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/tokyo.jpg')" width="96" height="297" alt="東京" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/kanagawa.jpg')" width="96" height="297" alt="神奈川">
+          <picture>
+            <source srcset="~/assets/images/area/kanagawa.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/kanagawa.jpg')" width="96" height="297" alt="神奈川" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/saitama.jpg')" width="96" height="297" alt="埼玉">
+          <picture>
+            <source srcset="~/assets/images/area/saitama.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/saitama.jpg')" width="96" height="297" alt="埼玉" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/tiba.jpg')" width="96" height="297" alt="千葉">
+          <picture>
+            <source srcset="~/assets/images/area/tiba.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/tiba.jpg')" width="96" height="297" alt="千葉" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/ibaraki.jpg')" width="96" height="297" alt="茨城">
+          <picture>
+            <source srcset="~/assets/images/area/ibaraki.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/ibaraki.jpg')" width="96" height="297" alt="茨城" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/tochigi.jpg')" width="96" height="297" alt="栃木">
+          <picture>
+            <source srcset="~/assets/images/area/tochigi.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/tochigi.jpg')" width="96" height="297" alt="栃木" />
+          </picture>
         </a>
       </li>
       <li>
         <a href>
-          <img v-lazy="require('~/assets/images/area/gunma.jpg')" alt="群馬">
+          <picture>
+            <source srcset="~/assets/images/area/gunma.webp" type="image/webp" />
+            <img v-lazy="require('~/assets/images/area/gunma.jpg')" width="96" height="297" alt="群馬" />
+          </picture>
         </a>
       </li>
     </ul>
@@ -50,16 +71,16 @@
 </template>
 
 <script>
-import HeadMain from "~/components/parts/HeadMain.vue"
-import IconMap from "~/components/icons/IconMap"
-import ButtonLink from "~/components/parts/ButtonLink"
+import HeadMain from "~/components/parts/HeadMain.vue";
+import IconMap from "~/components/icons/IconMap";
+import ButtonLink from "~/components/parts/ButtonLink";
 import MainColumnSection from "~/components/parts/MainColumnSection.vue";
 export default {
   components: {
     HeadMain,
     IconMap,
     ButtonLink,
-    MainColumnSection
+    MainColumnSection,
   },
 };
 </script>
