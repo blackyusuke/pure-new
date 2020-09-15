@@ -50,9 +50,6 @@
         <div class="overlay">Check!!</div>
       </a>
     </div>
-    <div class="side-item">
-      <h2 class="title is-small">大手グループ風俗店</h2>
-    </div>
   </div>
 </template>
 

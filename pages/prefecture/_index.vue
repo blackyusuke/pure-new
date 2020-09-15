@@ -1,7 +1,7 @@
 <template>
   <main id="prefecture">
-    <ul class="search-list">
-      <li class="search-main search-list-item">
+    <div class="search-list">
+      <div class="search-main search-list-item">
         <div class="contents">
           <HeadSearch title="エリアから探す" />
           <NavList flex="side">
@@ -13,8 +13,8 @@
             <a href>全てのエリアを見る</a>
           </div>
         </div>
-      </li>
-      <li class="search-main search-list-item">
+      </div>
+      <div class="search-main search-list-item">
         <div class="contents">
           <HeadSearch title="業種から探す" />
           <NavList flex="side">
@@ -29,8 +29,8 @@
             <a href>全ての業種を見る</a>
           </div>
         </div>
-      </li>
-      <li class="search-list-item other-search">
+      </div>
+      <div class="search-list-item other-search">
         <nav>
           <ul>
             <li>
@@ -47,8 +47,8 @@
             </li>
           </ul>
         </nav>
-      </li>
-    </ul>
+      </div>
+    </div>
     <AllColumnWrapper>
       <a href class="bnr">
         <img
@@ -56,6 +56,7 @@
           width="680"
           height="300"
         />
+        <div class="overlay">Check!!</div>
       </a>
       <a href class="bnr">
         <img
@@ -63,6 +64,7 @@
           width="680"
           height="140"
         />
+        <div class="overlay">Check!!</div>
       </a>
       <PickGirl />
       <TimeSale />
@@ -140,5 +142,20 @@ export default {
   color: theme("colors.primary");
   @apply text-fz16 leading-lh23 p-12 block;
   background: theme("colors.back-gray");
+}
+#prefecture .bnr {
+  @apply relative;
+}
+#prefecture .bnr:hover .overlay {
+  transform: scale(1);
+}
+#prefecture .bnr .overlay {
+  @apply absolute top-0 right-0 left-0 bottom-0 flex items-center justify-center text-fz30 font-bold;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+  color: theme("colors.primary");
+  z-index: theme("zIndex.1000");
 }
 </style>

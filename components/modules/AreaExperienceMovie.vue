@@ -55,7 +55,11 @@
           <article>
             <a href>
               <div class="image">
-                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" width="157" height="88" />
+                <img
+                  v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'"
+                  width="157"
+                  height="88"
+                />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -76,7 +80,15 @@
           <article>
             <a href>
               <div class="image">
-                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" width="157" height="88" />
+                <picture>
+                  <source srcset="~/assets/images/sample/157-88.webp" type="image/webp" />
+                  <img
+                    v-lazy="require('~/assets/images/sample/157-88.jpg')"
+                    width="157"
+                    height="88"
+                    alt="体験動画"
+                  />
+                </picture>
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -97,7 +109,11 @@
           <article>
             <a href>
               <div class="image">
-                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" width="157" height="88" />
+                <img
+                  v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'"
+                  width="157"
+                  height="88"
+                />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -118,7 +134,11 @@
           <article>
             <a href>
               <div class="image">
-                <img v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'" width="157" height="88" />
+                <img
+                  v-lazy="'http://placehold.jp/FFCCCC/FF0000/157x88.png'"
+                  width="157"
+                  height="88"
+                />
                 <span class="play-time">59:59</span>
                 <span class="play-icon">
                   <icon-triangle class="fill-current" width="18" height="18" />
@@ -148,7 +168,7 @@ export default {
   components: {
     IconFilm,
     IconTriangle,
-    MainColumnSection
+    MainColumnSection,
   },
 };
 </script>
@@ -304,7 +324,15 @@ export default {
 .area-experience-movie .movie .other-list li article a .description .views {
   @apply text-fz14;
 }
-.area-experience-movie .movie .other-list li article a .description .views span {
+.area-experience-movie
+  .movie
+  .other-list
+  li
+  article
+  a
+  .description
+  .views
+  span {
   @apply text-fz20 font-bold;
   color: theme("colors.primary");
 }

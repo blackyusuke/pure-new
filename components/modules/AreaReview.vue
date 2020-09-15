@@ -304,6 +304,7 @@ export default {
   content: "★★★★★";
   color: theme("colors.orange");
 }
+/* アニメーションホバー */
 .area-review .review ul li {
   transition: 0.25s;
 }
@@ -328,7 +329,7 @@ export default {
 .area-review .review ul li article {
   @apply bg-black;
 }
-.area-review .review ul li article a:hover {
+.area-review .review ul li article:hover {
   @apply opacity-6;
 }
 @keyframes pulse {
@@ -336,4 +337,5 @@ export default {
     box-shadow: 0 0 0 0 var(--hover);
   }
 }
+/* アニメーションホバーここまで */
 </style>
