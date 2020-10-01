@@ -7,7 +7,6 @@
             <swiper :options="swiperOption">
               <swiper-slide v-for="index in 5" :key="index">
                 <a href>
-                  <p>ああああああああああああああああああああ</p>
                   <img width="540" height="135" src="http://placehold.jp/FFCCCC/FF0000/540x135.png" />
                   <div class="overlay">Check!!</div>
                 </a>
